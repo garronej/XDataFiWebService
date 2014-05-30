@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AccesInfos method" Url="html/2c990274-b328-258a-54f9-b89448087142.htm" />
+  <HelpKINode Title="Action property" Url="html/0f7bc5d2-b62c-306f-0e26-dd7cffd49e2b.htm" />
+  <HelpKINode Title="AddDataRow method" Url="html/ce887dfa-92f2-c91c-7cd0-05d7faad8069.htm" />
+  <HelpKINode Title="ADF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ADP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AED enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AFA enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AFN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AFR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ALL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AMD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ANG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AOA enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AON enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="APIFiMag namespace" Url="html/e26490e8-2298-9881-3d78-0d25b259c9ff.htm" />
+  <HelpKINode Title="APIFiMag.backDataSet class">
+    <HelpKINode Title="backDataSet Class" Url="html/aaee0414-3dd7-5728-29bd-eff7ec1272e5.htm" />
+    <HelpKINode Title="backDataSet Members" Url="html/497f1623-39b5-eb81-7651-be08debc090d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ConnectivityException class">
+    <HelpKINode Title="ConnectivityException Class" Url="html/b2fbe4d1-0ef2-a1ea-c965-2ad2e726e456.htm" />
+    <HelpKINode Title="ConnectivityException Members" Url="html/44da51be-aeab-1aba-8490-ac547fe4e5cf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Currency enumeration" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="APIFiMag.Data class">
+    <HelpKINode Title="Data Class" Url="html/49a69cd4-a4a4-1aa3-a0c2-ceb4c22b9311.htm" />
+    <HelpKINode Title="Data Members" Url="html/ca2b7a69-bcbf-fce8-6cd3-057cebf0d5ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.DataDataTable class" Url="html/9fd3a200-e8ed-194d-d775-bf4658cec57d.htm" />
+  <HelpKINode Title="APIFiMag.DataRow class" Url="html/2dd5b27b-966a-a1e1-53b3-ffb86795ed76.htm" />
+  <HelpKINode Title="APIFiMag.DataRowChangeEvent class" Url="html/bf27148a-7671-b8d0-10b1-905faf6fc95c.htm" />
+  <HelpKINode Title="APIFiMag.Datas namespace" Url="html/5cc63b70-6839-09ed-b35c-c18b3b138704.htm" />
+  <HelpKINode Title="APIFiMag.Datas.DataActif class">
+    <HelpKINode Title="DataActif Class" Url="html/3771eb45-e815-479c-936c-9db495b9ad60.htm" />
+    <HelpKINode Title="DataActif Members" Url="html/de3a3436-abd2-c5fe-d561-5104d9e3bdb9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Datas.DataFXTop class">
+    <HelpKINode Title="DataFXTop Class" Url="html/3018d578-c425-2e12-2526-c0ec65f7a666.htm" />
+    <HelpKINode Title="DataFXTop Members" Url="html/6fc5bdad-de0d-c219-758c-5b28b059f197.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Datas.DataIRate class">
+    <HelpKINode Title="DataIRate Class" Url="html/37aa64d3-316e-ee39-73d2-2099468064b2.htm" />
+    <HelpKINode Title="DataIRate Members" Url="html/48692bc2-c2da-3c98-6725-0321c09a87ba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Datas.DataRealTime class">
+    <HelpKINode Title="DataRealTime Class" Url="html/1cccceb5-4691-4e49-d70b-e1dc26dec963.htm" />
+    <HelpKINode Title="DataRealTime Members" Url="html/92cebbc1-3313-e2c6-8713-34c562d3b2e4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Datas.DataXML class">
+    <HelpKINode Title="DataXML Class" Url="html/4b00689c-e0b1-6756-c49d-b05d07f3793c.htm" />
+    <HelpKINode Title="DataXML Members" Url="html/71f7dc68-54b9-8ce8-35a7-f9ae43271e75.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.DataSet class">
+    <HelpKINode Title="DataSet Class" Url="html/64279ddd-89bb-58a3-95f0-5c82aed7f0fd.htm" />
+    <HelpKINode Title="DataSet Members" Url="html/5c39fa3a-3d14-bf3a-5aeb-bae5a39309b9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.DataSet.DataDataTable class" Url="html/debefdb0-4d64-1d3f-71ab-d8c5be7a8e1a.htm" />
+  <HelpKINode Title="APIFiMag.DataSet.DataRow class" Url="html/34641fbf-fb32-752a-0e5e-a44f05d027ef.htm" />
+  <HelpKINode Title="APIFiMag.DataSet.DataRowChangeEvent class" Url="html/9ed1a79d-f958-2c7b-5d60-953cc91c3821.htm" />
+  <HelpKINode Title="APIFiMag.DataSet.DataRowChangeEventHandler delegate" Url="html/bcd1c3f4-6cde-7c26-2d01-465a51f8c5e6.htm" />
+  <HelpKINode Title="APIFiMag.ErreurInterne class">
+    <HelpKINode Title="ErreurInterne Class" Url="html/c7e6d848-95dc-a88d-e4bc-ac6d05bb7c77.htm" />
+    <HelpKINode Title="ErreurInterne Members" Url="html/55009f2b-e212-83d2-c8d0-9029f36e4e95.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ErreurSource class">
+    <HelpKINode Title="ErreurSource Class" Url="html/b87b8c6a-fe87-b184-20cd-9316a8afbe88.htm" />
+    <HelpKINode Title="ErreurSource Members" Url="html/60c2a8f1-dd9f-0d6d-568c-dd8b3761bb65.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ErreurUtilisateur class">
+    <HelpKINode Title="ErreurUtilisateur Class" Url="html/a666c903-0350-59ec-35e8-200ab1786ce0.htm" />
+    <HelpKINode Title="ErreurUtilisateur Members" Url="html/328ea191-c858-4933-f9a0-e78020a9b6c9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Export interface">
+    <HelpKINode Title="Export Interface" Url="html/74f85924-ccd7-49fd-af6c-74f33984fff2.htm" />
+    <HelpKINode Title="Export Members" Url="html/d668274e-c7c7-2f96-65b2-d2e60ca3873c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ExportCSV class">
+    <HelpKINode Title="ExportCSV Class" Url="html/47ab46eb-9e41-9307-886e-399283e9cba9.htm" />
+    <HelpKINode Title="ExportCSV Members" Url="html/096fc42c-f78a-cdbf-e6e2-db968e923e90.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Exporter namespace" Url="html/745e87fb-4f1b-1654-9c4b-c1b25d0c1bdd.htm" />
+  <HelpKINode Title="APIFiMag.Exporter.ExportMDF class">
+    <HelpKINode Title="ExportMDF Class" Url="html/c42082f6-e49c-f09a-aef6-a9034f9266d8.htm" />
+    <HelpKINode Title="ExportMDF Members" Url="html/58442519-862a-2fd4-746f-d8d9f2803d0b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ExportJSON class">
+    <HelpKINode Title="ExportJSON Class" Url="html/f8b222b5-baec-2ca7-bd77-413f8a3d9462.htm" />
+    <HelpKINode Title="ExportJSON Members" Url="html/b5d796c0-6bd8-cf3c-1975-ff7da0053bc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.ExportXML class">
+    <HelpKINode Title="ExportXML Class" Url="html/f8412985-8734-3c9e-2b07-e462ebbc677a.htm" />
+    <HelpKINode Title="ExportXML Members" Url="html/d4c7a29b-257b-4613-7d42-a776d2915e0f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Frequency enumeration" Url="html/0007adac-79b7-782d-7f65-109f88fac5b4.htm" />
+  <HelpKINode Title="APIFiMag.HistoricalColumn enumeration" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="APIFiMag.Import interface">
+    <HelpKINode Title="Import Interface" Url="html/f8fbdc21-7c99-4d88-0049-99a3bd5c6391.htm" />
+    <HelpKINode Title="Import Members" Url="html/ea17834d-f5bb-1b8d-58fe-7a0ef0433ed4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer namespace" Url="html/7fdd663f-ddd2-885b-8c02-f6c32edbf97e.htm" />
+  <HelpKINode Title="APIFiMag.Importer.ImportEBF class">
+    <HelpKINode Title="ImportEBF Class" Url="html/2d8244e1-ef5e-2e4d-4a10-dfdbfedb60ed.htm" />
+    <HelpKINode Title="ImportEBF Members" Url="html/bf3bb0d7-38c6-3321-35b7-c091aa69c751.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer.ImportGoogle class">
+    <HelpKINode Title="ImportGoogle Class" Url="html/caee2923-cb8b-c657-bfac-f4e7539c7c9f.htm" />
+    <HelpKINode Title="ImportGoogle Members" Url="html/1083ceca-c7cc-fcfb-677c-986d3d78e61b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer.ImportReal class">
+    <HelpKINode Title="ImportReal Class" Url="html/ec8d5ffc-9b3c-9cbd-bf63-620dc2b7e1e1.htm" />
+    <HelpKINode Title="ImportReal Members" Url="html/f5fdd2e7-d335-13a1-1a81-942923e7e545.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer.ImportYahoo class">
+    <HelpKINode Title="ImportYahoo Class" Url="html/c315f7cd-056c-5e7f-7568-fecf27a60246.htm" />
+    <HelpKINode Title="ImportYahoo Members" Url="html/313f8afd-0b88-b1b1-d723-3bc82cf50cd3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer.ParserCSV class">
+    <HelpKINode Title="ParserCSV Class" Url="html/e6afae3d-7446-bee1-99c5-87e3230d2a98.htm" />
+    <HelpKINode Title="ParserCSV Members" Url="html/11ec2a38-6685-0a2a-78e5-763fc19c3bb2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Importer.ParserFXTop class">
+    <HelpKINode Title="ParserFXTop Class" Url="html/06c72f2f-6496-77eb-ca8d-83c2cf085e51.htm" />
+    <HelpKINode Title="ParserFXTop Members" Url="html/30d9aca4-15b5-9ef3-558d-e1fd3991e847.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.InfosStatiques class">
+    <HelpKINode Title="InfosStatiques Class" Url="html/b9de3ae6-b8fa-60c1-4f89-d6083addf63c.htm" />
+    <HelpKINode Title="InfosStatiques Members" Url="html/74209cf3-d457-1755-aba0-b90b55c5959d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.InfosStatiques.infosDispo enumeration" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="APIFiMag.InfoStat class">
+    <HelpKINode Title="InfoStat Class" Url="html/85128733-3d97-dc0e-7f08-7bb5ed9e4372.htm" />
+    <HelpKINode Title="InfoStat Members" Url="html/2200507b-962d-c6b5-9238-f28d81688d5e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.InterestRate enumeration" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="APIFiMag.Mauvaistype class">
+    <HelpKINode Title="Mauvaistype Class" Url="html/54c96c7e-b655-1154-c119-ee4348254ba6.htm" />
+    <HelpKINode Title="Mauvaistype Members" Url="html/0781a44e-3bc8-0e7e-825f-41087a78903b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.MyExceptions class">
+    <HelpKINode Title="MyExceptions Class" Url="html/b6eb9050-2327-3428-55bb-8216a58daf94.htm" />
+    <HelpKINode Title="MyExceptions Members" Url="html/f24d15d7-9af2-1cfe-ac9b-e6ca2980f76b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.NegativeValueImpossible class">
+    <HelpKINode Title="NegativeValueImpossible Class" Url="html/83835b09-0671-634d-7493-e739a907cafd.htm" />
+    <HelpKINode Title="NegativeValueImpossible Members" Url="html/81459044-60e4-eaed-bcc5-fcac1278735b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.Parser class">
+    <HelpKINode Title="Parser Class" Url="html/b6cc81ab-c777-5c28-9644-f68f73c68323.htm" />
+    <HelpKINode Title="Parser Members" Url="html/6fd1378c-2b0d-a950-f9af-5ee5016d0f09.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.WrongDates class">
+    <HelpKINode Title="WrongDates Class" Url="html/28765d81-70c2-2576-e2f7-509999d04f25.htm" />
+    <HelpKINode Title="WrongDates Members" Url="html/303f7a36-f72e-4642-07bf-6349405c4513.htm" />
+  </HelpKINode>
+  <HelpKINode Title="APIFiMag.YQL class">
+    <HelpKINode Title="YQL Class" Url="html/37a11399-da9f-315c-ad26-815c4f425eae.htm" />
+    <HelpKINode Title="YQL Members" Url="html/dfb2b959-fc1d-d08f-b845-e04bef4d8b64.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ARS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Ask method" Url="html/9616ec59-7717-4140-6601-3a3a8350bdf7.htm" />
+  <HelpKINode Title="ATS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AUD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="avancement property" Url="html/2cee8333-d618-ff3e-45c0-72728ff7d745.htm" />
+  <HelpKINode Title="AWF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AWG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AZM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="AZN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="backDataSet class">
+    <HelpKINode Title="backDataSet Class" Url="html/aaee0414-3dd7-5728-29bd-eff7ec1272e5.htm" />
+    <HelpKINode Title="backDataSet Members" Url="html/497f1623-39b5-eb81-7651-be08debc090d.htm" />
+    <HelpKINode Title="about backDataSet class" Url="html/aaee0414-3dd7-5728-29bd-eff7ec1272e5.htm" />
+    <HelpKINode Title="all members" Url="html/497f1623-39b5-eb81-7651-be08debc090d.htm" />
+    <HelpKINode Title="constructor" Url="html/b2c4cba0-f12c-e282-3f84-910f23ebb4aa.htm" />
+    <HelpKINode Title="events" Url="html/4b1b338c-cfe7-267b-4713-f71f393f3cd0.htm" />
+    <HelpKINode Title="methods" Url="html/6f52bbc4-a98b-b121-a3db-984a1987d6cd.htm" />
+    <HelpKINode Title="properties" Url="html/f3aa3b3b-f5f3-d5e6-303d-4f0ba7638efd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="backDataSet.backDataSet constructor" Url="html/b2c4cba0-f12c-e282-3f84-910f23ebb4aa.htm" />
+  <HelpKINode Title="backDataSet.Clone method" Url="html/7d014142-2750-4815-e522-a5bcb3e839bc.htm" />
+  <HelpKINode Title="backDataSet.GetSchemaSerializable method" Url="html/1dbd88b2-727a-96e6-689e-56f227b591f6.htm" />
+  <HelpKINode Title="backDataSet.GetTypedDataSetSchema method" Url="html/73be1668-529b-c949-3b86-0bd35f54086c.htm" />
+  <HelpKINode Title="backDataSet.InitializeDerivedDataSet method" Url="html/aae15b2c-a58c-f72f-01ab-66675cd7db93.htm" />
+  <HelpKINode Title="backDataSet.ReadXmlSerializable method" Url="html/18bb06e5-2bd3-32c6-4da1-19e2ada09d70.htm" />
+  <HelpKINode Title="backDataSet.Relations property" Url="html/1f175a20-03d7-d200-09fd-cdbb90fe77cb.htm" />
+  <HelpKINode Title="backDataSet.SchemaSerializationMode property" Url="html/c8a8947c-519b-a6f4-8bf0-4b3fd880b0c6.htm" />
+  <HelpKINode Title="backDataSet.ShouldSerializeRelations method" Url="html/e2f9059c-3572-3781-5c72-8df80c49656a.htm" />
+  <HelpKINode Title="backDataSet.ShouldSerializeTables method" Url="html/13bfb79c-a374-9d31-d3ee-6a0da166a3a7.htm" />
+  <HelpKINode Title="backDataSet.Tables property" Url="html/620de9f3-e919-5476-2439-3013c700f1c1.htm" />
+  <HelpKINode Title="BAM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BBD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BDT enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BEF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BGL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BGN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BHD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Bid method" Url="html/c4ffbd15-f979-0804-ce57-ed9e34a85536.htm" />
+  <HelpKINode Title="BIF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BMD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BND enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BOB enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BRL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BSD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BTN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BWP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BYR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="BZD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CAD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Capitalisation enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="CDF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CHF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Clone method">
+    <HelpKINode Title="backDataSet.Clone Method " Url="html/7d014142-2750-4815-e522-a5bcb3e839bc.htm" />
+    <HelpKINode Title="DataSet.Clone Method " Url="html/834845fb-625d-752e-53e3-95ea001cad83.htm" />
+    <HelpKINode Title="DataSet.DataDataTable.Clone Method " Url="html/b06901a9-626a-2e46-3bb3-469423dfa70d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Close enumeration member" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="CLP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CNY enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Column property" Url="html/88056ff7-5b71-e49c-e039-8086e8aa19ea.htm" />
+  <HelpKINode Title="ColumnColumn property" Url="html/17ea5a6d-f244-c75f-65b2-0bf5d3b49229.htm" />
+  <HelpKINode Title="Columns property" Url="html/0d652bf0-6eea-0a4f-a4cd-a357353a881f.htm" />
+  <HelpKINode Title="ConnectivityException class">
+    <HelpKINode Title="ConnectivityException Class" Url="html/b2fbe4d1-0ef2-a1ea-c965-2ad2e726e456.htm" />
+    <HelpKINode Title="ConnectivityException Members" Url="html/44da51be-aeab-1aba-8490-ac547fe4e5cf.htm" />
+    <HelpKINode Title="about ConnectivityException class" Url="html/b2fbe4d1-0ef2-a1ea-c965-2ad2e726e456.htm" />
+    <HelpKINode Title="all members" Url="html/44da51be-aeab-1aba-8490-ac547fe4e5cf.htm" />
+    <HelpKINode Title="constructor" Url="html/d50a61cd-f742-0fab-d8ad-a939f35a9403.htm" />
+    <HelpKINode Title="events" Url="html/1120973b-021d-100f-6ee7-3893ca67cf30.htm" />
+    <HelpKINode Title="methods" Url="html/a6a14a25-60dd-480d-cb96-2d291a757fbf.htm" />
+    <HelpKINode Title="properties" Url="html/40e5f0e6-8494-0161-4397-ed4ef4279312.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConnectivityException.ConnectivityException constructor" Url="html/d50a61cd-f742-0fab-d8ad-a939f35a9403.htm" />
+  <HelpKINode Title="ConvertIsinToTicker method" Url="html/49416441-507c-39e3-3115-db487997936e.htm" />
+  <HelpKINode Title="ConvertTickerToIsin method" Url="html/f0f736f4-30e9-8b70-2827-1b3ec7ddda92.htm" />
+  <HelpKINode Title="ConvertTickerToName method" Url="html/2a986d9c-baf9-a502-430c-24f86de3cec1.htm" />
+  <HelpKINode Title="COP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Count property" Url="html/1b0724f3-52b7-2595-f78b-23d84ffbbfaf.htm" />
+  <HelpKINode Title="CreateInstance method" Url="html/ba8e8771-563d-68ec-cac0-da5726b3ab63.htm" />
+  <HelpKINode Title="CRS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CUC enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CUP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Currency enumeration" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CVE enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CYP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="CZK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Daily enumeration member" Url="html/0007adac-79b7-782d-7f65-109f88fac5b4.htm" />
+  <HelpKINode Title="Data class">
+    <HelpKINode Title="Data Class" Url="html/49a69cd4-a4a4-1aa3-a0c2-ceb4c22b9311.htm" />
+    <HelpKINode Title="Data Members" Url="html/ca2b7a69-bcbf-fce8-6cd3-057cebf0d5ca.htm" />
+    <HelpKINode Title="about Data class" Url="html/49a69cd4-a4a4-1aa3-a0c2-ceb4c22b9311.htm" />
+    <HelpKINode Title="all members" Url="html/ca2b7a69-bcbf-fce8-6cd3-057cebf0d5ca.htm" />
+    <HelpKINode Title="constructor" Url="html/0adadfec-18e9-8d33-810f-ef108cb080bc.htm" />
+    <HelpKINode Title="methods" Url="html/0692904e-a4f4-8e56-2681-724fde67d1ac.htm" />
+    <HelpKINode Title="properties" Url="html/53a500b4-392f-06d1-a5a8-cb2c0942aa55.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Data property" Url="html/39db721c-9d6d-6348-1bb4-dfc4a6de6f4c.htm" />
+  <HelpKINode Title="Data.Columns property" Url="html/0d652bf0-6eea-0a4f-a4cd-a357353a881f.htm" />
+  <HelpKINode Title="Data.Data constructor" Url="html/0adadfec-18e9-8d33-810f-ef108cb080bc.htm" />
+  <HelpKINode Title="Data.Debut property" Url="html/85dbcaaa-a614-4612-92ae-b84c32818eb3.htm" />
+  <HelpKINode Title="Data.Export method" Url="html/38f0742c-bd83-a431-2bd5-66ad1f572ec0.htm" />
+  <HelpKINode Title="Data.Fin property" Url="html/e3eef4c7-f374-22b2-dd69-c849d8a0568c.htm" />
+  <HelpKINode Title="Data.ImportData method" Url="html/8c0898b9-9b4a-58bb-3dd0-dbe283f1bff0.htm" />
+  <HelpKINode Title="Data.Symbol property" Url="html/173a8aec-9253-f14f-5033-32e886924c9d.htm" />
+  <HelpKINode Title="Data.Table property" Url="html/8ab352d6-6094-70c6-05fa-b38a6339fa61.htm" />
+  <HelpKINode Title="DataActif class">
+    <HelpKINode Title="DataActif Class" Url="html/3771eb45-e815-479c-936c-9db495b9ad60.htm" />
+    <HelpKINode Title="DataActif Members" Url="html/de3a3436-abd2-c5fe-d561-5104d9e3bdb9.htm" />
+    <HelpKINode Title="about DataActif class" Url="html/3771eb45-e815-479c-936c-9db495b9ad60.htm" />
+    <HelpKINode Title="all members" Url="html/de3a3436-abd2-c5fe-d561-5104d9e3bdb9.htm" />
+    <HelpKINode Title="constructor" Url="html/61248f62-4caa-ff50-11c7-2516cff31265.htm" />
+    <HelpKINode Title="methods" Url="html/f6c0cd12-d2bf-5848-bf55-c8b14c060430.htm" />
+    <HelpKINode Title="properties" Url="html/3b5cb7be-4b82-0c1e-8d4b-e3e3e3733ec7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataActif.DataActif constructor" Url="html/61248f62-4caa-ff50-11c7-2516cff31265.htm" />
+  <HelpKINode Title="DataDataTable class">
+    <HelpKINode Title="DataDataTable Members" Url="html/9fd3a200-e8ed-194d-d775-bf4658cec57d.htm" />
+    <HelpKINode Title="all members" Url="html/9fd3a200-e8ed-194d-d775-bf4658cec57d.htm" />
+    <HelpKINode Title="events" Url="html/e88a2f14-60c9-a5a4-f506-223a2c4762f7.htm" />
+    <HelpKINode Title="fields" Url="html/bfb6c226-d954-2467-7130-7d599b0f6ab9.htm" />
+    <HelpKINode Title="methods" Url="html/42ccf7f6-5913-89bb-478c-db33d6cabf0d.htm" />
+    <HelpKINode Title="properties" Url="html/f7609881-149b-9279-02e0-e77d0d415922.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataFXTop class">
+    <HelpKINode Title="DataFXTop Class" Url="html/3018d578-c425-2e12-2526-c0ec65f7a666.htm" />
+    <HelpKINode Title="DataFXTop Members" Url="html/6fc5bdad-de0d-c219-758c-5b28b059f197.htm" />
+    <HelpKINode Title="about DataFXTop class" Url="html/3018d578-c425-2e12-2526-c0ec65f7a666.htm" />
+    <HelpKINode Title="all members" Url="html/6fc5bdad-de0d-c219-758c-5b28b059f197.htm" />
+    <HelpKINode Title="constructor" Url="html/ea05a55b-05cb-1ab6-3966-6f97240ae30a.htm" />
+    <HelpKINode Title="methods" Url="html/d4da31d5-2143-95ce-224e-1c9b68dcee1d.htm" />
+    <HelpKINode Title="properties" Url="html/4ae4957a-acd9-4c03-a8d1-9cd76b1f4cd6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataFXTop.DataFXTop constructor" Url="html/ea05a55b-05cb-1ab6-3966-6f97240ae30a.htm" />
+  <HelpKINode Title="DataFXTop.Freq property" Url="html/5fc87afc-6063-468f-c4d9-454532845001.htm" />
+  <HelpKINode Title="DataIRate class">
+    <HelpKINode Title="DataIRate Class" Url="html/37aa64d3-316e-ee39-73d2-2099468064b2.htm" />
+    <HelpKINode Title="DataIRate Members" Url="html/48692bc2-c2da-3c98-6725-0321c09a87ba.htm" />
+    <HelpKINode Title="about DataIRate class" Url="html/37aa64d3-316e-ee39-73d2-2099468064b2.htm" />
+    <HelpKINode Title="all members" Url="html/48692bc2-c2da-3c98-6725-0321c09a87ba.htm" />
+    <HelpKINode Title="constructor" Url="html/5dfd2a96-bcf7-837f-0f61-eaed83f1cdc3.htm" />
+    <HelpKINode Title="methods" Url="html/8c9d3ebf-c9e6-885f-0283-c8b2b79c8f5c.htm" />
+    <HelpKINode Title="properties" Url="html/1637e3ed-9ba0-f7c9-26e2-1142921508ae.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataIRate.DataIRate constructor" Url="html/5dfd2a96-bcf7-837f-0f61-eaed83f1cdc3.htm" />
+  <HelpKINode Title="DataRealTime class">
+    <HelpKINode Title="DataRealTime Class" Url="html/1cccceb5-4691-4e49-d70b-e1dc26dec963.htm" />
+    <HelpKINode Title="DataRealTime Members" Url="html/92cebbc1-3313-e2c6-8713-34c562d3b2e4.htm" />
+    <HelpKINode Title="about DataRealTime class" Url="html/1cccceb5-4691-4e49-d70b-e1dc26dec963.htm" />
+    <HelpKINode Title="all members" Url="html/92cebbc1-3313-e2c6-8713-34c562d3b2e4.htm" />
+    <HelpKINode Title="constructor" Url="html/fee06ee5-1482-251f-4c99-741e55858de2.htm" />
+    <HelpKINode Title="methods" Url="html/21732104-51fc-f86c-1421-f669b9c0cd79.htm" />
+    <HelpKINode Title="properties" Url="html/4cb2db9e-60e8-f04d-8212-309df814514f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataRealTime.DataRealTime constructor" Url="html/fee06ee5-1482-251f-4c99-741e55858de2.htm" />
+  <HelpKINode Title="DataRealTime.Duree property" Url="html/c9124b0e-3815-8041-6889-b5d73ed6d0f9.htm" />
+  <HelpKINode Title="DataRealTime.Periode property" Url="html/0a9f39a8-b2ff-930a-28b6-80e1f68e0152.htm" />
+  <HelpKINode Title="DataRow class">
+    <HelpKINode Title="DataRow Members" Url="html/2dd5b27b-966a-a1e1-53b3-ffb86795ed76.htm" />
+    <HelpKINode Title="all members" Url="html/2dd5b27b-966a-a1e1-53b3-ffb86795ed76.htm" />
+    <HelpKINode Title="methods" Url="html/ca729208-b2bf-a4d6-cd56-53304ed33691.htm" />
+    <HelpKINode Title="properties" Url="html/cf96b135-6926-c3fb-0c68-5e91131c8d7b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataRowChanged event" Url="html/b2f6a8dd-7e77-d012-9cbf-b57035b2132c.htm" />
+  <HelpKINode Title="DataRowChangeEvent class">
+    <HelpKINode Title="DataRowChangeEvent Members" Url="html/bf27148a-7671-b8d0-10b1-905faf6fc95c.htm" />
+    <HelpKINode Title="all members" Url="html/bf27148a-7671-b8d0-10b1-905faf6fc95c.htm" />
+    <HelpKINode Title="methods" Url="html/42cf824a-914c-eee9-b357-777ecf934b04.htm" />
+    <HelpKINode Title="properties" Url="html/e3c5775d-4b70-b601-4943-bc560b1c4a27.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataRowChanging event" Url="html/13fa412a-9a1d-d697-1d2d-53d536963634.htm" />
+  <HelpKINode Title="DataRowDeleted event" Url="html/cdb572c4-b9b0-d3bc-2c31-659f21e1e5a9.htm" />
+  <HelpKINode Title="DataRowDeleting event" Url="html/0559f760-c07e-9785-a34c-965b2564ab75.htm" />
+  <HelpKINode Title="DataSet class">
+    <HelpKINode Title="DataSet Class" Url="html/64279ddd-89bb-58a3-95f0-5c82aed7f0fd.htm" />
+    <HelpKINode Title="DataSet Members" Url="html/5c39fa3a-3d14-bf3a-5aeb-bae5a39309b9.htm" />
+    <HelpKINode Title="about DataSet class" Url="html/64279ddd-89bb-58a3-95f0-5c82aed7f0fd.htm" />
+    <HelpKINode Title="all members" Url="html/5c39fa3a-3d14-bf3a-5aeb-bae5a39309b9.htm" />
+    <HelpKINode Title="constructor" Url="html/1e159f5f-6baa-6688-c202-aa13d3f907d7.htm" />
+    <HelpKINode Title="events" Url="html/70106781-7b6e-6d77-bbe5-23759bf9d829.htm" />
+    <HelpKINode Title="methods" Url="html/ed6a061e-2ef5-5f57-e60e-573f12fbd0d5.htm" />
+    <HelpKINode Title="properties" Url="html/0ead5630-1145-d55a-27b0-0ef81073852f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataSet.Clone method" Url="html/834845fb-625d-752e-53e3-95ea001cad83.htm" />
+  <HelpKINode Title="DataSet.Data property" Url="html/39db721c-9d6d-6348-1bb4-dfc4a6de6f4c.htm" />
+  <HelpKINode Title="DataSet.DataDataTable class">
+    <HelpKINode Title="DataSet.DataDataTable Class" Url="html/debefdb0-4d64-1d3f-71ab-d8c5be7a8e1a.htm" />
+    <HelpKINode Title="about DataSet.DataDataTable class" Url="html/debefdb0-4d64-1d3f-71ab-d8c5be7a8e1a.htm" />
+    <HelpKINode Title="constructor" Url="html/e27b72f0-5dac-a132-d066-71071d023be3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataSet.DataDataTable.AddDataRow method" Url="html/ce887dfa-92f2-c91c-7cd0-05d7faad8069.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.Clone method" Url="html/b06901a9-626a-2e46-3bb3-469423dfa70d.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.ColumnColumn property" Url="html/17ea5a6d-f244-c75f-65b2-0bf5d3b49229.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.Count property" Url="html/1b0724f3-52b7-2595-f78b-23d84ffbbfaf.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.CreateInstance method" Url="html/ba8e8771-563d-68ec-cac0-da5726b3ab63.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DataDataTable constructor" Url="html/e27b72f0-5dac-a132-d066-71071d023be3.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DataRowChanged event" Url="html/b2f6a8dd-7e77-d012-9cbf-b57035b2132c.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DataRowChanging event" Url="html/13fa412a-9a1d-d697-1d2d-53d536963634.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DataRowDeleted event" Url="html/cdb572c4-b9b0-d3bc-2c31-659f21e1e5a9.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DataRowDeleting event" Url="html/0559f760-c07e-9785-a34c-965b2564ab75.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.DateColumn property" Url="html/9cce0b7f-0c67-dc7e-c205-77a5d69caaaa.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.FindByDateSymbolColumn method" Url="html/857acce5-a9f8-e7ea-1cd7-f6698acd5da8.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.GetRowType method" Url="html/1d038d82-9e7b-46d5-21e7-a1973edc4db6.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.GetTypedTableSchema method" Url="html/5c0e8d4d-1730-c7b5-e5d0-7eb4505c9bc9.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.Item property" Url="html/cd929920-d7c6-3678-2b7a-4af47c5ddabe.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.NewDataRow method" Url="html/dac81bc9-ebd6-75bb-5cc9-ee5970279d59.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.NewRowFromBuilder method" Url="html/e6b66789-f014-2a47-7342-ae7b1c3ee33c.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.OnRowChanged method" Url="html/583b222a-3188-7845-858a-1fa01cadf10e.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.OnRowChanging method" Url="html/4ec308cb-708d-eccb-4164-24ddf31138bc.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.OnRowDeleted method" Url="html/7db98a6f-da67-4bba-eb2d-64be055965a0.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.OnRowDeleting method" Url="html/0996b53a-b31d-4354-b305-9a2921954798.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.RemoveDataRow method" Url="html/4d829421-a5a6-cada-ee12-136a39d936e4.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.SymbolColumn property" Url="html/592208d6-e9ba-ebc8-5a2c-d09c58a96993.htm" />
+  <HelpKINode Title="DataSet.DataDataTable.ValueColumn property" Url="html/7cc8f969-629b-6525-4f70-f49cea451ec4.htm" />
+  <HelpKINode Title="DataSet.DataRow class">
+    <HelpKINode Title="DataSet.DataRow Class" Url="html/34641fbf-fb32-752a-0e5e-a44f05d027ef.htm" />
+    <HelpKINode Title="about DataSet.DataRow class" Url="html/34641fbf-fb32-752a-0e5e-a44f05d027ef.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataSet.DataRow.Column property" Url="html/88056ff7-5b71-e49c-e039-8086e8aa19ea.htm" />
+  <HelpKINode Title="DataSet.DataRow.Date property" Url="html/9b8d5a24-5706-5789-13ad-2619a30cb810.htm" />
+  <HelpKINode Title="DataSet.DataRow.IsValueNull method" Url="html/d3c1d6d0-388d-0e2c-c8bc-f8c30779de87.htm" />
+  <HelpKINode Title="DataSet.DataRow.SetValueNull method" Url="html/ecb0ae02-14ad-2bc3-8c8e-60eb3b65189c.htm" />
+  <HelpKINode Title="DataSet.DataRow.Symbol property" Url="html/f10ec7aa-44fc-17a9-7144-903b97ea23be.htm" />
+  <HelpKINode Title="DataSet.DataRow.Value property" Url="html/3f094165-4ff4-9a39-0bab-c0722c13383f.htm" />
+  <HelpKINode Title="DataSet.DataRowChangeEvent class">
+    <HelpKINode Title="DataSet.DataRowChangeEvent Class" Url="html/9ed1a79d-f958-2c7b-5d60-953cc91c3821.htm" />
+    <HelpKINode Title="about DataSet.DataRowChangeEvent class" Url="html/9ed1a79d-f958-2c7b-5d60-953cc91c3821.htm" />
+    <HelpKINode Title="constructor" Url="html/41aae4f5-3e08-c888-8182-e592835b3f43.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataSet.DataRowChangeEvent.Action property" Url="html/0f7bc5d2-b62c-306f-0e26-dd7cffd49e2b.htm" />
+  <HelpKINode Title="DataSet.DataRowChangeEvent.DataRowChangeEvent constructor" Url="html/41aae4f5-3e08-c888-8182-e592835b3f43.htm" />
+  <HelpKINode Title="DataSet.DataRowChangeEvent.Row property" Url="html/9ff94b01-a52d-a350-b5e1-394e2f1f8fe2.htm" />
+  <HelpKINode Title="DataSet.DataRowChangeEventHandler delegate" Url="html/bcd1c3f4-6cde-7c26-2d01-465a51f8c5e6.htm" />
+  <HelpKINode Title="DataSet.DataSet constructor" Url="html/1e159f5f-6baa-6688-c202-aa13d3f907d7.htm" />
+  <HelpKINode Title="DataSet.GetSchemaSerializable method" Url="html/fdbf5c76-70b1-70c1-6d1d-f2f432f18503.htm" />
+  <HelpKINode Title="DataSet.GetTypedDataSetSchema method" Url="html/7c633706-958c-6958-1513-558298e0ee58.htm" />
+  <HelpKINode Title="DataSet.InitializeDerivedDataSet method" Url="html/06ce1b3a-01e8-cd6f-08fd-955563a9b0b4.htm" />
+  <HelpKINode Title="DataSet.ReadXmlSerializable method" Url="html/ac03d526-a172-83ff-008c-b94d0ee24111.htm" />
+  <HelpKINode Title="DataSet.Relations property" Url="html/a8e5028e-d011-e65a-2c78-44f8bceea147.htm" />
+  <HelpKINode Title="DataSet.SchemaSerializationMode property" Url="html/155ea786-adbe-e470-0809-21eed56849f5.htm" />
+  <HelpKINode Title="DataSet.ShouldSerializeRelations method" Url="html/1dc6cae6-50c8-9678-a3f2-f450ff2b9024.htm" />
+  <HelpKINode Title="DataSet.ShouldSerializeTables method" Url="html/482d792d-e47d-137d-1d43-c49002910ae8.htm" />
+  <HelpKINode Title="DataSet.Tables property" Url="html/9c58a703-a67e-2f17-c7af-f7064548ca65.htm" />
+  <HelpKINode Title="DataXML class">
+    <HelpKINode Title="DataXML Class" Url="html/4b00689c-e0b1-6756-c49d-b05d07f3793c.htm" />
+    <HelpKINode Title="DataXML Members" Url="html/71f7dc68-54b9-8ce8-35a7-f9ae43271e75.htm" />
+    <HelpKINode Title="about DataXML class" Url="html/4b00689c-e0b1-6756-c49d-b05d07f3793c.htm" />
+    <HelpKINode Title="all members" Url="html/71f7dc68-54b9-8ce8-35a7-f9ae43271e75.htm" />
+    <HelpKINode Title="constructor" Url="html/3bf0fc19-7fb9-8b72-1b47-ae7c422ce780.htm" />
+    <HelpKINode Title="methods" Url="html/b521a7b5-7509-1299-52db-2b9024dd7e70.htm" />
+    <HelpKINode Title="properties" Url="html/efa3f68a-4937-4e13-f0a5-1b7056865eeb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataXML.DataXML constructor" Url="html/3bf0fc19-7fb9-8b72-1b47-ae7c422ce780.htm" />
+  <HelpKINode Title="Date property" Url="html/9b8d5a24-5706-5789-13ad-2619a30cb810.htm" />
+  <HelpKINode Title="DateColumn property" Url="html/9cce0b7f-0c67-dc7e-c205-77a5d69caaaa.htm" />
+  <HelpKINode Title="Debut property" Url="html/85dbcaaa-a614-4612-92ae-b84c32818eb3.htm" />
+  <HelpKINode Title="DEM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="DIF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="DKK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="DOP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Duree property" Url="html/c9124b0e-3815-8041-6889-b5d73ed6d0f9.htm" />
+  <HelpKINode Title="DZF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Ebitda enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="ECS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="EEK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="EGP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="End enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="endDownload property" Url="html/bbfd6523-8647-4b8c-8923-5683fa830b1e.htm" />
+  <HelpKINode Title="EONIA enumeration member" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="EONIASWAP enumeration member" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="ERN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ErreurInterne class">
+    <HelpKINode Title="ErreurInterne Class" Url="html/c7e6d848-95dc-a88d-e4bc-ac6d05bb7c77.htm" />
+    <HelpKINode Title="ErreurInterne Members" Url="html/55009f2b-e212-83d2-c8d0-9029f36e4e95.htm" />
+    <HelpKINode Title="about ErreurInterne class" Url="html/c7e6d848-95dc-a88d-e4bc-ac6d05bb7c77.htm" />
+    <HelpKINode Title="all members" Url="html/55009f2b-e212-83d2-c8d0-9029f36e4e95.htm" />
+    <HelpKINode Title="constructor" Url="html/d4c46d5b-26b9-f6cf-8cc3-f8072fe01a4d.htm" />
+    <HelpKINode Title="events" Url="html/9a2652ef-2ff7-3706-50c0-8943775954a8.htm" />
+    <HelpKINode Title="methods" Url="html/bd018c65-1242-5807-46a9-5cddb47ec27f.htm" />
+    <HelpKINode Title="properties" Url="html/bf0d6125-636f-310b-e746-35cf84812f7c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErreurInterne.ErreurInterne constructor" Url="html/d4c46d5b-26b9-f6cf-8cc3-f8072fe01a4d.htm" />
+  <HelpKINode Title="ErreurSource class">
+    <HelpKINode Title="ErreurSource Class" Url="html/b87b8c6a-fe87-b184-20cd-9316a8afbe88.htm" />
+    <HelpKINode Title="ErreurSource Members" Url="html/60c2a8f1-dd9f-0d6d-568c-dd8b3761bb65.htm" />
+    <HelpKINode Title="about ErreurSource class" Url="html/b87b8c6a-fe87-b184-20cd-9316a8afbe88.htm" />
+    <HelpKINode Title="all members" Url="html/60c2a8f1-dd9f-0d6d-568c-dd8b3761bb65.htm" />
+    <HelpKINode Title="constructor" Url="html/d0f41ade-9720-39fe-bc88-2c6ffd11994a.htm" />
+    <HelpKINode Title="events" Url="html/56ba4917-6c11-21c0-9606-424cb5213062.htm" />
+    <HelpKINode Title="methods" Url="html/a4739fe4-03c1-b621-c58b-087a2cefede1.htm" />
+    <HelpKINode Title="properties" Url="html/53fe47cd-4da8-255d-6b08-10b6caaeb731.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErreurSource.ErreurSource constructor" Url="html/d0f41ade-9720-39fe-bc88-2c6ffd11994a.htm" />
+  <HelpKINode Title="ErreurUtilisateur class">
+    <HelpKINode Title="ErreurUtilisateur Class" Url="html/a666c903-0350-59ec-35e8-200ab1786ce0.htm" />
+    <HelpKINode Title="ErreurUtilisateur Members" Url="html/328ea191-c858-4933-f9a0-e78020a9b6c9.htm" />
+    <HelpKINode Title="about ErreurUtilisateur class" Url="html/a666c903-0350-59ec-35e8-200ab1786ce0.htm" />
+    <HelpKINode Title="all members" Url="html/328ea191-c858-4933-f9a0-e78020a9b6c9.htm" />
+    <HelpKINode Title="constructor" Url="html/787a7c72-e631-f08d-241e-d15a70bb2d67.htm" />
+    <HelpKINode Title="events" Url="html/5de4ffae-f79b-7c18-8a15-28bca42abd8d.htm" />
+    <HelpKINode Title="methods" Url="html/e6df7477-f5db-b04a-664a-4dde7e499577.htm" />
+    <HelpKINode Title="properties" Url="html/eb7a16fc-ba7d-1885-3611-d8c66fb9d389.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ErreurUtilisateur.ErreurUtilisateur constructor" Url="html/787a7c72-e631-f08d-241e-d15a70bb2d67.htm" />
+  <HelpKINode Title="ESP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ETD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="EUR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="EUREPO enumeration member" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="EURIBOR enumeration member" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="Export interface">
+    <HelpKINode Title="Export Interface" Url="html/74f85924-ccd7-49fd-af6c-74f33984fff2.htm" />
+    <HelpKINode Title="Export Members" Url="html/d668274e-c7c7-2f96-65b2-d2e60ca3873c.htm" />
+    <HelpKINode Title="about Export interface" Url="html/74f85924-ccd7-49fd-af6c-74f33984fff2.htm" />
+    <HelpKINode Title="all members" Url="html/d668274e-c7c7-2f96-65b2-d2e60ca3873c.htm" />
+    <HelpKINode Title="methods" Url="html/26370cae-5c53-4ae3-5ffc-40a0e3d31b28.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Export method">
+    <HelpKINode Title="Data.Export Method " Url="html/38f0742c-bd83-a431-2bd5-66ad1f572ec0.htm" />
+    <HelpKINode Title="Export.Export Method " Url="html/2a526495-fffa-3562-5262-c2d75cda7335.htm" />
+    <HelpKINode Title="ExportCSV.Export Method " Url="html/a2091dc3-7869-9579-c7c3-1622ee54ffbb.htm" />
+    <HelpKINode Title="ExportJSON.Export Method " Url="html/e9b63c3a-f267-5a35-1658-e7d817995aeb.htm" />
+    <HelpKINode Title="ExportMDF.Export Method " Url="html/0f90f0b4-74ab-095f-175e-ebf13f116a27.htm" />
+    <HelpKINode Title="ExportXML.Export Method " Url="html/2e14471f-c1c2-1358-4d69-ebfb62dce6aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Export.Export method" Url="html/2a526495-fffa-3562-5262-c2d75cda7335.htm" />
+  <HelpKINode Title="ExportCSV class">
+    <HelpKINode Title="ExportCSV Class" Url="html/47ab46eb-9e41-9307-886e-399283e9cba9.htm" />
+    <HelpKINode Title="ExportCSV Members" Url="html/096fc42c-f78a-cdbf-e6e2-db968e923e90.htm" />
+    <HelpKINode Title="about ExportCSV class" Url="html/47ab46eb-9e41-9307-886e-399283e9cba9.htm" />
+    <HelpKINode Title="all members" Url="html/096fc42c-f78a-cdbf-e6e2-db968e923e90.htm" />
+    <HelpKINode Title="constructor" Url="html/7174aecd-c6b0-c8d4-97b6-73206a34e799.htm" />
+    <HelpKINode Title="methods" Url="html/4159e13c-a99e-8792-a615-2a466ae1f3a9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExportCSV.Export method" Url="html/a2091dc3-7869-9579-c7c3-1622ee54ffbb.htm" />
+  <HelpKINode Title="ExportCSV.ExportCSV constructor" Url="html/7174aecd-c6b0-c8d4-97b6-73206a34e799.htm" />
+  <HelpKINode Title="ExportJSON class">
+    <HelpKINode Title="ExportJSON Class" Url="html/f8b222b5-baec-2ca7-bd77-413f8a3d9462.htm" />
+    <HelpKINode Title="ExportJSON Members" Url="html/b5d796c0-6bd8-cf3c-1975-ff7da0053bc2.htm" />
+    <HelpKINode Title="about ExportJSON class" Url="html/f8b222b5-baec-2ca7-bd77-413f8a3d9462.htm" />
+    <HelpKINode Title="all members" Url="html/b5d796c0-6bd8-cf3c-1975-ff7da0053bc2.htm" />
+    <HelpKINode Title="constructor" Url="html/7ac1a0ea-31bb-00e5-d487-34b62e37398a.htm" />
+    <HelpKINode Title="methods" Url="html/f49d80bd-ace9-39f0-d992-e66d2f5f9464.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExportJSON.Export method" Url="html/e9b63c3a-f267-5a35-1658-e7d817995aeb.htm" />
+  <HelpKINode Title="ExportJSON.ExportJSON constructor" Url="html/7ac1a0ea-31bb-00e5-d487-34b62e37398a.htm" />
+  <HelpKINode Title="ExportMDF class">
+    <HelpKINode Title="ExportMDF Class" Url="html/c42082f6-e49c-f09a-aef6-a9034f9266d8.htm" />
+    <HelpKINode Title="ExportMDF Members" Url="html/58442519-862a-2fd4-746f-d8d9f2803d0b.htm" />
+    <HelpKINode Title="about ExportMDF class" Url="html/c42082f6-e49c-f09a-aef6-a9034f9266d8.htm" />
+    <HelpKINode Title="all members" Url="html/58442519-862a-2fd4-746f-d8d9f2803d0b.htm" />
+    <HelpKINode Title="constructor" Url="html/4c34a2c1-a272-c2e7-9168-dffe35d7d015.htm" />
+    <HelpKINode Title="methods" Url="html/f742a172-eea3-accc-93a7-7a2be8fdc973.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExportMDF.Export method" Url="html/0f90f0b4-74ab-095f-175e-ebf13f116a27.htm" />
+  <HelpKINode Title="ExportMDF.ExportMDF constructor" Url="html/4c34a2c1-a272-c2e7-9168-dffe35d7d015.htm" />
+  <HelpKINode Title="ExportXML class">
+    <HelpKINode Title="ExportXML Class" Url="html/f8412985-8734-3c9e-2b07-e462ebbc677a.htm" />
+    <HelpKINode Title="ExportXML Members" Url="html/d4c7a29b-257b-4613-7d42-a776d2915e0f.htm" />
+    <HelpKINode Title="about ExportXML class" Url="html/f8412985-8734-3c9e-2b07-e462ebbc677a.htm" />
+    <HelpKINode Title="all members" Url="html/d4c7a29b-257b-4613-7d42-a776d2915e0f.htm" />
+    <HelpKINode Title="constructor" Url="html/5aff6f2f-ac69-d62e-1758-8bc73afb8256.htm" />
+    <HelpKINode Title="methods" Url="html/1d89a555-ecaa-7ea9-5a39-f626713322a1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExportXML.Export method" Url="html/2e14471f-c1c2-1358-4d69-ebfb62dce6aa.htm" />
+  <HelpKINode Title="ExportXML.ExportXML constructor" Url="html/5aff6f2f-ac69-d62e-1758-8bc73afb8256.htm" />
+  <HelpKINode Title="FIM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Fin property" Url="html/e3eef4c7-f374-22b2-dd69-c849d8a0568c.htm" />
+  <HelpKINode Title="FindByDateSymbolColumn method" Url="html/857acce5-a9f8-e7ea-1cd7-f6698acd5da8.htm" />
+  <HelpKINode Title="firms field" Url="html/1fbdc122-dc74-458f-644b-2349c210116a.htm" />
+  <HelpKINode Title="FJD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="FKP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Freq property" Url="html/5fc87afc-6063-468f-c4d9-454532845001.htm" />
+  <HelpKINode Title="Frequency enumeration" Url="html/0007adac-79b7-782d-7f65-109f88fac5b4.htm" />
+  <HelpKINode Title="GBP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GEL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GetRowType method" Url="html/1d038d82-9e7b-46d5-21e7-a1973edc4db6.htm" />
+  <HelpKINode Title="GetSchemaSerializable method">
+    <HelpKINode Title="backDataSet.GetSchemaSerializable Method " Url="html/1dbd88b2-727a-96e6-689e-56f227b591f6.htm" />
+    <HelpKINode Title="DataSet.GetSchemaSerializable Method " Url="html/fdbf5c76-70b1-70c1-6d1d-f2f432f18503.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetTypedDataSetSchema method">
+    <HelpKINode Title="backDataSet.GetTypedDataSetSchema Method " Url="html/73be1668-529b-c949-3b86-0bd35f54086c.htm" />
+    <HelpKINode Title="DataSet.GetTypedDataSetSchema Method " Url="html/7c633706-958c-6958-1513-558298e0ee58.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetTypedTableSchema method" Url="html/5c0e8d4d-1730-c7b5-e5d0-7eb4505c9bc9.htm" />
+  <HelpKINode Title="GGP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GHC enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GHS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GIP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GMP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GNF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GRD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GTQ enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="GYD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="High enumeration member" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="Historical method" Url="html/049e0815-6fdd-a720-b49b-d31a97bcbaf2.htm" />
+  <HelpKINode Title="HistoricalColumn enumeration" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="HKD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="HNL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="HRK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="HTG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="HUF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="IDR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="IEP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ILS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="IMP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Import interface">
+    <HelpKINode Title="Import Interface" Url="html/f8fbdc21-7c99-4d88-0049-99a3bd5c6391.htm" />
+    <HelpKINode Title="Import Members" Url="html/ea17834d-f5bb-1b8d-58fe-7a0ef0433ed4.htm" />
+    <HelpKINode Title="about Import interface" Url="html/f8fbdc21-7c99-4d88-0049-99a3bd5c6391.htm" />
+    <HelpKINode Title="all members" Url="html/ea17834d-f5bb-1b8d-58fe-7a0ef0433ed4.htm" />
+    <HelpKINode Title="methods" Url="html/6fab361b-bddf-72dc-9a48-672f40194b30.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Import method">
+    <HelpKINode Title="Import.Import Method " Url="html/32dc585a-c128-43e2-7cf0-0f9317ed87c3.htm" />
+    <HelpKINode Title="ImportEBF.Import Method " Url="html/2f5b71ae-c5b6-1a97-9ef3-3125652a48c5.htm" />
+    <HelpKINode Title="ImportGoogle.Import Method " Url="html/edbe6738-b1cb-08a6-6d2f-12d1183441c5.htm" />
+    <HelpKINode Title="ImportReal.Import Method " Url="html/8e5798f5-2218-9eaf-0733-040f285b2e81.htm" />
+    <HelpKINode Title="ImportYahoo.Import Method " Url="html/ea8d4488-dbe5-ae04-086d-d27fae9fcb17.htm" />
+    <HelpKINode Title="Parser.Import Method " Url="html/924b3868-5123-f5bc-fdff-a340e9b90ac9.htm" />
+    <HelpKINode Title="ParserCSV.Import Method " Url="html/e2598c00-438b-47d1-6fc0-00637f621a6a.htm" />
+    <HelpKINode Title="ParserFXTop.Import Method " Url="html/f1eaeb2b-2322-c373-2f4d-893ba31bc9c7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Import.Import method" Url="html/32dc585a-c128-43e2-7cf0-0f9317ed87c3.htm" />
+  <HelpKINode Title="ImportData method" Url="html/8c0898b9-9b4a-58bb-3dd0-dbe283f1bff0.htm" />
+  <HelpKINode Title="ImportEBF class">
+    <HelpKINode Title="ImportEBF Class" Url="html/2d8244e1-ef5e-2e4d-4a10-dfdbfedb60ed.htm" />
+    <HelpKINode Title="ImportEBF Members" Url="html/bf3bb0d7-38c6-3321-35b7-c091aa69c751.htm" />
+    <HelpKINode Title="about ImportEBF class" Url="html/2d8244e1-ef5e-2e4d-4a10-dfdbfedb60ed.htm" />
+    <HelpKINode Title="all members" Url="html/bf3bb0d7-38c6-3321-35b7-c091aa69c751.htm" />
+    <HelpKINode Title="constructor" Url="html/485c23a1-0ba0-9006-029c-786dd6260ec5.htm" />
+    <HelpKINode Title="fields" Url="html/296ca0ba-f1c9-80b2-8fb2-3e91295d8400.htm" />
+    <HelpKINode Title="methods" Url="html/f819507d-dcba-cbc0-c30c-e21d5e1b2e11.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImportEBF.Import method" Url="html/2f5b71ae-c5b6-1a97-9ef3-3125652a48c5.htm" />
+  <HelpKINode Title="ImportEBF.ImportEBF constructor" Url="html/485c23a1-0ba0-9006-029c-786dd6260ec5.htm" />
+  <HelpKINode Title="ImportGoogle class">
+    <HelpKINode Title="ImportGoogle Class" Url="html/caee2923-cb8b-c657-bfac-f4e7539c7c9f.htm" />
+    <HelpKINode Title="ImportGoogle Members" Url="html/1083ceca-c7cc-fcfb-677c-986d3d78e61b.htm" />
+    <HelpKINode Title="about ImportGoogle class" Url="html/caee2923-cb8b-c657-bfac-f4e7539c7c9f.htm" />
+    <HelpKINode Title="all members" Url="html/1083ceca-c7cc-fcfb-677c-986d3d78e61b.htm" />
+    <HelpKINode Title="constructor" Url="html/fb3a55fb-3f59-899b-176a-435409b4f209.htm" />
+    <HelpKINode Title="fields" Url="html/2d05fc9d-39ba-8edd-6a0a-59ecfd635f5a.htm" />
+    <HelpKINode Title="methods" Url="html/17b0ccb8-e161-98f5-b834-c79029c3924d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImportGoogle.Import method" Url="html/edbe6738-b1cb-08a6-6d2f-12d1183441c5.htm" />
+  <HelpKINode Title="ImportGoogle.ImportGoogle constructor" Url="html/fb3a55fb-3f59-899b-176a-435409b4f209.htm" />
+  <HelpKINode Title="ImportReal class">
+    <HelpKINode Title="ImportReal Class" Url="html/ec8d5ffc-9b3c-9cbd-bf63-620dc2b7e1e1.htm" />
+    <HelpKINode Title="ImportReal Members" Url="html/f5fdd2e7-d335-13a1-1a81-942923e7e545.htm" />
+    <HelpKINode Title="about ImportReal class" Url="html/ec8d5ffc-9b3c-9cbd-bf63-620dc2b7e1e1.htm" />
+    <HelpKINode Title="all members" Url="html/f5fdd2e7-d335-13a1-1a81-942923e7e545.htm" />
+    <HelpKINode Title="constructor" Url="html/80c599e5-1b5a-62e8-787a-0e6db812fb59.htm" />
+    <HelpKINode Title="methods" Url="html/5d731884-a763-1843-6734-693f69fbdeb7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImportReal.Import method" Url="html/8e5798f5-2218-9eaf-0733-040f285b2e81.htm" />
+  <HelpKINode Title="ImportReal.ImportReal constructor" Url="html/80c599e5-1b5a-62e8-787a-0e6db812fb59.htm" />
+  <HelpKINode Title="ImportYahoo class">
+    <HelpKINode Title="ImportYahoo Class" Url="html/c315f7cd-056c-5e7f-7568-fecf27a60246.htm" />
+    <HelpKINode Title="ImportYahoo Members" Url="html/313f8afd-0b88-b1b1-d723-3bc82cf50cd3.htm" />
+    <HelpKINode Title="about ImportYahoo class" Url="html/c315f7cd-056c-5e7f-7568-fecf27a60246.htm" />
+    <HelpKINode Title="all members" Url="html/313f8afd-0b88-b1b1-d723-3bc82cf50cd3.htm" />
+    <HelpKINode Title="constructor" Url="html/990934a7-3388-7bc3-2037-1fd352fbbc83.htm" />
+    <HelpKINode Title="fields" Url="html/a5f2b1c1-55bc-d2aa-2bdf-fdf2606d46aa.htm" />
+    <HelpKINode Title="methods" Url="html/577f8ef1-0961-66b2-8df9-d1db18b7acd9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ImportYahoo.Import method" Url="html/ea8d4488-dbe5-ae04-086d-d27fae9fcb17.htm" />
+  <HelpKINode Title="ImportYahoo.ImportYahoo constructor" Url="html/990934a7-3388-7bc3-2037-1fd352fbbc83.htm" />
+  <HelpKINode Title="Industrie enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="Industries method" Url="html/ad0e7645-19d7-2650-ae11-235014d22004.htm" />
+  <HelpKINode Title="InfosStatiques class">
+    <HelpKINode Title="InfosStatiques Class" Url="html/b9de3ae6-b8fa-60c1-4f89-d6083addf63c.htm" />
+    <HelpKINode Title="InfosStatiques Members" Url="html/74209cf3-d457-1755-aba0-b90b55c5959d.htm" />
+    <HelpKINode Title="about InfosStatiques class" Url="html/b9de3ae6-b8fa-60c1-4f89-d6083addf63c.htm" />
+    <HelpKINode Title="all members" Url="html/74209cf3-d457-1755-aba0-b90b55c5959d.htm" />
+    <HelpKINode Title="constructor" Url="html/55fd9f2c-c315-9bd2-f9dd-dadf03bb1d81.htm" />
+    <HelpKINode Title="methods" Url="html/1dac430f-7b20-07e4-710f-cc29112f8b21.htm" />
+    <HelpKINode Title="properties" Url="html/502a7dfc-8596-1006-6c14-923ba6a8936a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InfosStatiques.AccesInfos method" Url="html/2c990274-b328-258a-54f9-b89448087142.htm" />
+  <HelpKINode Title="InfosStatiques.ConvertIsinToTicker method" Url="html/49416441-507c-39e3-3115-db487997936e.htm" />
+  <HelpKINode Title="InfosStatiques.ConvertTickerToIsin method" Url="html/f0f736f4-30e9-8b70-2827-1b3ec7ddda92.htm" />
+  <HelpKINode Title="InfosStatiques.ConvertTickerToName method" Url="html/2a986d9c-baf9-a502-430c-24f86de3cec1.htm" />
+  <HelpKINode Title="InfosStatiques.infosDispo enumeration" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="InfosStatiques.InfosStatiques constructor" Url="html/55fd9f2c-c315-9bd2-f9dd-dadf03bb1d81.htm" />
+  <HelpKINode Title="InfosStatiques.setDoc method" Url="html/7ed4547c-3782-fba2-c2d6-4b32a490ffb7.htm" />
+  <HelpKINode Title="InfosStatiques.ValeursCourantes property" Url="html/b79ded2c-4296-1834-641a-0336423c27a8.htm" />
+  <HelpKINode Title="InfoStat class">
+    <HelpKINode Title="InfoStat Class" Url="html/85128733-3d97-dc0e-7f08-7bb5ed9e4372.htm" />
+    <HelpKINode Title="InfoStat Members" Url="html/2200507b-962d-c6b5-9238-f28d81688d5e.htm" />
+    <HelpKINode Title="about InfoStat class" Url="html/85128733-3d97-dc0e-7f08-7bb5ed9e4372.htm" />
+    <HelpKINode Title="all members" Url="html/2200507b-962d-c6b5-9238-f28d81688d5e.htm" />
+    <HelpKINode Title="constructor" Url="html/f836dd01-276c-66b6-35b9-4d5db9dd016f.htm" />
+    <HelpKINode Title="fields" Url="html/87f12f16-bbc8-67f2-7219-03e2ff531ca3.htm" />
+    <HelpKINode Title="methods" Url="html/f8c2c461-a2eb-cf6f-8211-9fddecc7ae2c.htm" />
+    <HelpKINode Title="properties" Url="html/7e76d69d-79e6-96b1-78d3-5404a1e96742.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InfoStat.avancement property" Url="html/2cee8333-d618-ff3e-45c0-72728ff7d745.htm" />
+  <HelpKINode Title="InfoStat.endDownload property" Url="html/bbfd6523-8647-4b8c-8923-5683fa830b1e.htm" />
+  <HelpKINode Title="InfoStat.firms field" Url="html/1fbdc122-dc74-458f-644b-2349c210116a.htm" />
+  <HelpKINode Title="InfoStat.InfoStat constructor" Url="html/f836dd01-276c-66b6-35b9-4d5db9dd016f.htm" />
+  <HelpKINode Title="InfoStat.release method" Url="html/8f68228c-5d38-c06f-e243-f95a51c09b3e.htm" />
+  <HelpKINode Title="InfoStat.symm field" Url="html/8d4bed9c-0c32-630d-8ffa-8d718f14047b.htm" />
+  <HelpKINode Title="InfoStat.telechargerInfoStat method" Url="html/8fd5f85b-f727-bdc2-9631-f7bfbcaf3788.htm" />
+  <HelpKINode Title="InfoStat.total property" Url="html/e28e75ec-fa3c-8c07-cd92-5007cf5ddce5.htm" />
+  <HelpKINode Title="InfoStat.wait method" Url="html/5d90a48f-a006-4000-0616-6a3e821adeea.htm" />
+  <HelpKINode Title="InitializeDerivedDataSet method">
+    <HelpKINode Title="backDataSet.InitializeDerivedDataSet Method " Url="html/aae15b2c-a58c-f72f-01ab-66675cd7db93.htm" />
+    <HelpKINode Title="DataSet.InitializeDerivedDataSet Method " Url="html/06ce1b3a-01e8-cd6f-08fd-955563a9b0b4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="INR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="InterestRate enumeration" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="IQD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="IRR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Isin enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="ISK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="IsValueNull method" Url="html/d3c1d6d0-388d-0e2c-c8bc-f8c30779de87.htm" />
+  <HelpKINode Title="Item property" Url="html/cd929920-d7c6-3678-2b7a-4af47c5ddabe.htm" />
+  <HelpKINode Title="ITL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="JEP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="JMP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="JOD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="JPY enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KES enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KGS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KHR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KMF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KPW enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KRW enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KWD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KYD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="KZT enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LAK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LBP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LKR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Low enumeration member" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="LRD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LSL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LTL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LUF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LVL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="LYD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MAD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Mauvaistype class">
+    <HelpKINode Title="Mauvaistype Class" Url="html/54c96c7e-b655-1154-c119-ee4348254ba6.htm" />
+    <HelpKINode Title="Mauvaistype Members" Url="html/0781a44e-3bc8-0e7e-825f-41087a78903b.htm" />
+    <HelpKINode Title="about Mauvaistype class" Url="html/54c96c7e-b655-1154-c119-ee4348254ba6.htm" />
+    <HelpKINode Title="all members" Url="html/0781a44e-3bc8-0e7e-825f-41087a78903b.htm" />
+    <HelpKINode Title="constructor" Url="html/ec910e12-e96f-d987-9dbe-7101078faaf5.htm" />
+    <HelpKINode Title="events" Url="html/41667354-f4e3-7d3e-ac9a-b0cc151792a0.htm" />
+    <HelpKINode Title="methods" Url="html/0498ed26-9c5b-3161-f8e9-fed8f6a5584b.htm" />
+    <HelpKINode Title="properties" Url="html/3208cd75-ffa9-0a4f-11aa-4a7ca16eaf74.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mauvaistype.Mauvaistype constructor" Url="html/ec910e12-e96f-d987-9dbe-7101078faaf5.htm" />
+  <HelpKINode Title="MDL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MGA enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MGF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MKD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MMK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MNT enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MonPrixTempsReel method" Url="html/34287f0a-5d87-6672-96de-e1c25816de38.htm" />
+  <HelpKINode Title="Monthly enumeration member" Url="html/0007adac-79b7-782d-7f65-109f88fac5b4.htm" />
+  <HelpKINode Title="MOP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MRO enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MTL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MUR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MVR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MWK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MXN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MyExceptions class">
+    <HelpKINode Title="MyExceptions Class" Url="html/b6eb9050-2327-3428-55bb-8216a58daf94.htm" />
+    <HelpKINode Title="MyExceptions Members" Url="html/f24d15d7-9af2-1cfe-ac9b-e6ca2980f76b.htm" />
+    <HelpKINode Title="about MyExceptions class" Url="html/b6eb9050-2327-3428-55bb-8216a58daf94.htm" />
+    <HelpKINode Title="all members" Url="html/f24d15d7-9af2-1cfe-ac9b-e6ca2980f76b.htm" />
+    <HelpKINode Title="constructor" Url="html/6a2fdd2f-882f-17e6-fc3f-ef9b50f2a580.htm" />
+    <HelpKINode Title="events" Url="html/5c9d7b82-54df-5e92-0234-15cf7f1cc460.htm" />
+    <HelpKINode Title="methods" Url="html/1b555820-0bdb-90b4-5df2-bfc5c5288c2b.htm" />
+    <HelpKINode Title="properties" Url="html/f0095165-522f-a66b-e203-06616ef44f66.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MyExceptions.MyExceptions constructor" Url="html/6a2fdd2f-882f-17e6-fc3f-ef9b50f2a580.htm" />
+  <HelpKINode Title="MYR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MZM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="MZN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NAD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Name enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="NbEmployes enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="NegativeValueImpossible class">
+    <HelpKINode Title="NegativeValueImpossible Class" Url="html/83835b09-0671-634d-7493-e739a907cafd.htm" />
+    <HelpKINode Title="NegativeValueImpossible Members" Url="html/81459044-60e4-eaed-bcc5-fcac1278735b.htm" />
+    <HelpKINode Title="about NegativeValueImpossible class" Url="html/83835b09-0671-634d-7493-e739a907cafd.htm" />
+    <HelpKINode Title="all members" Url="html/81459044-60e4-eaed-bcc5-fcac1278735b.htm" />
+    <HelpKINode Title="constructor" Url="html/b2593ad2-e8b5-6e1d-5857-fa74a7c751a9.htm" />
+    <HelpKINode Title="events" Url="html/e8e678e9-fee9-478e-0e00-b7b0cd26bd3f.htm" />
+    <HelpKINode Title="methods" Url="html/9d36f1e4-ebdf-5ecc-dc7b-acac5e865f7a.htm" />
+    <HelpKINode Title="properties" Url="html/19d2be75-e9c6-4fab-3f22-8b9e153d184f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NegativeValueImpossible.NegativeValueImpossible constructor" Url="html/b2593ad2-e8b5-6e1d-5857-fa74a7c751a9.htm" />
+  <HelpKINode Title="NewDataRow method" Url="html/dac81bc9-ebd6-75bb-5cc9-ee5970279d59.htm" />
+  <HelpKINode Title="NewRowFromBuilder method" Url="html/e6b66789-f014-2a47-7342-ae7b1c3ee33c.htm" />
+  <HelpKINode Title="NGN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NIO enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NLG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NOK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NPR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NTD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="NZD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="OMR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="OnRowChanged method" Url="html/583b222a-3188-7845-858a-1fa01cadf10e.htm" />
+  <HelpKINode Title="OnRowChanging method" Url="html/4ec308cb-708d-eccb-4164-24ddf31138bc.htm" />
+  <HelpKINode Title="OnRowDeleted method" Url="html/7db98a6f-da67-4bba-eb2d-64be055965a0.htm" />
+  <HelpKINode Title="OnRowDeleting method" Url="html/0996b53a-b31d-4354-b305-9a2921954798.htm" />
+  <HelpKINode Title="Open enumeration member" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="PAB enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Parser class">
+    <HelpKINode Title="Parser Class" Url="html/b6cc81ab-c777-5c28-9644-f68f73c68323.htm" />
+    <HelpKINode Title="Parser Members" Url="html/6fd1378c-2b0d-a950-f9af-5ee5016d0f09.htm" />
+    <HelpKINode Title="about Parser class" Url="html/b6cc81ab-c777-5c28-9644-f68f73c68323.htm" />
+    <HelpKINode Title="all members" Url="html/6fd1378c-2b0d-a950-f9af-5ee5016d0f09.htm" />
+    <HelpKINode Title="constructor" Url="html/3fe43ebf-6062-3866-408e-dcf57cc7a95e.htm" />
+    <HelpKINode Title="methods" Url="html/f51cb064-c5fc-a814-c078-432433fa53d3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Parser.Import method" Url="html/924b3868-5123-f5bc-fdff-a340e9b90ac9.htm" />
+  <HelpKINode Title="Parser.Parser constructor" Url="html/3fe43ebf-6062-3866-408e-dcf57cc7a95e.htm" />
+  <HelpKINode Title="ParserCSV class">
+    <HelpKINode Title="ParserCSV Class" Url="html/e6afae3d-7446-bee1-99c5-87e3230d2a98.htm" />
+    <HelpKINode Title="ParserCSV Members" Url="html/11ec2a38-6685-0a2a-78e5-763fc19c3bb2.htm" />
+    <HelpKINode Title="about ParserCSV class" Url="html/e6afae3d-7446-bee1-99c5-87e3230d2a98.htm" />
+    <HelpKINode Title="all members" Url="html/11ec2a38-6685-0a2a-78e5-763fc19c3bb2.htm" />
+    <HelpKINode Title="constructor" Url="html/11c0ec67-f462-c88e-a495-14a363b7b25c.htm" />
+    <HelpKINode Title="fields" Url="html/205cbaeb-e42c-f0ef-70e7-541e0833d8fb.htm" />
+    <HelpKINode Title="methods" Url="html/a1c4057e-de0e-4f43-983c-79f19250081c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParserCSV.Import method" Url="html/e2598c00-438b-47d1-6fc0-00637f621a6a.htm" />
+  <HelpKINode Title="ParserCSV.ParserCSV constructor" Url="html/11c0ec67-f462-c88e-a495-14a363b7b25c.htm" />
+  <HelpKINode Title="ParserCSV._CurrentSymbol field" Url="html/420efc0e-c055-b692-83c1-7bd2decc347a.htm" />
+  <HelpKINode Title="ParserCSV._Filepath field" Url="html/ad45dc20-d03a-caf7-7abd-0056150ff193.htm" />
+  <HelpKINode Title="ParserFXTop class">
+    <HelpKINode Title="ParserFXTop Class" Url="html/06c72f2f-6496-77eb-ca8d-83c2cf085e51.htm" />
+    <HelpKINode Title="ParserFXTop Members" Url="html/30d9aca4-15b5-9ef3-558d-e1fd3991e847.htm" />
+    <HelpKINode Title="about ParserFXTop class" Url="html/06c72f2f-6496-77eb-ca8d-83c2cf085e51.htm" />
+    <HelpKINode Title="all members" Url="html/30d9aca4-15b5-9ef3-558d-e1fd3991e847.htm" />
+    <HelpKINode Title="constructor" Url="html/3b45cab7-2dd4-8fa7-d71f-1ebbd87a7f1a.htm" />
+    <HelpKINode Title="methods" Url="html/c0de4404-3db5-c29e-7041-1077ac37398d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ParserFXTop.Import method" Url="html/f1eaeb2b-2322-c373-2f4d-893ba31bc9c7.htm" />
+  <HelpKINode Title="ParserFXTop.ParserFXTop constructor" Url="html/3b45cab7-2dd4-8fa7-d71f-1ebbd87a7f1a.htm" />
+  <HelpKINode Title="PEN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Periode property" Url="html/0a9f39a8-b2ff-930a-28b6-80e1f68e0152.htm" />
+  <HelpKINode Title="PGK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PHP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PKR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PlaceBoursiere enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="PLN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PSL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PTE enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="PYG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="QAR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Quotes method" Url="html/bb6e87ca-83e2-2b29-e1b8-3855bcb3a494.htm" />
+  <HelpKINode Title="ReadXmlSerializable method">
+    <HelpKINode Title="backDataSet.ReadXmlSerializable Method " Url="html/18bb06e5-2bd3-32c6-4da1-19e2ada09d70.htm" />
+    <HelpKINode Title="DataSet.ReadXmlSerializable Method " Url="html/ac03d526-a172-83ff-008c-b94d0ee24111.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Relations property">
+    <HelpKINode Title="backDataSet.Relations Property " Url="html/1f175a20-03d7-d200-09fd-cdbb90fe77cb.htm" />
+    <HelpKINode Title="DataSet.Relations Property " Url="html/a8e5028e-d011-e65a-2c78-44f8bceea147.htm" />
+  </HelpKINode>
+  <HelpKINode Title="release method" Url="html/8f68228c-5d38-c06f-e243-f95a51c09b3e.htm" />
+  <HelpKINode Title="RemoveDataRow method" Url="html/4d829421-a5a6-cada-ee12-136a39d936e4.htm" />
+  <HelpKINode Title="ROL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="RON enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Row property" Url="html/9ff94b01-a52d-a350-b5e1-394e2f1f8fe2.htm" />
+  <HelpKINode Title="RSD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="RUB enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="RWF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SAR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SBD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SchemaSerializationMode property">
+    <HelpKINode Title="backDataSet.SchemaSerializationMode Property " Url="html/c8a8947c-519b-a6f4-8bf0-4b3fd880b0c6.htm" />
+    <HelpKINode Title="DataSet.SchemaSerializationMode Property " Url="html/155ea786-adbe-e470-0809-21eed56849f5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SCR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SDD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SDG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SDP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Secteur enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="Sectors method" Url="html/225025b7-a172-4036-8b9d-4120fb3a391a.htm" />
+  <HelpKINode Title="SEK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="setDoc method" Url="html/7ed4547c-3782-fba2-c2d6-4b32a490ffb7.htm" />
+  <HelpKINode Title="SetValueNull method" Url="html/ecb0ae02-14ad-2bc3-8c8e-60eb3b65189c.htm" />
+  <HelpKINode Title="SGD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ShouldSerializeRelations method">
+    <HelpKINode Title="backDataSet.ShouldSerializeRelations Method " Url="html/e2f9059c-3572-3781-5c72-8df80c49656a.htm" />
+    <HelpKINode Title="DataSet.ShouldSerializeRelations Method " Url="html/1dc6cae6-50c8-9678-a3f2-f450ff2b9024.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShouldSerializeTables method">
+    <HelpKINode Title="backDataSet.ShouldSerializeTables Method " Url="html/13bfb79c-a374-9d31-d3ee-6a0da166a3a7.htm" />
+    <HelpKINode Title="DataSet.ShouldSerializeTables Method " Url="html/482d792d-e47d-137d-1d43-c49002910ae8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SHP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SIT enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SKK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SLL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SOS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SPL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SRD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SRG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Start enumeration member" Url="html/8a4bac00-e088-1ceb-5559-36d05b167e01.htm" />
+  <HelpKINode Title="STD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Stocks method" Url="html/b410d0b4-6520-3e03-1379-c3f9738e9b62.htm" />
+  <HelpKINode Title="SVC enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="SVP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Symbol property">
+    <HelpKINode Title="Data.Symbol Property " Url="html/173a8aec-9253-f14f-5033-32e886924c9d.htm" />
+    <HelpKINode Title="DataSet.DataRow.Symbol Property " Url="html/f10ec7aa-44fc-17a9-7144-903b97ea23be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SymbolColumn property" Url="html/592208d6-e9ba-ebc8-5a2c-d09c58a96993.htm" />
+  <HelpKINode Title="symm field" Url="html/8d4bed9c-0c32-630d-8ffa-8d718f14047b.htm" />
+  <HelpKINode Title="SZL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Table property" Url="html/8ab352d6-6094-70c6-05fa-b38a6339fa61.htm" />
+  <HelpKINode Title="Tables property">
+    <HelpKINode Title="backDataSet.Tables Property " Url="html/620de9f3-e919-5476-2439-3013c700f1c1.htm" />
+    <HelpKINode Title="DataSet.Tables Property " Url="html/9c58a703-a67e-2f17-c7af-f7064548ca65.htm" />
+  </HelpKINode>
+  <HelpKINode Title="telechargerInfoStat method" Url="html/8fd5f85b-f727-bdc2-9631-f7bfbcaf3788.htm" />
+  <HelpKINode Title="THB enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TJS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TMM enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TND enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TOP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="total property" Url="html/e28e75ec-fa3c-8c07-cd92-5007cf5ddce5.htm" />
+  <HelpKINode Title="TRL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TRY enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TTD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TWD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TYD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="TZS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="UAH enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="UGX enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="USD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="USDEURIBOR enumeration member" Url="html/9db7cf22-8716-4e41-1b2f-53c06ad78700.htm" />
+  <HelpKINode Title="UYP enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="UYU enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="UZS enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="VAL enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ValeursCourantes property" Url="html/b79ded2c-4296-1834-641a-0336423c27a8.htm" />
+  <HelpKINode Title="Value property" Url="html/3f094165-4ff4-9a39-0bab-c0722c13383f.htm" />
+  <HelpKINode Title="ValueColumn property" Url="html/7cc8f969-629b-6525-4f70-f49cea451ec4.htm" />
+  <HelpKINode Title="VEB enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="VEF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="VND enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Volume enumeration member" Url="html/6183d65e-5c91-df08-6cef-4bfe264c5522.htm" />
+  <HelpKINode Title="VUV enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="wait method" Url="html/5d90a48f-a006-4000-0616-6a3e821adeea.htm" />
+  <HelpKINode Title="WrongDates class">
+    <HelpKINode Title="WrongDates Class" Url="html/28765d81-70c2-2576-e2f7-509999d04f25.htm" />
+    <HelpKINode Title="WrongDates Members" Url="html/303f7a36-f72e-4642-07bf-6349405c4513.htm" />
+    <HelpKINode Title="about WrongDates class" Url="html/28765d81-70c2-2576-e2f7-509999d04f25.htm" />
+    <HelpKINode Title="all members" Url="html/303f7a36-f72e-4642-07bf-6349405c4513.htm" />
+    <HelpKINode Title="constructor" Url="html/6628602a-e96c-6625-0530-f2dbb29745ad.htm" />
+    <HelpKINode Title="events" Url="html/e8e0a971-a072-8485-5c71-3a8c7fa3aedf.htm" />
+    <HelpKINode Title="methods" Url="html/12a69427-d6c0-95cd-a61b-666a72f2c0e8.htm" />
+    <HelpKINode Title="properties" Url="html/21d9705a-dd50-2838-8e63-d1af8ac8f81d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WrongDates.WrongDates constructor" Url="html/6628602a-e96c-6625-0530-f2dbb29745ad.htm" />
+  <HelpKINode Title="WST enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XAF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XAG enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XAU enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XCD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XDR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XEU enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XOF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XPD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XPF enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="XPT enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="Yearly enumeration member" Url="html/0007adac-79b7-782d-7f65-109f88fac5b4.htm" />
+  <HelpKINode Title="YER enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="YQL class">
+    <HelpKINode Title="YQL Class" Url="html/37a11399-da9f-315c-ad26-815c4f425eae.htm" />
+    <HelpKINode Title="YQL Members" Url="html/dfb2b959-fc1d-d08f-b845-e04bef4d8b64.htm" />
+    <HelpKINode Title="about YQL class" Url="html/37a11399-da9f-315c-ad26-815c4f425eae.htm" />
+    <HelpKINode Title="all members" Url="html/dfb2b959-fc1d-d08f-b845-e04bef4d8b64.htm" />
+    <HelpKINode Title="constructor" Url="html/9fb71afb-258c-8b65-e973-3da1f7f51dea.htm" />
+    <HelpKINode Title="methods" Url="html/779b4ac3-a2ad-71d3-5857-4bdee57c92c4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="YQL.Ask method" Url="html/9616ec59-7717-4140-6601-3a3a8350bdf7.htm" />
+  <HelpKINode Title="YQL.Bid method" Url="html/c4ffbd15-f979-0804-ce57-ed9e34a85536.htm" />
+  <HelpKINode Title="YQL.Historical method" Url="html/049e0815-6fdd-a720-b49b-d31a97bcbaf2.htm" />
+  <HelpKINode Title="YQL.Industries method" Url="html/ad0e7645-19d7-2650-ae11-235014d22004.htm" />
+  <HelpKINode Title="YQL.MonPrixTempsReel method" Url="html/34287f0a-5d87-6672-96de-e1c25816de38.htm" />
+  <HelpKINode Title="YQL.Quotes method" Url="html/bb6e87ca-83e2-2b29-e1b8-3855bcb3a494.htm" />
+  <HelpKINode Title="YQL.Sectors method" Url="html/225025b7-a172-4036-8b9d-4120fb3a391a.htm" />
+  <HelpKINode Title="YQL.Stocks method" Url="html/b410d0b4-6520-3e03-1379-c3f9738e9b62.htm" />
+  <HelpKINode Title="YQL.YQL constructor" Url="html/9fb71afb-258c-8b65-e973-3da1f7f51dea.htm" />
+  <HelpKINode Title="YUN enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ZAR enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ZMK enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="ZWD enumeration member" Url="html/99dcb5d5-6324-4cc6-4540-de8a60f97c57.htm" />
+  <HelpKINode Title="_CurrentSymbol field" Url="html/420efc0e-c055-b692-83c1-7bd2decc347a.htm" />
+  <HelpKINode Title="_Filepath field" Url="html/ad45dc20-d03a-caf7-7abd-0056150ff193.htm" />
+</HelpKI>

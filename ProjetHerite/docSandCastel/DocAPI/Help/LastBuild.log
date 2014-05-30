@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="2014.4.22.0" projectFile="C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\docApi.shfbproj" started="30/05/2014 18:00:16">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+   C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI
+Using presentation style &#39;VS2005&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005&#39;
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\API\APIFiMag\bin\Release\APIFiMag.dll
+    Found assembly &#39;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\API\APIFiMag\bin\Release\APIFiMag.dll&#39;
+Source: C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\API\APIFiMag\bin\Release\APIFiMag.xml
+
+Copying XML comments files
+    C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\API\APIFiMag\bin\Release\APIFiMag.XML -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\APIFiMag.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, Anglais (&#201;tats-Unis))...
+    Last step completed in 00:00:00.0340
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0150
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+La g‚n‚ration a d‚marr‚ 30/05/2014 18:00:17.
+Projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\GenerateRefInfo.proj&quot; sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loaded 1 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 4 namespaces, 41 types, and 372 members
+  Copie du fichier de &quot;reflection.org&quot; vers &quot;reflection.all&quot;.
+  XslTransform (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+G‚n‚ration du projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\GenerateRefInfo.proj&quot; termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+
+Temps ‚coul‚ 00:00:02.61
+    Last step completed in 00:00:03.2558
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+La g‚n‚ration a d‚marr‚ 30/05/2014 18:00:21.
+Projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\TransformManifest.proj&quot; sur le noud 1 (cibles par d‚faut).
+TransformManifest:
+  XslTransform (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copie du fichier de &quot;reflection.xml&quot; vers &quot;reflection.nofilenames&quot;.
+  XslTransform (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+G‚n‚ration du projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\TransformManifest.proj&quot; termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+
+Temps ‚coul‚ 00:00:02.14
+    Last step completed in 00:00:02.7915
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0800
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0120
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+La g‚n‚ration a d‚marr‚ 30/05/2014 18:00:23.
+Projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\GenerateIntermediateTOC.proj&quot; sur le noud 1 (cibles par d‚faut).
+GenerateIntermediateTOC:
+  XslTransform (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+G‚n‚ration du projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\GenerateIntermediateTOC.proj&quot; termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+
+Temps ‚coul‚ 00:00:01.19
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:01.8306
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.2926
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0470
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+La g‚n‚ration a d‚marr‚ 30/05/2014 18:00:26.
+Projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj&quot; sur le noud 1 (cibles par d‚faut).
+BuildReferenceTopics:
+  BuildAssembler (v2014.1.26.0)
+  Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  ResolveReferenceLinksComponent: The MSDN content ID cache &#39;C:\Users\Joseph\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MsdnContentId.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:APIFiMag] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:APIFiMag.backDataSet] MSDN web service failed.  No further look ups will be performed for this build. [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : Reason: Le nom distant n&#39;a pas pu ˆtre r‚solu: &#39;services.msdn.microsoft.com&#39; [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;info&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.Clone] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.Clone] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.GetSchemaSerializable] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.GetSchemaSerializable] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;param name=&quot;xs&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.InitializeDerivedDataSet] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ReadXmlSerializable(System.Xml.XmlReader)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ReadXmlSerializable(System.Xml.XmlReader)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.backDataSet.Relations] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.backDataSet.SchemaSerializationMode] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ShouldSerializeRelations] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ShouldSerializeRelations] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ShouldSerializeTables] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.backDataSet.ShouldSerializeTables] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.backDataSet.Tables] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Data.ImportData(APIFiMag.Import)] Missing &lt;param name=&quot;i&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;info&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.Clone] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.Clone] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.Data] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.GetSchemaSerializable] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.GetSchemaSerializable] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.GetTypedDataSetSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;param name=&quot;xs&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.InitializeDerivedDataSet] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ReadXmlSerializable(System.Xml.XmlReader)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ReadXmlSerializable(System.Xml.XmlReader)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.Relations] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.SchemaSerializationMode] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ShouldSerializeRelations] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ShouldSerializeRelations] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ShouldSerializeTables] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.ShouldSerializeTables] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.Tables] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [AllMembers.T:APIFiMag.DataSet.DataDataTable] Invalid reference link target &#39;T:System.Data.TypedTableBase&#39;1&#39;. [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:APIFiMag.DataSet.DataDataTable] Invalid reference link target &#39;T:System.Data.TypedTableBase&#39;1&#39;. [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;info&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(APIFiMag.DataSet.DataRow)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(APIFiMag.DataSet.DataRow)] Missing &lt;param name=&quot;row&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;param name=&quot;Date&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;param name=&quot;Symbol&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;param name=&quot;Column&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.AddDataRow(System.DateTime,System.String,System.String,System.Double)] Missing &lt;param name=&quot;Value&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.Clone] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.Clone] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.ColumnColumn] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.Count] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.CreateInstance] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.CreateInstance] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [E:APIFiMag.DataSet.DataDataTable.DataRowChanged] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [E:APIFiMag.DataSet.DataDataTable.DataRowChanging] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [E:APIFiMag.DataSet.DataDataTable.DataRowDeleted] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [E:APIFiMag.DataSet.DataDataTable.DataRowDeleting] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.DateColumn] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.FindByDateSymbolColumn(System.DateTime,System.String,System.String)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.FindByDateSymbolColumn(System.DateTime,System.String,System.String)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.FindByDateSymbolColumn(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;Date&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.FindByDateSymbolColumn(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;Symbol&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.FindByDateSymbolColumn(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;Column&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.GetRowType] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.GetRowType] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.GetTypedTableSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.GetTypedTableSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.GetTypedTableSchema(System.Xml.Schema.XmlSchemaSet)] Missing &lt;param name=&quot;xs&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.Item(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.NewDataRow] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.NewDataRow] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.NewRowFromBuilder(System.Data.DataRowBuilder)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.NewRowFromBuilder(System.Data.DataRowBuilder)] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.NewRowFromBuilder(System.Data.DataRowBuilder)] Missing &lt;param name=&quot;builder&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowChanged(System.Data.DataRowChangeEventArgs)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowChanged(System.Data.DataRowChangeEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowChanging(System.Data.DataRowChangeEventArgs)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowChanging(System.Data.DataRowChangeEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowDeleted(System.Data.DataRowChangeEventArgs)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowDeleted(System.Data.DataRowChangeEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)] Missing &lt;param name=&quot;e&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.RemoveDataRow(APIFiMag.DataSet.DataRow)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataDataTable.RemoveDataRow(APIFiMag.DataSet.DataRow)] Missing &lt;param name=&quot;row&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.SymbolColumn] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataDataTable.ValueColumn] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRow.Column] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRow.Date] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataRow.IsValueNull] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataRow.IsValueNull] Missing &lt;returns&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataRow.SetValueNull] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRow.Symbol] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRow.Value] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataRowChangeEvent.#ctor(APIFiMag.DataSet.DataRow,System.Data.DataRowAction)] Missing &lt;param name=&quot;row&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.DataSet.DataRowChangeEvent.#ctor(APIFiMag.DataSet.DataRow,System.Data.DataRowAction)] Missing &lt;param name=&quot;action&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRowChangeEvent.Action] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:APIFiMag.DataSet.DataRowChangeEvent.Row] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:APIFiMag.DataSet.DataRowChangeEventHandler] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Export.Export(APIFiMag.Data)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Export.Export(APIFiMag.Data)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.ExportCSV.#ctor(System.String)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.ExportJSON.#ctor(System.String)] Missing &lt;param name=&quot;filePath&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Import.Import(APIFiMag.Data)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Import.Import(APIFiMag.Data)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.InfosStatiques.ConvertTickerToName(System.String@)] Missing &lt;param name=&quot;ticker&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.InfoStat.release] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.InfoStat.telechargerInfoStat(System.Boolean)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.InfoStat.telechargerInfoStat(System.Boolean)] Missing &lt;param name=&quot;thread&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.InfoStat.wait] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Parser.Import(APIFiMag.Data)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Parser.Import(APIFiMag.Data)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.YQL.Historical(APIFiMag.Data,System.DateTime,System.DateTime)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.YQL.Industries(System.String)] Missing &lt;param name=&quot;sector&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.YQL.Quotes(System.String)] Missing &lt;param name=&quot;nomSte&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.YQL.Stocks(System.String)] Missing &lt;param name=&quot;nomSte&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:APIFiMag.Datas] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Datas.DataXML.#ctor(System.Xml.XmlDocument)] Missing &lt;param name=&quot;doc&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:APIFiMag.Exporter] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:APIFiMag.Exporter.ExportMDF] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Exporter.ExportMDF.#ctor(System.String)] Missing &lt;param name=&quot;filepath&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Exporter.ExportMDF.Export(APIFiMag.Data)] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Exporter.ExportMDF.Export(APIFiMag.Data)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:APIFiMag.Importer] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:APIFiMag.Importer.ImportGoogle.Import(APIFiMag.Data)] Missing &lt;param name=&quot;d&quot;/&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:APIFiMag.Importer.ParserCSV._CurrentSymbol] Missing &lt;summary&gt; documentation [C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj]
+  Processed 302 topic(s)
+  132 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 9 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 5 of 30.
+G‚n‚ration du projet &quot;C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\BuildReferenceTopics.proj&quot; termin‚e (cibles par d‚faut).
+
+La g‚n‚ration a r‚ussi.
+
+Temps ‚coul‚ 00:00:17.35
+    Last step completed in 00:00:18.0250
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+
+Clearing any prior web output
+    Last step completed in 00:00:00.0080
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 2014.4.22.0
+Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website
+Processed 302 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\WebTOC.xml
+    Last step completed in 00:00:03.2412
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\adm.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\adm.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\adm_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\adm_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\adm_dev.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\adm_dev.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\adm_dev_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\adm_dev_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\alert_caution.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\alert_caution.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\alert_note.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\alert_note.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\alert_security.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\alert_security.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\big_adm.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\big_adm.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\big_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\big_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\big_dev.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\big_dev.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\big_kw.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\big_kw.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\box.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\box.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\Caution.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\Caution.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\CFW.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\collall.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\collall.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\collapse.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\collapse.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\collapse_all.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\collapse_all.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\copycode.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\copycode.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\copycodeHighlight.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\copycodeHighlight.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\dev.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\dev.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\dev_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\dev_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\dropdown.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\dropdown.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\dropdownHover.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\dropdownHover.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\drpdown.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\drpdown.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\drpdown_orange.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\drpdown_orange.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\drpdown_orange_up.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\drpdown_orange_up.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\drpup.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\drpup.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\exp.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\exp.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\expall.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\expall.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\expand_all.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\expand_all.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\filter1a.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\filter1a.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\filter1c.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\filter1c.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\footer.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\footer.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\gradient.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\gradient.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\greencheck.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\greencheck.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\greychck.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\greychck.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\header_prev_next.jpg -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\header_prev_next.jpg
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\header_sql_tutorial_blank.jpg
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\header_sql_tutorial_logo.GIF
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_adm.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_adm.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_adm_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_adm_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_adm_dev.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_adm_dev.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_adm_dev_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_adm_dev_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_dev.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_dev.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\kw_dev_arch.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\kw_dev_arch.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\LastChild.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\LastChild.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\load.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\load.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\load_hover.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\load_hover.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\note.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\note.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pencil.GIF -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pencil.GIF
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privclass.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privdelegate.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privenum.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privenum.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privenumeration.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privevent.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privextension.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privfield.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privinterface.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privmethod.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privproperty.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\privstructure.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protclass.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protdelegate.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protenum.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protenum.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protenumeration.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protevent.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protextension.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protfield.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protinterface.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protmethod.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protoperator.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protproperty.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\protstructure.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubclass.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubdelegate.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubenum.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubenum.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubenumeration.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubevent.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubextension.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubfield.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubinterface.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubmethod.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\puboperator.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubproperty.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\pubstructure.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\requirements1a.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\requirements1a.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\requirements1c.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\requirements1c.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\save.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\save.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\save_hover.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\save_hover.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\security.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\security.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\seealso1a.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\seealso1a.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\seealso1c.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\seealso1c.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\slMobile.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\static.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\icons\xna.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\CheckboxMenu.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\CheckboxMenu.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\CommonUtilities.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\CommonUtilities.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\Dropdown.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\Dropdown.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\EventUtilities.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\EventUtilities.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\script_feedBack.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\script_feedBack.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\script_manifold.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\script_manifold.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\scripts\SplitScreen.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\scripts\SplitScreen.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2005\styles\Presentation.css -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\styles\Presentation.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\CloseSearch.png -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\CloseSearch.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\CollapseAll.png -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\CollapseAll.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Collapsed.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Collapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Expanded.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Expanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\favicon.ico -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\FillNode.aspx -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\FillNode.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\FillNode.php -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\FillNode.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Index.aspx -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Index.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Index.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Index.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\index.html -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\index.php -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\index.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Item.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Item.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\LoadIndexKeywords.aspx -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\LoadIndexKeywords.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\LoadIndexKeywords.php -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\LoadIndexKeywords.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Search.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Search.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SearchHelp.aspx -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SearchHelp.inc.php -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SearchHelp.php -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Splitter.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Splitter.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\SyncTOC.gif -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\SyncTOC.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.css -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\TOC.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\TOC.js -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\TOC.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\Web\Web.Config -&gt; C:\Users\Joseph\Google Drive\Dropbox\GitHub\XDataFiWebService\XdataFioffline\docSandCastel\DocAPI\Help\Working\Output\Website\.\Web.Config
+    Last step completed in 00:00:00.6200
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0060
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+    Last step completed in 00:00:01.5632
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 100 files
+Copied 200 files
+Copied 300 files
+Copied 400 files
+Copied 461 files for the website content
+    Last step completed in 00:00:00.8711
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.1740
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 05/30/2014 06:00 .  Total time: 00:00:34,0656
+
+</buildStep>
+</shfbBuild>
