@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="AppliFiMag.ViewFiMag"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="MinWidth" Value="65" />
+            <Setter Property="SeparatorBrush" Value="Black" />
+            <Setter Property="FontWeight" Value="Black" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridColumnHeader}">
+                        <Grid>
+                            <Border x:Name="columnHeaderBorder" BorderThickness="0,0,1,1" Padding="10,10,3,0" Background="Transparent" BorderBrush="Black">
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+			                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+				                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type DataGridRow}">
+            <Setter Property="Validation.ErrorTemplate" Value="{x:Null}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridRow}">
+                        <Border x:Name="DGR_Border"
+			                    BorderBrush="{TemplateBinding BorderBrush}"
+			                    BorderThickness="{TemplateBinding BorderThickness}"
+		                        SnapsToDevicePixels="True" Background="#FFCECECE">
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Duration="0:0:0.15"
+                                                Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                                To="#FFCECECE" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimation Duration="0:0:0.15"
+                                                Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                                To="#FF97C136" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                            <SelectiveScrollingGrid>
+                                <SelectiveScrollingGrid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </SelectiveScrollingGrid.ColumnDefinitions>
+                                <SelectiveScrollingGrid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </SelectiveScrollingGrid.RowDefinitions>
+                                <DataGridCellsPresenter Grid.Column="1"
+			                        ItemsPanel="{TemplateBinding ItemsPanel}"
+			                        SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                <DataGridDetailsPresenter Grid.Row="1"
+			                        Grid.Column="1"
+			                        SelectiveScrollingGrid.SelectiveScrollingOrientation="{Binding 
+                                     AreRowDetailsFrozen,
+                                      ConverterParameter={x:Static SelectiveScrollingOrientation.Vertical},
+			                          Converter={x:Static DataGrid.RowDetailsScrollingConverter},
+			                          RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+			                        Visibility="{TemplateBinding DetailsVisibility}" />
+                                <DataGridRowHeader Grid.RowSpan="2"
+			                        SelectiveScrollingGrid.SelectiveScrollingOrientation="Vertical"
+			                        Visibility="{Binding HeadersVisibility,
+                                    ConverterParameter={x:Static DataGridHeadersVisibility.Row},
+                                    Converter={x:Static DataGrid.HeadersVisibilityConverter},
+                                    RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" />
+                            </SelectiveScrollingGrid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="{x:Type DataGridCell}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                        <Border x:Name="border"
+			Background="Transparent"
+			BorderBrush="Transparent"
+			BorderThickness="1"
+			SnapsToDevicePixels="True">
+
+                            <ContentPresenter HorizontalAlignment="Right" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+
+
+
+        <DataGrid Grid.Column="0" Grid.Row="1" Name="dg" ItemsSource="{Binding Path=Data}" CanUserSortColumns="False" CanUserReorderColumns="False" AutoGenerateColumns="False" IsReadOnly="True" Background="Transparent" BorderThickness="0" RowHeaderWidth="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="80" Header="Date" Binding="{Binding Path=Key.Date, StringFormat={}{0:dd/MM/yyyy}}"/>
+                <DataGridTextColumn Header="Actif" Binding="{Binding Path=Key.Symbol}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

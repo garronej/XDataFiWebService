@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="AppliFiMag.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="521" d:DesignWidth="300">
+    <Grid>
+        <TextBlock FontFamily="Consolas" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Visibility="Hidden" Text ="
+               .,-:;//;:=,&#10;
+           . :H@@@MM@M#H/.,+%;,&#10;
+        ,/X+ +M@@M@MM%=,-%HMMM@X/,&#10;
+      -+@MM; $M@@MH+-,;XMMMM@MMMM@+-&#10;
+     ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.&#10;
+   ,%MM@@MH ,@%=            .---=-=:=,.&#10;
+   =@#@@@MX .,              -%HX$$%%%+;&#10;
+  =-./@M@M$                  .;@MMMM@MM:&#10;
+  X@/ -$MM/                    .+MM@@@M$&#10;
+ ,@M@H: :@:                    . =X#@@@@-&#10;
+ ,@@@MMX, .                    /H- ;@M@M=&#10;
+ .H@@@@M@+,                    %MM+..%#$.&#10;
+  /MMMM@MMH/.                  XM@MH; =;&#10;
+   /%+%$XHH@$=              , .H@@@@MX,&#10;
+    .=--------.           -%H.,@@@@@MX,&#10;
+    .%MM@@@HHHXX$$$%+= .:$MMX =M@@MM%.&#10;
+      =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=&#10;
+        =%@M@M#@$-.=$@MM@@@M; %M%=&#10;
+          ,:+$+-,/H#MMMMMMM@= =,&#10;
+                =++%%%%+/:-.&#10;">
+        </TextBlock>
+        <TextBlock FontFamily="Calibri" FontWeight="Bold" FontSize="80" Foreground="#FF3DC136" Text=" Chargement" HorizontalAlignment="Center" VerticalAlignment="Center"  Opacity="1"/>
+    </Grid>
+</UserControl>
