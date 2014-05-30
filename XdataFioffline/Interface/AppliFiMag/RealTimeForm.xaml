@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="AppliFiMag.RealTimeForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:l="clr-namespace:AppliFiMag"
+             
+             
+             d:DesignHeight="400" d:DesignWidth="600">
+    <UserControl.Resources>
+        <l:ConvertImportToString x:Key="conv" />
+        <HierarchicalDataTemplate x:Key="template" ItemsSource="{Binding Path=Elements}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=Attribute[name].Value}" />
+                <TextBlock Text="{Binding Path=Attribute[symbol].Value, StringFormat=: {0}}" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="29" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"  Text="Actif choisi" Height="25" Width="115"/>
+        <StackPanel Grid.ColumnSpan="2" Margin="5" Grid.Column="1" Grid.Row="2">
+            <TextBox Text="{Binding Path=Symbol}" IsReadOnly="True" Height="25" />
+            <Grid Margin="0,15,0,0" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Durée : " />
+                <TextBox Grid.Column="1" Text="{Binding Path=Duree}" Width="100" />
+            </Grid>
+            <Grid Margin="0,15,0,0" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Période : " />
+                <TextBox Grid.Column="1" Text="{Binding Path=Periode}" Width="100" />
+            </Grid>
+        </StackPanel>
+        <Button Content="creer" Grid.Row="6" Height="23" HorizontalAlignment="Center" Command="{Binding Path=Add}" VerticalAlignment="Center" Width="Auto" Grid.ColumnSpan="2" Margin="5" Grid.Column="1" />
+        <TreeView Name="treeView" Grid.RowSpan="50"
+              ItemsSource="{Binding Path=Root.Elements}"
+              ItemTemplate="{StaticResource template}" MouseDoubleClick="treeView_MouseDoubleClick">
+        </TreeView>
+    </Grid>
+</UserControl>
