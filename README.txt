@@ -36,6 +36,6 @@ NOTE: Les source du document de suivie se trouve sur le OneDrive que l'on a mis 
 Modifiez le par là et exporter éventuellement le en PDF dans le dépot git. 
 
 Conseil: Prenez le temps de regarer comment fonctione l'application gitHub pour ordinateur. Commit corréspont 
-à comit pour les fichier coché, Sync a pull et publish a push.
+à comit pour les fichier coché, Sync a pull/push.
 
 
