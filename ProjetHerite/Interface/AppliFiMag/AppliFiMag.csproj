@@ -65,9 +65,8 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="APIFiMag, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\APIFiMag.dll</HintPath>
+    <Reference Include="APIFiMag">
+      <HintPath>..\..\API\APIFiMag\bin\Release\APIFiMag.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

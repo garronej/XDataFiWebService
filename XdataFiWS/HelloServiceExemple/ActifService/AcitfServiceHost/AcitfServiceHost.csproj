@@ -49,7 +49,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="App1.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ActifService\ActifService.csproj">
