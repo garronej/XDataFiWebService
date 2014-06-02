@@ -1,14 +1,14 @@
-HelloServiceExemple/ Contient un exemple simple de service WCF.
+﻿HelloServiceExemple/ Contient un exemple simple de service WCF.
 
 Partie Service : 
 
-L'API WCF ( qui n'es constituer que d'une fonction triviale prenant un string et retou
-rant "Hello string" est implémenté dans HelloService/HelloWcfService.
+L'API WCF ( qui n'est constitué que d'une fonction triviale prenant un string et retournant
+ "Hello string" est implémenté dans HelloService/HelloWcfService.
 
-HelloService/HelloWcfService est le répertoir du projet qui prend en charge l'exibition
-des end point par le quelle vas intéragire les application clientes, recupération des meta data
-( prototipe des classe de l'API et transit des requette/reponces"
-C'est un programe console, pour que le webservice soit fonctionelle.
+HelloService/HelloWcfService est le répertoir du projet qui prend en charge l'exhibition
+des end point par lequel va intéragir les applications clientes, recupération des meta data
+( prototipe des classe de l'API et transit des requette/reponses"
+C'est un programme console, pour que le webservice soit fonctionel.
 
 Procedure pour lancer le server : 
 1) Ouvrir avec Visual Studio HelloServiceExemple/HelloService.sln puis click droit
