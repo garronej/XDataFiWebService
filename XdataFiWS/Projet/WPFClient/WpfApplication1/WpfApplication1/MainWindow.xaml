@@ -1,0 +1,117 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" mc:Ignorable="d"
+        x:Name="window" x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+	<Window.Resources>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Property1}"/>
+			</StackPanel>
+		</DataTemplate>
+	</Window.Resources>
+	<Grid x:Name="grid" DataContext="{Binding Mode=OneWay, Source={StaticResource Database}}" d:DataContext="{Binding Mode=OneWay, Source={StaticResource Database}}" RenderTransformOrigin="0.5,0.5" Margin="582,367.5,-582,-367.5">
+		<Grid.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Grid.RenderTransform>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:1" To="vs0">
+						<Storyboard>
+							<DoubleAnimation Duration="0:0:3" To="552" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid"/>
+							<DoubleAnimation Duration="0:0:3" To="3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid"/>
+							<DoubleAnimation Duration="0:0:3" To="-570" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1"/>
+							<DoubleAnimation Duration="0:0:3" To="2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1"/>
+							<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid1">
+								<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+								<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+								<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+							</DoubleAnimationUsingKeyFrames>
+							<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid1">
+								<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+								<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="358.203"/>
+							</DoubleAnimationUsingKeyFrames>
+						</Storyboard>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="vs1">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-372"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-578"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-26"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="268"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="vs0">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="552"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="3"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-570"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<i:Interaction.Triggers>
+			<i:EventTrigger>
+				<ei:GoToStateAction StateName="vs0"/>
+			</i:EventTrigger>
+		</i:Interaction.Triggers>
+		<ListBox x:Name="listBox" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="194" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Collection}" SelectedIndex="{Binding id, Source={StaticResource DataStore}}"/>
+		<Image HorizontalAlignment="Left" Height="300" Margin="209,10,0,0" VerticalAlignment="Top" Width="298" DataContext="{Binding SelectedItem, ElementName=listBox}" Source="{Binding Property2}"/>
+		<Grid x:Name="grid1" HorizontalAlignment="Left" Height="187.5" Margin="-538.5,-299.667,0,0" VerticalAlignment="Top" Width="455.833" RenderTransformOrigin="0.5,0.5" DataContext="{Binding Source={StaticResource DataStore}}">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Rectangle Fill="#FFF4F4F5" Stroke="Black"/>
+			<Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="46.5" Margin="309.5,74.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5">
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<ei:GoToStateAction StateName="vs1"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+			<TextBox HorizontalAlignment="Left" Height="45.833" Margin="48.5,75.167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" Text="{Binding id}"/>
+		</Grid>
+        
+	</Grid>
+</Window>
