@@ -5,5 +5,10 @@
 	StartupUri="MainWindow.xaml">
 	<Application.Resources>
 		<!-- Les ressources réparties au niveau Application sont définies ici. -->
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="Simple Styles.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
 	</Application.Resources>
 </Application>
