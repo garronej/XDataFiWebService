@@ -1,0 +1,33 @@
+﻿<!--
+      *********    NE PAS MODIFIER CE FICHIER     *********
+      Ce fichier est régénéré par un outil de création.Modifier
+ .     ce fichier peut provoquer des erreurs.
+-->
+<SampleData:Database xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Database">
+	<SampleData:Database.Collection>
+		<SampleData:Item Property1="gh" Property2="Database_Files\image01.png"/>
+		<SampleData:Item Property1="Duis praesent aliquam" Property2="Database_Files\image02.png"/>
+		<SampleData:Item Property1="Accumsan class" Property2="Database_Files\image03.png"/>
+		<SampleData:Item Property1="Aenean curae donec integer" Property2="Database_Files\image04.png"/>
+		<SampleData:Item Property1="Mauris nullam" Property2="Database_Files\image05.png"/>
+		<SampleData:Item Property1="Quisque etiam" Property2="Database_Files\image01.png"/>
+		<SampleData:Item Property1="Vivamus aliquam fusce aliquet" Property2="Database_Files\image02.png"/>
+		<SampleData:Item Property1="Lorem blandit commodo nunc" Property2="Database_Files\image03.png"/>
+		<SampleData:Item Property1="Amet morbi" Property2="Database_Files\image04.png"/>
+		<SampleData:Item Property1="Nulla ante conubia" Property2="Database_Files\image05.png"/>
+		<SampleData:Item Property1="Nam sed aliquam dis" Property2="Database_Files\image01.png"/>
+		<SampleData:Item Property1="Cras duis aenean" Property2="Database_Files\image02.png"/>
+		<SampleData:Item Property1="Maecenas nunc integer quisque" Property2="Database_Files\image03.png"/>
+		<SampleData:Item Property1="Amet mauris vivamus" Property2="Database_Files\image04.png"/>
+		<SampleData:Item Property1="Class praesent nullam" Property2="Database_Files\image05.png"/>
+		<SampleData:Item Property1="Curae est accumsan aptent" Property2="Database_Files\image01.png"/>
+		<SampleData:Item Property1="Donec bibendum auctor dictumst" Property2="Database_Files\image02.png"/>
+		<SampleData:Item Property1="Eleifend etiam ante facilisi" Property2="Database_Files\image03.png"/>
+		<SampleData:Item Property1="Hac congue fusce aliquam" Property2="Database_Files\image04.png"/>
+		<SampleData:Item Property1="Cursus lorem morbi aliquet" Property2="Database_Files\image05.png"/>
+		<SampleData:Item Property1="Dictum nulla proin leo" Property2="Database_Files\image01.png"/>
+		<SampleData:Item Property1="Lectus augue" Property2="Database_Files\image02.png"/>
+		<SampleData:Item Property1="Faucibus blandit libero habitant" Property2="Database_Files\image03.png"/>
+		<SampleData:Item Property1="Mus dolor fames ligula" Property2="Database_Files\image04.png"/>
+	</SampleData:Database.Collection>
+</SampleData:Database>

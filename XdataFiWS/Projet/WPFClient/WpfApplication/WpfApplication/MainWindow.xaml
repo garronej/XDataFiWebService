@@ -1,0 +1,237 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="WpfApplication.MainWindow"
+        Title="MainWindow" Height="600" Width="800">
+	<Window.Resources>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding DeviseList}"/>
+			</StackPanel>
+		</DataTemplate>
+	</Window.Resources>
+	<Grid DataContext="{Binding Source={StaticResource Devise}}">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualState x:Name="init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1758"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-1320"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="historique_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="23.25"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1367.75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1608"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-870"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1.02"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1.02"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="taux_interbancaire_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-2773.333"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="2874.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.375"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.98"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.982"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="taux_de_change_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1347.333"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1499.333"/>
+						</DoubleAnimationUsingKeyFrames>
+						<Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Selector.SelectedIndex)" Storyboard.TargetName="Devise1">
+							<EasingInt32KeyFrame KeyTime="0" Value="4"/>
+						</Int32AnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Stroke="Black" VerticalAlignment="Top" Width="792"/>
+		<TextBlock HorizontalAlignment="Left" Height="118" TextWrapping="Wrap" VerticalAlignment="Top" Width="792" FontSize="60" FontWeight="Bold" TextAlignment="Center"><Run Text="XApiFi"/></TextBlock>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="452" Margin="0,118,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+		<Button Content="Historique" HorizontalAlignment="Left" Height="50" Margin="0,118,0,0" VerticalAlignment="Top" Width="100">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="historique_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Taux Interbancaire" HorizontalAlignment="Left" Height="50" Margin="0,168,0,0" VerticalAlignment="Top" Width="100">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="taux_interbancaire_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Taux de change" HorizontalAlignment="Left" Height="50" Margin="0,218,0,0" VerticalAlignment="Top" Width="100">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="taux_de_change_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,268,0,0" VerticalAlignment="Top" Width="100"/>
+		<Button Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,318,0,0" VerticalAlignment="Top" Width="100"/>
+		<Grid x:Name="grid" HorizontalAlignment="Left" Height="452" Margin="76,-1250,0,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<TextBlock HorizontalAlignment="Left" Height="34.5" Margin="0,37.5,0,0" TextWrapping="Wrap" Text="Choix de l'actif :" VerticalAlignment="Top" Width="104.5"/>
+			<TextBox HorizontalAlignment="Left" Height="31.5" Margin="157,30,0,0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="129"/>
+			<DatePicker HorizontalAlignment="Left" Margin="80.5,138,0,0" VerticalAlignment="Top"/>
+			<DatePicker HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top"/>
+			<CheckBox Content="open" HorizontalAlignment="Left" Height="24" Margin="43,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
+			<CheckBox Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
+			<CheckBox Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
+			<CheckBox Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
+			<CheckBox Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
+			<Button Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643"/>
+			<Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21.5" Margin="-100.375,249.5,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="98.875" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Button x:Name="button" Content="Menu" HorizontalAlignment="Left" Height="50" Margin="-101,271,0,0" VerticalAlignment="Top" Width="100" Opacity="0" RenderTransformOrigin="0.5,0.5">
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<ei:GoToStateAction StateName="init"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+		</Grid>
+		<Grid x:Name="grid1" HorizontalAlignment="Left" Height="452" Margin="2873,-2757.283,-2773,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<TextBox HorizontalAlignment="Left" Height="41.334" Margin="0,33.333,0,0" TextWrapping="Wrap" Text="Choisissez le taux désiré :" VerticalAlignment="Top" Width="158"/>
+			<ComboBox HorizontalAlignment="Left" Margin="260.667,33.333,0,0" VerticalAlignment="Top" Width="120"/>
+			<DatePicker HorizontalAlignment="Left" Margin="55.666,125.666,0,0" VerticalAlignment="Top"/>
+			<DatePicker HorizontalAlignment="Left" Margin="318,125.666,0,0" VerticalAlignment="Top"/>
+			<Rectangle x:Name="rectangle1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20.833" Margin="-104.708,246.333,0,0" Stroke="Black" VerticalAlignment="Top" Width="100.375" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Button x:Name="button1" Content="Menu" HorizontalAlignment="Left" Height="50" Margin="-104.333,266.833,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+				<Button.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Button.RenderTransform>
+			</Button>
+			<Button Content="Enter" HorizontalAlignment="Left" Height="50" Margin="74,266.833,0,0" VerticalAlignment="Top" Width="84"/>
+		</Grid>
+		<Grid x:Name="grid2" HorizontalAlignment="Left" Height="452" Margin="-1244,-1382,0,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
+			<Grid.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Grid.RenderTransform>
+			<Button Content="Menu" HorizontalAlignment="Left" Height="50" Margin="-100.25,268,0,0" VerticalAlignment="Top" Width="100">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="Click">
+						<ei:GoToStateAction StateName="init"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Button>
+        
+			<TextBlock HorizontalAlignment="Left" Height="43.5" Margin="0,30,0,0" TextWrapping="Wrap" Text="Choisissez la devise que vous désirez comparer" VerticalAlignment="Top" Width="163"/>
+			<ComboBox x:Name="Devise1" HorizontalAlignment="Left" Margin="19,78.5,0,0" VerticalAlignment="Top" Width="120" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Item}"/>
+			<TextBlock HorizontalAlignment="Left" Height="48" Margin="377.5,25.5,0,0" TextWrapping="Wrap" Text="Choisissez la devise à laquelle vous voulez comparer" VerticalAlignment="Top" Width="198"/>
+			<ComboBox x:Name="Devise2" HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120"/>
+			<DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"/>
+			<DatePicker x:Name="DateFin" HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
+			<Button Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click"/>
+			<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="-99,248.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="98.75"/>
+		</Grid>
+        
+	</Grid>
+</Window>

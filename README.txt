@@ -52,3 +52,5 @@ Conseil: Prenez le temps de regarder comment fonctionne l'application gitHub pou
 
 Lien vers la page du projet des années précédentes :
 http://ensiwiki.ensimag.fr/index.php/Finance:Outil_de_r%C3%A9cup%C3%A9ration_de_donn%C3%A9es_financi%C3%A8res/AppliFiMag
+
+Penser a ajouter la reference a APIfimal pour pouvoir compiler l'interface. Elle se trouve dans API/debug/bin/APIfimag.dll

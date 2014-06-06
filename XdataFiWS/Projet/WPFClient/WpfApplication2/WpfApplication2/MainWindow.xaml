@@ -1,0 +1,837 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:Properties="clr-namespace:WpfApplication2.Properties" x:Class="WpfApplication2.MainWindow"
+        Title="MainWindow" Height="600" Width="800">
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+	</Window.Triggers>
+	<Grid x:Name="grid" Margin="-1,0,1.79999999999995,0" RenderTransformOrigin="0.5,0.5">
+		<Grid.RenderTransform>
+			<TransformGroup>
+				<ScaleTransform/>
+				<SkewTransform/>
+				<RotateTransform/>
+				<TranslateTransform/>
+			</TransformGroup>
+		</Grid.RenderTransform>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualState x:Name="initial">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="53.333"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Block.TextAlignment)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static TextAlignment.Center}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontFamily)" Storyboard.TargetName="textBlock">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<FontFamily>Showcard Gothic</FontFamily>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="histo_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="checkBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="checkBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="checkBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="checkBox3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="checkBox4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-175.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="291"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-6.75"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.929"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-25.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-188"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-7"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="datePicker1">
+							<EasingThicknessKeyFrame KeyTime="0" Value="640,277,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="checkBox1">
+							<EasingThicknessKeyFrame KeyTime="0" Value="281,356,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="checkBox2">
+							<EasingThicknessKeyFrame KeyTime="0" Value="410,356,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="checkBox3">
+							<EasingThicknessKeyFrame KeyTime="0" Value="530,356,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="checkBox4">
+							<EasingThicknessKeyFrame KeyTime="0" Value="645,356,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Enter"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="checkBox">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="open"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="checkBox1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="close"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="checkBox2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="high"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="checkBox3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="low"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="checkBox4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="volume"/>
+						</ObjectAnimationUsingKeyFrames>
+						<StringAnimationUsingKeyFrames Storyboard.TargetProperty="(DatePicker.Text)" Storyboard.TargetName="datePicker">
+							<DiscreteStringKeyFrame KeyTime="0" Value="date de début"/>
+						</StringAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.989"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
+							<EasingColorKeyFrame KeyTime="0" Value="#FFE7FD0D"/>
+						</ColorAnimationUsingKeyFrames>
+						<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="button1">
+							<EasingThicknessKeyFrame KeyTime="0" Value="0,304,0,0"/>
+						</ThicknessAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Menu "/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-742.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-531"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="34.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-531"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="34.5"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="taux_interbancaire_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-1128"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-32"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-82"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-568"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="354.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-9.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<StringAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="textBlock2_Copy">
+							<DiscreteStringKeyFrame KeyTime="0" Value="Fin"/>
+						</StringAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button2">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Enter"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="27"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1.074"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="16"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-9"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-38"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="16"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.926"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-9.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-29"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-39"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle_Copy">
+							<EasingColorKeyFrame KeyTime="0" Value="#FFE3F909"/>
+						</ColorAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button1_Copy">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Menu"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Taux Interbancaire"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="comboBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="comboBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-12"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comboBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-23"/>
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="taux_change_init">
+					<Storyboard>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock2_Copy">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="comboBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1126"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comboBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-831"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1_Copy1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle_Copy1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button1_Copy1">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Menu"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle_Copy1">
+							<EasingColorKeyFrame KeyTime="0" Value="#FFF0FB09"/>
+						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-1116"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock">
+							<EasingDoubleKeyFrame KeyTime="0" Value="4"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Block.TextAlignment)" Storyboard.TargetName="textBlock3">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static TextAlignment.Center}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="textBlock3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="18.667"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="checkBox4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="checkBox4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-36"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-684"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-0.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlock3">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-1.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="comboBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="comboBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-40"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comboBox1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-20"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="datePicker5">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-35"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-3"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="datePicker5">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-72"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="datePicker5">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-12"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="comboBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock6">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="textBlock6">
+							<EasingDoubleKeyFrame KeyTime="0" Value="18.667"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="comboBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-165.5"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="comboBox2">
+							<EasingDoubleKeyFrame KeyTime="0" Value="-18"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button4">
+							<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button4">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Enter"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="textBlock7">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static VerticalAlignment.Top}"/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="border">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static VerticalAlignment.Top}"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Border x:Name="border" BorderBrush="Black" BorderThickness="1" Height="97.5" Width="791.2" Background="#FFF9F906" Margin="0,0,0,472.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+			<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="473.5" Margin="-1,96,0,-474" Stroke="Black" VerticalAlignment="Top" Width="96.667"/>
+		</Border>
+		<Button Content="Historique" HorizontalAlignment="Left" Height="40" Margin="0,97.5,0,0" VerticalAlignment="Top" Width="95.667">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="histo_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button x:Name="button3" Content="Taux Interbancaire" HorizontalAlignment="Left" Height="40" Margin="0,136,0,0" VerticalAlignment="Top" Width="95.667">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="taux_interbancaire_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Taux de change" HorizontalAlignment="Left" Height="40" Margin="0,175,0,0" VerticalAlignment="Top" Width="95.667">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="taux_change_init"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Button" HorizontalAlignment="Left" Height="40" Margin="0,253,0,0" VerticalAlignment="Top" Width="95.667"/>
+		<Button Content="Button" HorizontalAlignment="Left" Height="40" Margin="0,214,0,0" VerticalAlignment="Top" Width="95.667"/>
+		<TextBlock x:Name="textBlock7" Height="96.438" TextWrapping="Wrap" Text="XDataFi" Width="791.2" TextAlignment="Center" FontSize="53.333" Foreground="#FFF70F0F" Margin="0,2.229,0,471.333" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+		<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="63" Margin="303,145,0,0" Opacity="0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.5,0.5">
+			<TextBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBox.RenderTransform>
+		</TextBox>
+		<Button x:Name="button" Content="button" HorizontalAlignment="Left" Height="52.5" Margin="529.5,158.5,0,0" Opacity="0" VerticalAlignment="Top" Width="106.5" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<CheckBox x:Name="checkBox" Content="checkBox" HorizontalAlignment="Left" Margin="160.5,356.5,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<CheckBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</CheckBox.RenderTransform>
+		</CheckBox>
+		<CheckBox x:Name="checkBox1" Content="checkBox1" HorizontalAlignment="Left" Margin="298.5,359.5,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<CheckBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</CheckBox.RenderTransform>
+		</CheckBox>
+		<CheckBox x:Name="checkBox2" Content="checkBox2" HorizontalAlignment="Left" Margin="441,376,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<CheckBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</CheckBox.RenderTransform>
+		</CheckBox>
+		<CheckBox x:Name="checkBox3" Content="checkBox3" HorizontalAlignment="Left" Margin="555,367,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<CheckBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</CheckBox.RenderTransform>
+		</CheckBox>
+		<CheckBox x:Name="checkBox4" Content="checkBox4" HorizontalAlignment="Left" Margin="694.5,368.5,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<CheckBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</CheckBox.RenderTransform>
+		</CheckBox>
+		<DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="223.5,275.5,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<DatePicker x:Name="datePicker1" HorizontalAlignment="Left" Margin="556.5,286,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<Button x:Name="button1" Content="button1" HorizontalAlignment="Left" Height="34.5" Margin="0,435.5,0,0" Opacity="0" VerticalAlignment="Top" Width="94.5" RenderTransformOrigin="0.5,0.5">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="initial"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="11" Margin="0.333,293.333,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="94.334"/>
+		<TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="238.5" Margin="160.5,-843.5,0,0" Opacity="0" TextWrapping="Wrap" Text="Salut beau gosse!" VerticalAlignment="Top" Width="483" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="46.5" Margin="282,121,0,0" Opacity="0" TextWrapping="Wrap" Text="taux d'intérêt interbancaire" VerticalAlignment="Top" Width="264" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="40.5" Margin="141,269.5,0,0" Opacity="0" TextWrapping="Wrap" Text="Début" VerticalAlignment="Top" Width="124.5" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Height="40.5" Margin="141,269.5,0,0" Opacity="0" TextWrapping="Wrap" Text="Début" VerticalAlignment="Top" Width="124.5" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<DatePicker x:Name="datePicker2" HorizontalAlignment="Left" Margin="163.5,337,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<DatePicker x:Name="datePicker3" HorizontalAlignment="Left" Margin="496.5,337,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<Button x:Name="button2" Content="button2" HorizontalAlignment="Left" Height="55.5" Margin="327,422.5,0,0" Opacity="0" VerticalAlignment="Top" Width="123" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Button x:Name="button1_Copy" Content="button1" HorizontalAlignment="Left" Height="34.5" Margin="0,304,0,0" Opacity="0" VerticalAlignment="Top" Width="94.5" RenderTransformOrigin="0.5,0.5">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="initial"/>
+					<ei:GoToStateAction StateName="initial"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Rectangle x:Name="rectangle_Copy" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="11" Margin="0.333,293.333,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="94.334"/>
+		<ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="335.667,190.333,0,0" Opacity="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+			<ComboBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ComboBox.RenderTransform>
+		</ComboBox>
+		<Button x:Name="button1_Copy1" Content="button1" HorizontalAlignment="Left" Height="34.5" Margin="0,304,0,0" Opacity="0" VerticalAlignment="Top" Width="95.667" RenderTransformOrigin="0.5,0.5">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<ei:GoToStateAction StateName="initial"/>
+					<ei:GoToStateAction StateName="initial"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Rectangle x:Name="rectangle_Copy1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="11" Margin="0.333,293.333,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="95.334"/>
+		<TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="63.333" Margin="96.333,98.667,0,0" Opacity="0" TextWrapping="Wrap" Text="Quelle devise vous intéresse?" VerticalAlignment="Top" Width="300.667" RenderTransformOrigin="0.5,0.5">
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="216,180,0,0" Opacity="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+			<ComboBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ComboBox.RenderTransform>
+		</ComboBox>
+		<DatePicker x:Name="datePicker4" HorizontalAlignment="Left" Margin="137,303,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<DatePicker x:Name="datePicker5" HorizontalAlignment="Left" Margin="380,312,0,0" Opacity="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<DatePicker.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</DatePicker.RenderTransform>
+		</DatePicker>
+		<TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Height="29" Margin="107,263,0,0" Opacity="0" TextWrapping="Wrap" Text="Début " VerticalAlignment="Top" Width="139"/>
+		<TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Height="30" Margin="308,260,0,0" Opacity="0" TextWrapping="Wrap" Text="Fin" VerticalAlignment="Top" Width="149"/>
+		<ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="674,177,-2.8,0" Opacity="0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+			<ComboBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</ComboBox.RenderTransform>
+		</ComboBox>
+		<TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="52" Margin="490,98,-0.8,0" Opacity="0" TextWrapping="Wrap" Text="Devise par rapport à laquelle vous voulez comparer:" VerticalAlignment="Top" Width="302"/>
+		<Button x:Name="button4" Content="button4" HorizontalAlignment="Left" Height="40.5" Margin="219,412,0,0" Opacity="0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+        
+	</Grid>
+</Window>
