@@ -3,7 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="WpfApplication.MainWindow"
         Title="MainWindow" Height="600" Width="800">
-	<Grid>
+	<Window.Resources>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding DeviseList}"/>
+			</StackPanel>
+		</DataTemplate>
+	</Window.Resources>
+	<Grid DataContext="{Binding Source={StaticResource Devise}}">
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="VisualStateGroup">
 				<VisualState x:Name="init">
@@ -81,11 +88,14 @@
 				<VisualState x:Name="taux_de_change_init">
 					<Storyboard>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid2">
-							<EasingDoubleKeyFrame KeyTime="0" Value="1343.333"/>
+							<EasingDoubleKeyFrame KeyTime="0" Value="1347.333"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid2">
 							<EasingDoubleKeyFrame KeyTime="0" Value="1499.333"/>
 						</DoubleAnimationUsingKeyFrames>
+						<Int32AnimationUsingKeyFrames Storyboard.TargetProperty="(Selector.SelectedIndex)" Storyboard.TargetName="Devise1">
+							<EasingInt32KeyFrame KeyTime="0" Value="4"/>
+						</Int32AnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
@@ -214,12 +224,12 @@
 			</Button>
         
 			<TextBlock HorizontalAlignment="Left" Height="43.5" Margin="0,30,0,0" TextWrapping="Wrap" Text="Choisissez la devise que vous désirez comparer" VerticalAlignment="Top" Width="163"/>
-			<ComboBox HorizontalAlignment="Left" Margin="19,78.5,0,0" VerticalAlignment="Top" Width="120"/>
+			<ComboBox x:Name="Devise1" HorizontalAlignment="Left" Margin="19,78.5,0,0" VerticalAlignment="Top" Width="120" ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Item}"/>
 			<TextBlock HorizontalAlignment="Left" Height="48" Margin="377.5,25.5,0,0" TextWrapping="Wrap" Text="Choisissez la devise à laquelle vous voulez comparer" VerticalAlignment="Top" Width="198"/>
-			<ComboBox HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120"/>
-			<DatePicker HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"/>
-			<DatePicker HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
-			<Button Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129"/>
+			<ComboBox x:Name="Devise2" HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120"/>
+			<DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"/>
+			<DatePicker x:Name="DateFin" HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
+			<Button Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click"/>
 			<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="20" Margin="-99,248.5,0,0" Stroke="Black" VerticalAlignment="Top" Width="98.75"/>
 		</Grid>
         
