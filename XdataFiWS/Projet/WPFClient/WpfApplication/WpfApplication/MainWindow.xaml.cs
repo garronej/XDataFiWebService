@@ -22,37 +22,39 @@ namespace WpfApplication
     
     public partial class MainWindow : Window
     {
-        List<String> Item = new List<String>();
+        
        
         public MainWindow()
         {
-            Item.Add("EUR");
-            Item.Add("USD");
+            
             InitializeComponent();
-            
-			
-            
-            
-			
+            Devise1.Items.Add("USD");
+            Devise1.Items.Add("EUR");
+            Devise1.Items.Add("ADF");
+
+            Devise2.Items.Add("USD");
+            Devise2.Items.Add("EUR");
+            Devise2.Items.Add("ADF");
+
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	
-			int IdDevise2 = Devise2.SelectedIndex;
-           
-            String Date2 = DateFin.SelectedDate.ToString();
 
             
+            
+           
 
 //XdataFiWebService.HelloWcfServiceClient client = new XdataFiWebService.HelloWcfServiceClient();
 
             //client.Currency Devise1 = client.Currency(Devise1.SelectedValue.ToString());
+            //DateTime Date1 = Convert.ToDateTime(DateDebut.SelectedDate.ToString());
             //DateTime Date1 = Convert.ToDateTime(DateDebut.SelectedDate.ToString());
            
             //client.devise()
 			
 			
         }
+
     }
 }
