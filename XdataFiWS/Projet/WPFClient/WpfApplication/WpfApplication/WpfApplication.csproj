@@ -60,7 +60,7 @@
     <Compile Include="SampleData\Devise\Devise.xaml.cs">
       <DependentUpon>Devise.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Service References\XdataFiWebService\Reference.cs">
+    <Compile Include="Service References\ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -105,12 +105,30 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Service References\XdataFiWebService\HelloWcfService.wsdl" />
-    <None Include="Service References\XdataFiWebService\item.xsd">
+    <None Include="Service References\ServiceReference\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\XdataFiWebService\item1.xsd">
+    <None Include="Service References\ServiceReference\item1.xsd">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\item3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\item4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\Services.wsdl" />
+    <None Include="Service References\ServiceReference\WpfApplication.ServiceReference.DataActif.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\WpfApplication.ServiceReference.DataExchangeRate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\WpfApplication.ServiceReference.DataInterestRate.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -120,22 +138,26 @@
     <DesignTimeOnly Include="SampleData\Devise\Devise.xsd" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataStore\TestStoreDataGrid\" />
+    <Folder Include="SampleData\TestDonnéeDataGrid\" />
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\XdataFiWebService\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\XdataFiWebService\item.disco" />
+    <None Include="Service References\ServiceReference\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\XdataFiWebService\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\XdataFiWebService\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\XdataFiWebService\Reference.svcmap">
+    <None Include="Service References\ServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

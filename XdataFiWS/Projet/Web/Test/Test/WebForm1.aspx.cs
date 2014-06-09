@@ -213,6 +213,7 @@ namespace Test
             // On crée une nouvelle ligne
             TableRow tRowTitle = new TableRow();
             Table1.Rows.Add(tRowTitle);
+            
 
             // Nom de l'actif
             TableCell tCellNameTitle = new TableCell();
