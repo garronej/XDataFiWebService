@@ -456,7 +456,7 @@ namespace WcfLibrary.Data
         public enum TypeData
         {
             HistoricalData,
-            Currency,
+            ExchangeRate,
             InterestRate,
             RealTime
         }
@@ -486,7 +486,7 @@ namespace WcfLibrary.Data
 
         [DataMember]
         /// <summary> Type des données </summary>
-        public TypeData Type { get; set; }
+        public TypeData Type { get; protected set; }
 
         #endregion
 

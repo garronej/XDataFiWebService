@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,14 +22,16 @@ namespace Service
         /// <param name="fin">Date de fin</param>
         public WcfLibrary.Data.DataActif getActifHistorique(List<string> symbol, List<WcfLibrary.Data.Data.HistoricalColumn> columns, DateTime debut, DateTime fin)
         {
+            //OperationContext.Current.
+            //OperationContext.Current.ServiceSecurityContext.WindowsIdentity.Name;
             WcfLibrary.Constantes.displayDEBUG("start getActifHistorique", 0);
             
             // Création du DataActif
             WcfLibrary.Data.DataActif d = new WcfLibrary.Data.DataActif(symbol, columns, debut, fin);
 
             // Import des données désirées
-            WcfLibrary.Import.ImportYahoo i = new WcfLibrary.Import.ImportYahoo();
-            i.Import(d);
+            WcfLibrary.ImportParse.Yahoo i = new WcfLibrary.ImportParse.Yahoo();
+            i.ImportAndParse(d);
 
             WcfLibrary.Constantes.displayDEBUG("end getActifHistorique", 0);
 
@@ -55,8 +58,8 @@ namespace Service
             WcfLibrary.Data.DataExchangeRate d = new WcfLibrary.Data.DataExchangeRate(symbol, columns, debut, fin, freq);
 
             // Import des données désirées
-            WcfLibrary.Import.ParserFXTop i = new WcfLibrary.Import.ParserFXTop();
-            i.Import(d);
+            WcfLibrary.ImportParse.FXTop i = new WcfLibrary.ImportParse.FXTop();
+            i.ImportAndParse(d);
 
             WcfLibrary.Constantes.displayDEBUG("end getExchangeRate", 0);
 
@@ -79,8 +82,8 @@ namespace Service
             WcfLibrary.Data.DataInterestRate d = new WcfLibrary.Data.DataInterestRate(symbol, debut, fin);
 
             // Import des données désirées
-            WcfLibrary.Import.ImportEBF i = new WcfLibrary.Import.ImportEBF();
-            i.Import(d);
+            WcfLibrary.ImportParse.EBF i = new WcfLibrary.ImportParse.EBF();
+            i.ImportAndParse(d);
 
             WcfLibrary.Constantes.displayDEBUG("end getInterestRate", 0);
 

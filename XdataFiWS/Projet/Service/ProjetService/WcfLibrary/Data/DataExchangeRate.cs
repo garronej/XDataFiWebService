@@ -34,7 +34,7 @@ namespace WcfLibrary.Data
                 throw new WrongDates(@"La date de fin ne peut être antérieure au début de l'acquisition");
             }
             
-            Type = TypeData.Currency;
+            Type = TypeData.ExchangeRate;
 
             Symbol = new List<string>();
             Columns = new List<string>();
@@ -58,9 +58,9 @@ namespace WcfLibrary.Data
                     if (item != symbol)
                         Symbol.Add(symbol.ToString() + "/" + item.ToString());
                 }
-                Columns.Add("AVERAGE");
-                Columns.Add("MIN");
-                Columns.Add("MAX");
+                Columns.Add("Average");
+                Columns.Add("Min");
+                Columns.Add("Max");
             }
 
             Debut = debut;

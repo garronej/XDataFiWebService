@@ -4,55 +4,28 @@ using System.Data;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WcfLibrary.Import
+namespace WcfLibrary.Parser
 {
     /// <summary>
     /// Parser pour les fichiers CSV
     /// </summary>
-    public class ParserCSV : Import
+    public class ParserCSV : Parser
     {
-        #region attributs
-        /// <summary>
-        /// Chemin du fichier à importer
-        /// </summary>
-        protected string _Filepath;
+        #region Attributs
 
-        /// <summary>
-        /// Séparateur voulu, suivant la norme du fichier Csv
-        /// </summary>
+        /// <summary> Correspond à la culture du fichier importé. le format varie en fonction de la langue utilisée </summary>
+        private CultureInfo _Culture;
+        /// <summary> Séparateur voulu, suivant la norme du fichier Csv (lié à la culture)</summary>
         private char _Separateur;
 
-        ///// <summary>
-        ///// Vaut true si l'ordre date, symbole 1, ... est respecté, false sinon
-        ///// </summary>
-        //private bool _Correspondance;
-
-        /// <summary>
-        /// Vaut true si le nom des colonnes est présent
-        /// </summary>
+        /// <summary> Vaut true si le nom des colonnes est présent </summary>
         private bool _Nom;
 
-        /// <summary>
-        /// Correspond à la culture du fichier importé. le format varie en fonction de la langue utilisée
-        /// </summary>
-        private CultureInfo _Culture;
-        private string _NomDateColonne;
+        /// <summary> Vaut true si la matrice des données est transposée </summary>
         private bool _Transpose;
-
-        protected string _CurrentSymbol;
-
-        ///// <summary>
-        ///// Vaut 0 par défaut, sinon vaut le numéro de la colonne date si _Correspondance = false
-        ///// </summary>
-        //private int _CompteurDate;
-
-        ///// <summary>
-        ///// _TableauCorrespondance[i] vaut i si _Correspondance, vaut la valeur voulue sinon
-        ///// </summary>
-        //private int[] _TableauCorrespondance;
+        /// <summary> Nom de la colonne de date </summary>
+        private string _NomDateColonne;
 
         #endregion
 
@@ -110,12 +83,12 @@ namespace WcfLibrary.Import
         { }
         #endregion
 
-        #region Import
+        #region Méthodes
         /// <summary>
         /// Remplit la base de données à partir du fichier Csv importé
         /// </summary>
         /// <param name="d">base de donnée</param>
-        public virtual void Import(Data.Data d)
+        public override void ParseFile(Data.Data d)
         {
             WcfLibrary.Constantes.displayDEBUG("start parseCSV", 2);
 
@@ -128,14 +101,10 @@ namespace WcfLibrary.Import
             if (String.IsNullOrEmpty(_CurrentSymbol))
                 _CurrentSymbol = d.Symbol.First();
 
+            WcfLibrary.Constantes.displayDEBUG(_Filepath, 2);
             StreamReader str = new StreamReader(_Filepath);
             string line;
-
-            // Start correspond à l'indice du tableau de la première date désirée
-            // End correspong à l'indice du tableau de la dernière date désirée
-            //int start = 0, end = 0;
-            //Boolean startInit = false;
-
+            WcfLibrary.Constantes.displayDEBUG("lu ok", 2);
             // Lien entre nom colonne et numéro colonne
             Dictionary<string, int> correspondanceColonne = new Dictionary<string, int>();
             // Lien entre nom ligne (symbole + data) et numéro de ligne
