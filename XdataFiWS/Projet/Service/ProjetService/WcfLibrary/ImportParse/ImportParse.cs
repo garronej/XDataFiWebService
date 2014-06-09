@@ -32,11 +32,15 @@ namespace WcfLibrary.ImportParse
         {
             WcfLibrary.Constantes.displayDEBUG(_Filepath, 1);
 
-            // Si le fichier existe, alors on le supprime
-            if (System.IO.File.Exists(@_Filepath))
+            // Si le fichier existe, alors on le nomme autrement
+            int i = 0;
+            string nameFile = _Filepath;
+            while (System.IO.File.Exists(@_Filepath))
             {
-                System.IO.File.Delete(@_Filepath);
+                i++;
+                nameFile = i + "_" + _Filepath;
             }
+            _Filepath = nameFile;
 
             // Téléchargement
             WcfLibrary.Constantes.displayDEBUG("start Download", 2);

@@ -24,9 +24,10 @@ namespace Service
         public WcfLibrary.Data.DataActif getActifHistorique(List<string> symbol, List<WcfLibrary.Data.Data.HistoricalColumn> columns, DateTime debut, DateTime fin)
         {
             //RemoteEndpointMessageProperty messageProperty = OperationContext.Current.IncomingMessageProperties[RemoteEndpointMessageProperty.Name] as RemoteEndpointMessageProperty;
+            
             //Console.WriteLine("Remote address is: {0}", messageProperty.Address);
-            Service1 serv = new Service1();
-            serv.DoWork();
+            //Service1 serv = new Service1();
+            //serv.DoWork();
 
             WcfLibrary.Constantes.displayDEBUG("start getActifHistorique", 0);
             
