@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,8 +23,11 @@ namespace Service
         /// <param name="fin">Date de fin</param>
         public WcfLibrary.Data.DataActif getActifHistorique(List<string> symbol, List<WcfLibrary.Data.Data.HistoricalColumn> columns, DateTime debut, DateTime fin)
         {
-            //OperationContext.Current.
-            //OperationContext.Current.ServiceSecurityContext.WindowsIdentity.Name;
+            //RemoteEndpointMessageProperty messageProperty = OperationContext.Current.IncomingMessageProperties[RemoteEndpointMessageProperty.Name] as RemoteEndpointMessageProperty;
+            //Console.WriteLine("Remote address is: {0}", messageProperty.Address);
+            Service1 serv = new Service1();
+            serv.DoWork();
+
             WcfLibrary.Constantes.displayDEBUG("start getActifHistorique", 0);
             
             // Création du DataActif

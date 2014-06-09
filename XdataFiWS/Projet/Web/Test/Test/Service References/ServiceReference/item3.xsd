@@ -51,7 +51,7 @@
   <xs:simpleType name="Data.TypeData">
     <xs:restriction base="xs:string">
       <xs:enumeration value="HistoricalData" />
-      <xs:enumeration value="Currency" />
+      <xs:enumeration value="ExchangeRate" />
       <xs:enumeration value="InterestRate" />
       <xs:enumeration value="RealTime" />
     </xs:restriction>

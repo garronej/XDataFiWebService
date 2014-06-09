@@ -71,6 +71,7 @@ namespace WcfLibrary.ImportParse
 
                         //Récupération de l'url
                         //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=EUR&C2=USD&DD1=1&MM1=1&YYYY1=2012&B=1&P=&I=1&DD2=1&MM21&YYYY2=2013&btnOK=Go%21
+                        //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=ADF&C2=ALL&MA=1&DD1=1&MM1=1&YYYY1=2012&B=1&P=&I=1&DD2=1&MM21&YYYY2=2013&btnOK=Go%21
                         string url;
 
                         if (der.Freq == Data.Data.Frequency.Daily)
@@ -87,7 +88,8 @@ namespace WcfLibrary.ImportParse
                             url = "http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=" + monnaie[0] + "&C2=" + monnaie[1] + choixFreq + "&DD1=" + der.Debut.ToString("dd") + "&MM1=" + der.Debut.ToString("MM") + "&YYYY1=" + der.Debut.ToString("yyyy") + "&B=1&P=&I=1&DD2=" + der.Fin.ToString("dd") + "&MM2=" + der.Fin.ToString("MM") + "&YYYY2=" + der.Fin.ToString("yyyy") + "&btnOK=Go%21";
                         }
 
-                        _Filepath = "FxTop_" + symb + "_" + der.Freq.ToString() + "_" + der.Debut.ToString("dd-MM-yy") + "_" + der.Fin.ToString("dd-MM-yy") + ".html";
+                        _Filepath = "FxTop_" + monnaie[0] + "_" + monnaie[1] + "_" + der.Freq.ToString() 
+                                  + "_" + der.Debut.ToString("dd-MM-yy") + "_" + der.Fin.ToString("dd-MM-yy") + ".html";
                         Uri siteUri = new Uri(url);
 
                         // Télécharge le fichier

@@ -168,7 +168,7 @@ namespace Test.ServiceReference {
             HistoricalData = 0,
             
             [System.Runtime.Serialization.EnumMemberAttribute()]
-            Currency = 1,
+            ExchangeRate = 1,
             
             [System.Runtime.Serialization.EnumMemberAttribute()]
             InterestRate = 2,
