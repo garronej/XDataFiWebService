@@ -43,7 +43,7 @@ namespace WpfApplication
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            /*
+            
             Data.Currency currencyToCompare = (Data.Currency) 
                 Enum.Parse(typeof(Data.Currency), Devise1.SelectedValue.ToString());
 
@@ -57,7 +57,7 @@ namespace WpfApplication
 
             ServiceReference.ExchangeRateServiceClient client = new ServiceReference.ExchangeRateServiceClient();
             DataExchangeRate d = client.getExchangeRate(currencyToCompare, l, debut, fin, Data.Frequency.Monthly);
-            client.Close();*/
+            client.Close();
             /*
             table tab = new table();
             tab.t = new Table();
@@ -84,35 +84,116 @@ namespace WpfApplication
             contenu.RowDefinitions.Clear();
             contenu.Children.Clear();
 
-            contenu.Width = 400;
-            contenu.Height = 200;
+            contenu.Width = 800;
+            contenu.Height = 100;
             contenu.HorizontalAlignment = HorizontalAlignment.Left;
             contenu.VerticalAlignment = VerticalAlignment.Top;
-            contenu.Margin = new Thickness(0, 0, 0, 0);
-            contenu.ShowGridLines = true;
-            contenu.Background = new SolidColorBrush(Colors.Aqua);
+            contenu.Margin = new Thickness(104, 120, 0, 0);
+            contenu.ShowGridLines = false;
+            contenu.Background = new SolidColorBrush(Colors.LightGreen);
+
             
             ColumnDefinition c1 = new ColumnDefinition();
             contenu.ColumnDefinitions.Add(c1);
+            ColumnDefinition c2 = new ColumnDefinition();
+            contenu.ColumnDefinitions.Add(c2);
 
             RowDefinition r1 = new RowDefinition();
             r1.Height = new GridLength(60);
             contenu.RowDefinitions.Add(r1);
 
-            TextBlock t = new TextBlock();
-            t.Text = "OK";
-            t.FontSize = 14;
-            Grid.SetColumn(t, 0);
-            Grid.SetRow(t, 0);
+            TextBlock t1 = new TextBlock();
+            t1.Background = new SolidColorBrush(Colors.Green);
+            t1.Text = "Symbole";
+            t1.FontSize = 14;
+            Grid.SetColumn(t1, 0);
+            Grid.SetRow(t1, 0);
+            TextBlock t2 = new TextBlock();
+            t2.Background = new SolidColorBrush(Colors.Green);
+            t2.Text = "Date";
+            t2.FontSize = 14;
+            Grid.SetColumn(t2, 1);
+            Grid.SetRow(t2, 0);
 
-            contenu.Children.Add(t);
+            contenu.Children.Add(t1);
+            contenu.Children.Add(t2);
 
+            //on créer les colonnes et on remplit les titres
+            int j = 0;
+            foreach (string col in d.Columns)
+            {    
+                ColumnDefinition c= new ColumnDefinition();
+                contenu.ColumnDefinitions.Add(c);
+                TextBlock t = new TextBlock();
+                t.Background = new SolidColorBrush(Colors.Green);
+                t.Text = col;
+                t.FontSize = 14;
+                Grid.SetColumn(t, 2+j);
+                Grid.SetRow(t, 0);
+                contenu.Children.Add(t);
+                j++;
+            }
+
+            //on créer et on remplit les lignes
+            int n = d.Ds.Tables[0].Rows.Count;
+
+            for (int i = 0; i < n; i++)
+            {
+                string name = (string)d.Ds.Tables[0].Rows[i]["Symbol"];
+                DateTime time = (DateTime)d.Ds.Tables[0].Rows[i]["Date"];
+
+                RowDefinition r = new RowDefinition();
+                r.Height = new GridLength(60);
+                contenu.RowDefinitions.Add(r);
+
+                TextBlock tt = new TextBlock();
+                if (i % 2 == 0)
+                {
+                    tt.Background = new SolidColorBrush(Colors.LawnGreen);
+                }
+                tt.Text = name;
+                tt.FontSize = 14;
+                Grid.SetColumn(tt, 0);
+                Grid.SetRow(tt, i + 1);
+                contenu.Children.Add(tt);
+
+                TextBlock tt2 = new TextBlock();
+                if (i % 2 == 0)
+                {
+                    tt2.Background = new SolidColorBrush(Colors.LawnGreen);
+                }
+                tt2.Text = time.ToString("dd/MM/yyyy");
+                tt2.FontSize = 14;
+                Grid.SetColumn(tt2, 1);
+                Grid.SetRow(tt2, i+1);
+                contenu.Children.Add(tt2);
+
+                int k = 0;
+                foreach (string s in d.Columns)
+                {
+                    // Ajout d'une case (correspondant à une valeur)
+                    TextBlock tt3 = new TextBlock();
+                    if (i % 2 == 0)
+                    {
+                        tt3.Background = new SolidColorBrush(Colors.LawnGreen);
+                    }
+                    tt3.Text = d.Ds.Tables[0].Rows[i][s].ToString();
+                    tt3.FontSize = 14;
+                    Grid.SetColumn(tt3, 2+k);
+                    Grid.SetRow(tt3, i + 1);
+                    contenu.Children.Add(tt3);
+                    k++;
+                }
+
+            }
+            /*
+            ScrollViewer scroll = new ScrollViewer();
+            scroll.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+            contenu.Children.Add(scroll);
+            */
+            
         }
 
     }
-    public class table
-    {
-
-        public Table t;
-    }
+   
 }
