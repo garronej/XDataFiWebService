@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.Generic;
+using System.Data;
+using Taux_interbancaire.ServiceReference;
 
 namespace Taux_interbancaire
 {
@@ -23,11 +26,22 @@ namespace Taux_interbancaire
         public UserControl1()
         {
             InitializeComponent();
+            DateDébut.SelectedDate = DateTime.Today;
+            DateFin.SelectedDate = DateTime.Today;
         }
 
         private void EnterInterBancaire_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO : ajoutez ici l'implémentation du gestionnaire d'événements.
+            Data.InterestRate symbol = (Data.InterestRate)
+                Enum.Parse(typeof(Data.InterestRate), TauxInterBancaire.SelectedItem.ToString());
+
+
+            DateTime debut = Convert.ToDateTime(DateDébut.SelectedDate.ToString());
+            DateTime fin = Convert.ToDateTime(DateFin.SelectedDate.ToString());
+
+            ServiceReference.InterestRateServiceClient client = new ServiceReference.InterestRateServiceClient();
+             DataInterestRate d = client.getInterestRate(symbol,debut,fin);
+            client.Close();
         }
     }
 }

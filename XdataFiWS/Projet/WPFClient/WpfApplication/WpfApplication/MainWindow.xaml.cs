@@ -36,14 +36,16 @@ namespace WpfApplication
         {
             
             InitializeComponent();
-            Devise1.Items.Add("USD");
-            Devise1.Items.Add("EUR");
-            Devise1.Items.Add("ADF");
+            foreach (Data.Currency cur in (Data.Currency[])Enum.GetValues(typeof(Data.Currency)))
+            {
 
-            Devise2.Items.Add("USD");
-            Devise2.Items.Add("EUR");
-            Devise2.Items.Add("ADF");
-
+                Devise1.Items.Add(cur);
+                Devise2.Items.Add(cur);
+            } 
+            DateDebut.SelectedDate = DateTime.Today;
+            DateFin.SelectedDate = DateTime.Today;
+            
+           
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -309,7 +311,6 @@ namespace WpfApplication
 
             //on créer les colonnes et on remplit les titres
             int j = 0;
-            textBlock3.Text = "BONJOUR TAMER 1 " + j.ToString();
             foreach (string col in d.Columns)
             {
                 ColumnDefinition c = new ColumnDefinition();
@@ -322,7 +323,6 @@ namespace WpfApplication
                 Grid.SetRow(t, 0);
                 contenu.Children.Add(t);
                 j++;
-                textBlock3.Text = "BONJOUR TAMER " +j.ToString();
             }
 
             //on créer et on remplit les lignes
@@ -379,6 +379,19 @@ namespace WpfApplication
             }
         }
 
+        private void DateDebut_SelectedDateChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+        	 DateFin.BlackoutDates.Add(new CalendarDateRange(new DateTime(1900, 1, 1),  Convert.ToDateTime(DateDebut.SelectedDate.ToString()).AddDays(-1)));
+            
+        }
+
+        private void DateFin_CalendarOpened(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	 DateFin.BlackoutDates.Add(new CalendarDateRange(new DateTime(1900, 1, 1),  Convert.ToDateTime(DateDebut.SelectedDate.ToString()).AddDays(-1)));
+            
+        }
+
+        
 
     }
    

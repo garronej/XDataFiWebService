@@ -26,13 +26,14 @@ namespace TauxDeChange
         public UserControl1()
         {
             InitializeComponent();
-			Devise1.Items.Add("USD");
-            Devise1.Items.Add("EUR");
-            Devise1.Items.Add("ADF");
+            foreach (Data.Currency cur in (Data.Currency[])Enum.GetValues(typeof(Data.Currency))) {
+            
+                Devise1.Items.Add(cur);
+                Devise2.Items.Add(cur);
+            } 
 
-            Devise2.Items.Add("USD");
-            Devise2.Items.Add("EUR");
-            Devise2.Items.Add("ADF");
+            DateDebut.SelectedDate = DateTime.Today;
+            DateFin.SelectedDate = DateTime.Today;
         }
 
         private void EnterTauxChange_Click(object sender, System.Windows.RoutedEventArgs e)

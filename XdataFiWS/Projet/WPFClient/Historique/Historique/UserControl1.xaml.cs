@@ -32,10 +32,12 @@ namespace Historique
         Boolean check4 = false;
         Boolean check5 = false;
 
+
         public UserControl1()
         {
             InitializeComponent();
-			
+            Début.SelectedDate = DateTime.Today;
+            Fin.SelectedDate = DateTime.Today;
         }
 
         private void EnterHistorique_Click(object sender, System.Windows.RoutedEventArgs e)

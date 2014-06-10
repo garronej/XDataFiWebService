@@ -387,7 +387,7 @@
             <CheckBox x:Name="close" Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="close_Unchecked" Checked="close_Checked"/>
             <CheckBox x:Name="high" Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="high_Checked" Unchecked="high_Unchecked"/>
             <CheckBox x:Name="low" Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="low_Unchecked" Checked="low_Checked"/>
-            <CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="volume_Checked"/>
+            <CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="volume_Checked" Unchecked="volume_Unchecked"/>
             <Button x:Name="EnterHistorique" Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643" Click="EnterHistorique_Click">
             	<i:Interaction.Triggers>
             		<i:EventTrigger EventName="Click">
@@ -443,7 +443,7 @@
             <ComboBox x:Name="Devise1" HorizontalAlignment="Left" Margin="19,78.5,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
             <TextBlock HorizontalAlignment="Left" Height="48" Margin="377.5,25.5,0,0" TextWrapping="Wrap" Text="Choisissez la devise à laquelle vous voulez comparer" VerticalAlignment="Top" Width="198"/>
             <ComboBox x:Name="Devise2" HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-            <DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top" />
             <DatePicker x:Name="DateFin" HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
             <Button x:Name="button9" Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click">
             	<i:Interaction.Triggers>
@@ -501,7 +501,6 @@
         		</Grid.RenderTransform>
         	</Grid>
         </ScrollViewer>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="1,466,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27.96" Width="85.46"/>
 
     </Grid>
 </Window>
