@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Historique.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="800" Height="600">
+    <Grid Width="800" Height="600">
+    	<TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="34.5" Margin="-300,100,0,0" TextWrapping="Wrap" Text="Choix de l'actif :" VerticalAlignment="Top" Width="104.5"/>
+    	<TextBox x:Name="Actif" HorizontalAlignment="Center" Height="31.5" Margin="200,100,0,0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="129"/>
+    	<DatePicker x:Name="Début" HorizontalAlignment="Center" Margin="-300,0,0,0" VerticalAlignment="Center"/>
+    	<DatePicker x:Name="Fin" HorizontalAlignment="Center" Margin="169,0,0,4" VerticalAlignment="Center"/>
+    	<CheckBox x:Name="open" Content="open" HorizontalAlignment="Center" Height="24" Margin="-600,250,0,0" VerticalAlignment="Center" Width="91.5" Checked="open_Checked" Unchecked="open_Unchecked"/>
+    	<CheckBox x:Name="close" Content="close" HorizontalAlignment="Center" Height="24" Margin="-300,250,0,0" VerticalAlignment="Center" Width="91.5" Checked="close_Checked" Unchecked="close_Unchecked"/>
+    	<CheckBox x:Name="high" Content="high" HorizontalAlignment="Center" Height="24" Margin="0,250,0,0" VerticalAlignment="Center" Width="91.5" Checked="high_Checked" Unchecked="high_Unchecked"/>
+    	<CheckBox x:Name="low" Content="low" HorizontalAlignment="Center" Height="24" Margin="300,250,0,0" VerticalAlignment="Center" Width="91.5" Checked="low_Checked" Unchecked="low_Unchecked"/>
+    	<CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Center" Height="24" Margin="600,250,0,0" VerticalAlignment="Center" Width="91.5" Checked="volume_Checked" Unchecked="volume_Unchecked"/>
+    	<Button x:Name="EnterHistorique" Content="Enter" HorizontalAlignment="Center" Height="50" Margin="0,454,0,0" VerticalAlignment="Center" Width="150" Click="EnterHistorique_Click"/>
+            
+    </Grid>
+</UserControl>

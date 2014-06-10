@@ -10,7 +10,7 @@
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
-    <Grid DataContext="{Binding Source={StaticResource Devise}}">
+    <Grid DataContext="{Binding Source={StaticResource Devise}}" Background="#FFA0F9A0">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="init">
@@ -33,6 +33,9 @@
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle2">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="99"/>
                         </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FFB8B8B6"/>
+                        </ColorAnimationUsingKeyFrames>
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="historique_init">
@@ -44,9 +47,6 @@
                             <EasingDoubleKeyFrame KeyTime="0" Value="1367.75"/>
                         </DoubleAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
-                            <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                        </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button">
                             <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                         </DoubleAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid1">
@@ -61,12 +61,6 @@
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
                             <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                         </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="button">
-                            <EasingDoubleKeyFrame KeyTime="0" Value="1.02"/>
-                        </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button">
-                            <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                        </DoubleAnimationUsingKeyFrames>
                         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid">
                         	<EasingThicknessKeyFrame KeyTime="0" Value="79,-1250,0,0"/>
                         </ThicknessAnimationUsingKeyFrames>
@@ -76,15 +70,67 @@
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="101"/>
                         </DoubleAnimationUsingKeyFrames>
-                        <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="button">
-                        	<EasingThicknessKeyFrame KeyTime="0" Value="-102,271,0,0"/>
-                        </ThicknessAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button">
-                        	<EasingDoubleKeyFrame KeyTime="0" Value="101"/>
-                        </DoubleAnimationUsingKeyFrames>
                         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="textBlock">
                         	<EasingThicknessKeyFrame KeyTime="0" Value="25,34,0,0"/>
                         </ThicknessAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="button7">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF6E6E6E"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ButtonBase.ClickMode)" Storyboard.TargetName="button7">
+                        	<DiscreteObjectKeyFrame KeyTime="0">
+                        		<DiscreteObjectKeyFrame.Value>
+                        			<ClickMode>Release</ClickMode>
+                        		</DiscreteObjectKeyFrame.Value>
+                        	</DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="button7">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="button7">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FFA3A3A4"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF080808"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF08C308"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="button1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0.995"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button1">
+                        	<DiscreteObjectKeyFrame KeyTime="0" Value="Menu"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <BooleanAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.IsDefault)" Storyboard.TargetName="button1">
+                        	<DiscreteBooleanKeyFrame KeyTime="0" Value="True"/>
+                        </BooleanAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rectangle1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1.048"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-0.5"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="EnterHistorique">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="135"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="EnterHistorique">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="50"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="877"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-910"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Actif">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="taux_interbancaire_init">
@@ -94,12 +140,6 @@
                         </DoubleAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid1">
                             <EasingDoubleKeyFrame KeyTime="0" Value="2874.5"/>
-                        </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBox">
-                        	<EasingDoubleKeyFrame KeyTime="0" Value="43.5"/>
-                        </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBox">
-                        	<EasingDoubleKeyFrame KeyTime="0" Value="1.5"/>
                         </DoubleAnimationUsingKeyFrames>
                         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid1">
                         	<EasingThicknessKeyFrame KeyTime="0" Value="2876,-2757.283,-2773,0"/>
@@ -117,7 +157,7 @@
                         	<EasingDoubleKeyFrame KeyTime="0" Value="103"/>
                         </DoubleAnimationUsingKeyFrames>
                         <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="button1">
-                        	<EasingThicknessKeyFrame KeyTime="0" Value="0,389,0,0"/>
+                        	<EasingThicknessKeyFrame KeyTime="0" Value="1,390,0,0"/>
                         </ThicknessAnimationUsingKeyFrames>
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button1">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="103"/>
@@ -128,6 +168,33 @@
                         <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="button1">
                         	<DiscreteObjectKeyFrame KeyTime="0" Value="Menu"/>
                         </ObjectAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="button6">
+                        	<LinearColorKeyFrame KeyTime="0" Value="#FF6E6E6E"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="button6">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="button6">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FFA3A3A4"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FD08C308"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-0.667"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-2"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock2">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button8">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="135"/>
+                        </DoubleAnimationUsingKeyFrames>
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="taux_de_change_init">
@@ -171,6 +238,51 @@
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button7">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="103"/>
                         </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="button5">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF6E6E6E"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="button5">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="button5">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FFA3A3A3"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-1.334"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-1.334"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle3">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FFA3A3A3"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF08C308"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="button1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-2"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="button1">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="0.667"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button2">
+                        	<EasingColorKeyFrame KeyTime="0" Value="#FF08C308"/>
+                        </ColorAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button9">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="135"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button9">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="50"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1620"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-1116"/>
+                        </DoubleAnimationUsingKeyFrames>
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="res_taux_de_change">
@@ -179,18 +291,54 @@
                 			<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                 		</DoubleAnimationUsingKeyFrames>
                 		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="contenu">
-                			<EasingDoubleKeyFrame KeyTime="0" Value="400"/>
+                			<EasingDoubleKeyFrame KeyTime="0" Value="676"/>
                 		</DoubleAnimationUsingKeyFrames>
                 		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="contenu">
-                			<EasingDoubleKeyFrame KeyTime="0" Value="200"/>
+                			<EasingDoubleKeyFrame KeyTime="0" Value="439"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="button5">
+                			<EasingColorKeyFrame KeyTime="0" Value="#FF6E6E6E"/>
+                		</ColorAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="button5">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="button5">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="scrollViewer">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="scrollViewer">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="1.413"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="scrollViewer">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="1.423"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="scrollViewer">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="14"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="scrollViewer">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="46"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="contenu">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="0.702"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="contenu">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="0.683"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="contenu">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="-100.786"/>
+                		</DoubleAnimationUsingKeyFrames>
+                		<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="contenu">
+                			<EasingDoubleKeyFrame KeyTime="0" Value="-69.638"/>
                 		</DoubleAnimationUsingKeyFrames>
                 	</Storyboard>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="118" Stroke="Black" VerticalAlignment="Top" Width="792"/>
-        <TextBlock HorizontalAlignment="Left" Height="118" TextWrapping="Wrap" VerticalAlignment="Top" Width="792" FontSize="60" FontWeight="Bold" TextAlignment="Center"><Run Text="XApiFi"/></TextBlock>
-        <Rectangle x:Name="rectangle2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="452" Margin="0,118,0,0" Stroke="Black" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="118" TextWrapping="Wrap" VerticalAlignment="Top" Width="792" FontSize="60" FontWeight="Bold" TextAlignment="Center" Background="#FF5F5F5F" Foreground="#FF30D616"><Run Text="XApiFi"/></TextBlock>
+        <Rectangle x:Name="rectangle2" Fill="#FFA3A3A4" HorizontalAlignment="Left" Height="452" Margin="0,118,0,0" Stroke="Black" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.5,0.5">
         	<Rectangle.RenderTransform>
         		<TransformGroup>
         			<ScaleTransform/>
@@ -200,29 +348,29 @@
         		</TransformGroup>
         	</Rectangle.RenderTransform>
         </Rectangle>
-        <Button x:Name="button7" Content="Historique" HorizontalAlignment="Left" Height="50" Margin="0,118,0,0" VerticalAlignment="Top" Width="103">
+        <Button x:Name="button7" Content="Historique" HorizontalAlignment="Left" Height="50" Margin="0,118,0,0" VerticalAlignment="Top" Width="103" Foreground="#FF08C308">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <ei:GoToStateAction StateName="historique_init"/>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
-        <Button x:Name="button6" Content="Taux Interbancaire" HorizontalAlignment="Left" Height="50" Margin="0,168,0,0" VerticalAlignment="Top" Width="103">
+        <Button x:Name="button6" Content="Taux Interbancaire" HorizontalAlignment="Left" Height="50" Margin="0,168,0,0" VerticalAlignment="Top" Width="103" Foreground="#FF08C308">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <ei:GoToStateAction StateName="taux_interbancaire_init"/>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
-        <Button x:Name="button5" Content="Taux de change" HorizontalAlignment="Left" Height="50" Margin="0,218,0,0" VerticalAlignment="Top" Width="103">
+        <Button x:Name="button5" Content="Taux de change" HorizontalAlignment="Left" Height="50" Margin="0,218,0,0" VerticalAlignment="Top" Width="103" Foreground="#FF08C308">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="Click">
                     <ei:GoToStateAction StateName="taux_de_change_init"/>
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </Button>
-        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,268,0,0" VerticalAlignment="Top" Width="103"/>
-        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,318,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,268,0,0" VerticalAlignment="Top" Width="103" Foreground="#FF08C308"/>
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Height="50" Margin="0,318,0,0" VerticalAlignment="Top" Width="103" Foreground="#FF08C308"/>
         <Grid x:Name="grid" HorizontalAlignment="Left" Height="452" Margin="76,-1250,0,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
@@ -233,15 +381,20 @@
                 </TransformGroup>
             </Grid.RenderTransform>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="34.5" Margin="0,37.5,0,0" TextWrapping="Wrap" Text="Choix de l'actif :" VerticalAlignment="Top" Width="104.5"/>
-            <TextBox HorizontalAlignment="Left" Height="31.5" Margin="157,30,0,0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="129"/>
-            <DatePicker HorizontalAlignment="Left" Margin="80.5,138,0,0" VerticalAlignment="Top"/>
-            <DatePicker HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="open" HorizontalAlignment="Left" Height="24" Margin="43,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <Button Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643"/>
+            <DatePicker x:Name="Début" HorizontalAlignment="Left" Margin="80.5,138,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="Fin" HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="open" Content="open" HorizontalAlignment="Left" Height="24" Margin="43,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="open_Checked" Unchecked="open_Unchecked"/>
+            <CheckBox x:Name="close" Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="close_Unchecked" Checked="close_Checked"/>
+            <CheckBox x:Name="high" Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="high_Checked" Unchecked="high_Unchecked"/>
+            <CheckBox x:Name="low" Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="low_Unchecked" Checked="low_Checked"/>
+            <CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="volume_Checked"/>
+            <Button x:Name="EnterHistorique" Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643" Click="EnterHistorique_Click">
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="Click">
+            			<ei:GoToStateAction StateName="res_taux_de_change"/>
+            		</i:EventTrigger>
+            	</i:Interaction.Triggers>
+            </Button>
             <Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21.5" Margin="-100.375,249.5,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="98.875" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
@@ -252,21 +405,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Button x:Name="button" Content="Menu" HorizontalAlignment="Left" Height="50" Margin="-101,271,0,0" VerticalAlignment="Top" Width="100" Opacity="0" RenderTransformOrigin="0.5,0.5">
-                <Button.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Button.RenderTransform>
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="Click">
-                        <ei:GoToStateAction StateName="init"/>
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-            </Button>
+            <TextBox x:Name="Actif" HorizontalAlignment="Left" Height="38" Margin="185.75,28.25,0,0" Opacity="0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="104"/>
         </Grid>
         <Grid x:Name="grid1" HorizontalAlignment="Left" Height="452" Margin="2873,-2757.283,-2773,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
@@ -277,20 +416,11 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="41.334" Margin="0,33.333,0,0" TextWrapping="Wrap" Text="Choisissez le taux désiré :" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.5,0.5">
-            	<TextBox.RenderTransform>
-            		<TransformGroup>
-            			<ScaleTransform/>
-            			<SkewTransform/>
-            			<RotateTransform/>
-            			<TranslateTransform/>
-            		</TransformGroup>
-            	</TextBox.RenderTransform>
-            </TextBox>
             <ComboBox HorizontalAlignment="Left" Margin="260.667,33.333,0,0" VerticalAlignment="Top" Width="120"/>
             <DatePicker HorizontalAlignment="Left" Margin="55.666,125.666,0,0" VerticalAlignment="Top"/>
             <DatePicker HorizontalAlignment="Left" Margin="318,125.666,0,0" VerticalAlignment="Top"/>
-            <Button Content="Enter" HorizontalAlignment="Left" Height="50" Margin="74,266.833,0,0" VerticalAlignment="Top" Width="84"/>
+            <Button x:Name="button8" Content="Enter" HorizontalAlignment="Left" Height="50" Margin="74,266.833,0,0" VerticalAlignment="Top" Width="84"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="42" Margin="40.333,27.783,0,0" Opacity="0" TextWrapping="Wrap" Text="Choisissez le taux désiré:" VerticalAlignment="Top" Width="160"/>
         </Grid>
         <Grid x:Name="grid2" HorizontalAlignment="Left" Height="452" Margin="-1244,-1382,0,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
@@ -315,7 +445,7 @@
             <ComboBox x:Name="Devise2" HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
             <DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"/>
             <DatePicker x:Name="DateFin" HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
-            <Button Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click">
+            <Button x:Name="button9" Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click">
             	<i:Interaction.Triggers>
             		<i:EventTrigger EventName="Click">
             			<ei:GoToStateAction StateName="res_taux_de_change"/>
@@ -326,15 +456,52 @@
             <TextBlock x:Name="testt" HorizontalAlignment="Left" Height="44" Margin="326,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
 
         </Grid>
-        <Rectangle x:Name="rectangle1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21" Margin="1,368.5,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="102"/>
-        <Button x:Name="button1" Content="button1" HorizontalAlignment="Left" Height="46.5" Margin="1,389,0,0" Opacity="0" VerticalAlignment="Top" Width="101.5">
+        <Rectangle x:Name="rectangle1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21" Margin="1,368.5,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.5,0.5">
+        	<Rectangle.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="button1" Content="button1" HorizontalAlignment="Left" Height="46.5" Margin="1,389,0,0" Opacity="0" VerticalAlignment="Top" Width="101.5" RenderTransformOrigin="0.5,0.5">
+        	<Button.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Button.RenderTransform>
         	<i:Interaction.Triggers>
         		<i:EventTrigger EventName="Click">
         			<ei:GoToStateAction StateName="init"/>
         		</i:EventTrigger>
         	</i:Interaction.Triggers>
         </Button>
-        <Grid x:Name="contenu" HorizontalAlignment="Left" Height="126" Margin="221,202,0,0" Opacity="0" VerticalAlignment="Top" Width="201"/>
+        <ScrollViewer x:Name="scrollViewer" HorizontalAlignment="Left" Height="316" Margin="190,140,0,0" Opacity="0" VerticalAlignment="Top" Width="488" RenderTransformOrigin="0.5,0.5" HorizontalScrollBarVisibility="Auto"  VerticalScrollBarVisibility="Auto">
+        	<ScrollViewer.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</ScrollViewer.RenderTransform>
+        	<Grid x:Name="contenu" HorizontalAlignment="Left" Height="400" Opacity="0" VerticalAlignment="Top" Width="600" RenderTransformOrigin="0.5,0.5">
+        		<Grid.RenderTransform>
+        			<TransformGroup>
+        				<ScaleTransform/>
+        				<SkewTransform/>
+        				<RotateTransform/>
+        				<TranslateTransform/>
+        			</TransformGroup>
+        		</Grid.RenderTransform>
+        	</Grid>
+        </ScrollViewer>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="1,466,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27.96" Width="85.46"/>
 
     </Grid>
 </Window>

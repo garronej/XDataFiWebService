@@ -1,0 +1,12 @@
+﻿<!--
+      *********    NE PAS MODIFIER CE FICHIER     *********
+      Ce fichier est régénéré par un outil de création.Modifier
+ .     ce fichier peut provoquer des erreurs.
+-->
+<SampleData:Devise xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.Devise">
+	<SampleData:Devise.Collection>
+		<SampleData:Item DeviseList="EUR"/>
+		<SampleData:Item DeviseList="USD"/>
+		<SampleData:Item DeviseList="DIN"/>
+	</SampleData:Devise.Collection>
+</SampleData:Devise>
