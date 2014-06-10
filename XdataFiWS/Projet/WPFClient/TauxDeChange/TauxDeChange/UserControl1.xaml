@@ -17,7 +17,7 @@
     	<TextBlock HorizontalAlignment="Center" Height="48" Margin="250,50,0,0" TextWrapping="Wrap" Text="Choisissez la devise à laquelle vous voulez comparer" VerticalAlignment="Top" Width="198"/>
     	<DatePicker x:Name="DateDebut" HorizontalAlignment="Center" Margin="-300,0,0,0" VerticalAlignment="Center"/>
     	<DatePicker x:Name="DateFin" HorizontalAlignment="Center" Margin="250,0,0,0" VerticalAlignment="Center"/>
-    	<Button x:Name="EnterTauxChange" Content="Enter" HorizontalAlignment="Center" Height="50" Margin="0,300,0,0" VerticalAlignment="Center" Width="150"/>
+    	<Button x:Name="EnterTauxChange" Content="Enter" HorizontalAlignment="Center" Height="50" Margin="0,300,0,0" VerticalAlignment="Center" Width="150" Click="EnterTauxChange_Click"/>
     	<ComboBox x:Name="Devise1" HorizontalAlignment="Center" Margin="-320,150,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
     	<ComboBox x:Name="Devise2" HorizontalAlignment="Center" Margin="250,150,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
             

@@ -50,7 +50,7 @@ namespace WpfApplication
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            
             Data.Currency currencyToCompare = (Data.Currency)
                 Enum.Parse(typeof(Data.Currency), Devise1.SelectedValue.ToString());
 
@@ -387,7 +387,7 @@ namespace WpfApplication
 
         private void DateFin_CalendarOpened(object sender, System.Windows.RoutedEventArgs e)
         {
-        	 DateFin.BlackoutDates.Add(new CalendarDateRange(new DateTime(1900, 1, 1),  Convert.ToDateTime(DateDebut.SelectedDate.ToString()).AddDays(-1)));
+        	 DateFin.BlackoutDates.Add(new CalendarDateRange(new DateTime(2014, 1, 1),  Convert.ToDateTime(DateDebut.SelectedDate.ToString()).AddDays(-1)));
             
         }
 
