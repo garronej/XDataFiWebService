@@ -35,7 +35,7 @@ namespace WcfLibrary.ImportParse
             // Si le fichier existe, alors on le nomme autrement
             int i = 0;
             string nameFile = _Filepath;
-            while (System.IO.File.Exists(@_Filepath))
+            while (System.IO.File.Exists(@nameFile))
             {
                 i++;
                 nameFile = i + "_" + _Filepath;
