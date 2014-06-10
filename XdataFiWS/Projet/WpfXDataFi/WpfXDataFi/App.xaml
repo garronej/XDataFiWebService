@@ -1,0 +1,118 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WpfXDataFi.App"
+	StartupUri="MainWindow.xaml">
+	
+	<Application.Resources>
+		
+        <!--Control colors : En-tete-->
+		<SolidColorBrush x:Key="BackgroundColor">#FF1F201E</SolidColorBrush>
+		<SolidColorBrush x:Key="TitleColor">#FF2B702C</SolidColorBrush>
+
+        <!--Control colors : LeftMenu-->
+        <SolidColorBrush x:Key="MenuButtonNormalColor">#FF343632</SolidColorBrush>
+        <SolidColorBrush x:Key="MenuButtonPressedColor">#FF292B28</SolidColorBrush>
+        <SolidColorBrush x:Key="MenuLineSeparateColor">#FF000000</SolidColorBrush>
+
+		<SolidColorBrush x:Key="TextNormalColor">#FFFFFFFF</SolidColorBrush>
+		<SolidColorBrush x:Key="TextOverColor">#FF2B702C</SolidColorBrush>
+
+		<SolidColorBrush x:Key="Test">#FFAA00AA</SolidColorBrush>
+
+		<!--Control colors : User Controls-->
+		<SolidColorBrush x:Key="BackgroundContentColor">#FFC3F5B8</SolidColorBrush>
+
+		<!--Control colors : Resultats-->
+		<SolidColorBrush x:Key="TitleBarColor">#FF84C776</SolidColorBrush>
+		<SolidColorBrush x:Key="LightBarColor">#FF9FF28E</SolidColorBrush>
+		<SolidColorBrush x:Key="DarkBarColor">#FF89DE78</SolidColorBrush>
+
+
+        <!-- Button -->
+        <Style x:Key="MenuButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource MenuButtonNormalColor}" />
+            <Setter Property="Foreground" Value="{StaticResource TextNormalColor}" />
+			<Setter Property="BorderBrush" Value="{StaticResource MenuLineSeparateColor}" />
+			<Setter Property="BorderThickness" Value="0,1,0,1" />
+
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Height" Value="60" />
+			<Setter Property="Margin" Value="0" />
+			
+			<!-- Remove default mouseover -->
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}" >
+							
+							<ContentPresenter 
+								HorizontalAlignment="Center" 
+								VerticalAlignment="Center" />
+						</Border>
+
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="true">
+								<Setter Property="Background" Value="{StaticResource MenuButtonPressedColor}" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+        </Style>
+
+		<!-- Button -->
+        <Style x:Key="MenuButtonClick" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource MenuButtonPressedColor}" />
+            <Setter Property="Foreground" Value="{StaticResource TextOverColor}" />
+			<Setter Property="BorderBrush" Value="{StaticResource MenuLineSeparateColor}" />
+			<Setter Property="BorderThickness" Value="0,1,0,1" />
+			
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Height" Value="60" />
+			<Setter Property="Margin" Value="0" />
+
+			<!-- Remove default mouseover -->
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}" >
+							
+							<ContentPresenter 
+								HorizontalAlignment="Center" 
+								VerticalAlignment="Center" />
+						</Border>
+
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="true">
+								<Setter Property="Background" Value="{StaticResource MenuButtonPressedColor}" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			</Style>
+
+			<!-- Text Alignment -->
+			<Style x:Key="TextCenter" TargetType="TextBlock">
+				<Setter Property="VerticalAlignment" Value="Center" />
+				<Setter Property="TextAlignment" Value="Center" />
+				<Setter Property="FontSize" Value="14" />
+			</Style>
+
+			<Style x:Key="TextRight" TargetType="TextBlock">
+				<Setter Property="VerticalAlignment" Value="Center" />
+				<Setter Property="TextAlignment" Value="Right" />
+				<Setter Property="FontSize" Value="14" />
+				<Setter Property="Margin" Value="0,0,5,0" />
+			</Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,49 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	mc:Ignorable="d"
+	x:Class="WpfXDataFi.LeftMenuControl"
+	x:Name="UserControl"
+	d:DesignWidth="120" d:DesignHeight="460">
+
+	<Grid x:Name="LeftMenu" Background="{StaticResource MenuButtonNormalColor}" >
+		<StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+			<Button Content="Données Historiques" 
+				Style="{StaticResource MenuButton}" 
+				Click="showHist" />
+			<Button Content="Taux interbancaires" 
+				Style="{StaticResource MenuButton}" 
+				Click="showInterestRate" />
+			<Button Content="Taux de change" 
+				Style="{StaticResource MenuButton}" 
+				Click="showChangeRate" />
+			<Button Content="Temps réel" 
+				Style="{StaticResource MenuButton}"
+				Click="showHist" />
+            <Button Content="XML" 
+				Style="{StaticResource MenuButton}"
+				Click="showXML" >
+            </Button>
+
+			<Rectangle Fill="{StaticResource MenuLineSeparateColor}" Height="1"  StrokeThickness="0" />
+			<Rectangle Fill="{StaticResource MenuButtonNormalColor}" Height="12" StrokeThickness="0" />
+			<Rectangle Fill="{StaticResource MenuLineSeparateColor}" Height="1"  StrokeThickness="0" />
+
+            <Button x:Name="ButtonData"
+				Content="Données" 
+				Style="{StaticResource MenuButton}"
+				Visibility = "Hidden"
+				Click="showRes" />
+            <Button x:Name="ButtonMenu"
+				Content="Menu" 
+				Style="{StaticResource MenuButton}"
+				Visibility = "Hidden"
+				Click="showAccueil" />
+        </StackPanel>
+        
+    </Grid>
+
+</UserControl>
