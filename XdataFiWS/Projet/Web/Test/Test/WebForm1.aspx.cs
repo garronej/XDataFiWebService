@@ -58,14 +58,14 @@ namespace Test
             #endregion
 
             #region Affichage
-            // On affiche la bar de titre
+            // On affiche la barre de titre
             // On crée une nouvelle ligne
             TableRow tRowTitle = new TableRow();
             Table1.Rows.Add(tRowTitle);
 
             // Nom de l'actif
             TableCell tCellNameTitle = new TableCell();
-            tCellNameTitle.Text = "Symbole";
+            tCellNameTitle.Text = "Symbol";
             tRowTitle.Cells.Add(tCellNameTitle);
 
             // Date
@@ -138,7 +138,7 @@ namespace Test
 
             // Nom de l'actif
             TableCell tCellNameTitle = new TableCell();
-            tCellNameTitle.Text = "Symbole";
+            tCellNameTitle.Text = "Symbol";
             tRowTitle.Cells.Add(tCellNameTitle);
 
             // Date
@@ -202,7 +202,7 @@ namespace Test
             ServiceReference.ExchangeRateServiceClient client = new ServiceReference.ExchangeRateServiceClient();
             DataExchangeRate d = client.getExchangeRate(Data.Currency.ADF, l, debut, fin, Data.Frequency.Monthly);
             client.Close();
-
+            
             //Label1.Text = d.Dict["CA.PA"].Dict[fin][0].ToString() + " "
             //            + d.Dict["BNP.PA"].Dict[fin][0].ToString();
             Label1.Text = d.Ds.Tables[0].Rows[0]["Symbol"].ToString();
@@ -217,7 +217,7 @@ namespace Test
 
             // Nom de l'actif
             TableCell tCellNameTitle = new TableCell();
-            tCellNameTitle.Text = "Symbole";
+            tCellNameTitle.Text = "Symbol";
             tRowTitle.Cells.Add(tCellNameTitle);
 
             // Date

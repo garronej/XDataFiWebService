@@ -52,17 +52,20 @@
     <Compile Include="Data\DataExchangeRate.cs" />
     <Compile Include="Data\DataInterestRate.cs" />
     <Compile Include="Data\DataRealTime.cs" />
-    <Compile Include="Import\Import.cs" />
-    <Compile Include="Import\ImportEBF.cs" />
-    <Compile Include="Import\ParserFXTop.cs" />
-    <Compile Include="Import\ImportGoogle.cs" />
-    <Compile Include="Import\ImportReal.cs" />
-    <Compile Include="Import\ImportYahoo.cs" />
-    <Compile Include="Import\Parser.cs" />
-    <Compile Include="Import\ParserCSV.cs" />
+    <Compile Include="Data\DataXML.cs" />
+    <Compile Include="ImportParse\ImportParse.cs" />
+    <Compile Include="ImportParse\Google.cs" />
+    <Compile Include="ImportParse\EBF.cs" />
+    <Compile Include="ImportParse\FXTop.cs" />
+    <Compile Include="ImportParse\Yahoo.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="Parser\Parser.cs" />
+    <Compile Include="Parser\ParserCSV.cs" />
+    <Compile Include="Parser\ParserFXTop.cs" />
+    <Compile Include="Parser\ParserXML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
