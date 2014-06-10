@@ -116,11 +116,20 @@
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle1">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="-0.5"/>
                         </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="button">
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="EnterHistorique">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="135"/>
                         </DoubleAnimationUsingKeyFrames>
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="button">
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="EnterHistorique">
                         	<EasingDoubleKeyFrame KeyTime="0" Value="50"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="877"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="scrollViewer">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="-910"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Actif">
+                        	<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                         </DoubleAnimationUsingKeyFrames>
                     </Storyboard>
                 </VisualState>
@@ -372,15 +381,20 @@
                 </TransformGroup>
             </Grid.RenderTransform>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="34.5" Margin="0,37.5,0,0" TextWrapping="Wrap" Text="Choix de l'actif :" VerticalAlignment="Top" Width="104.5"/>
-            <TextBox HorizontalAlignment="Left" Height="31.5" Margin="157,30,0,0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="129"/>
-            <DatePicker HorizontalAlignment="Left" Margin="80.5,138,0,0" VerticalAlignment="Top"/>
-            <DatePicker HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="open" HorizontalAlignment="Left" Height="24" Margin="43,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <CheckBox Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5"/>
-            <Button x:Name="button" Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643"/>
+            <DatePicker x:Name="Début" HorizontalAlignment="Left" Margin="80.5,138,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="Fin" HorizontalAlignment="Left" Margin="348,138,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="open" Content="open" HorizontalAlignment="Left" Height="24" Margin="43,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="open_Checked" Unchecked="open_Unchecked"/>
+            <CheckBox x:Name="close" Content="close" HorizontalAlignment="Left" Height="24" Margin="161,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="close_Unchecked" Checked="close_Checked"/>
+            <CheckBox x:Name="high" Content="high" HorizontalAlignment="Left" Height="24" Margin="274,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="high_Checked" Unchecked="high_Unchecked"/>
+            <CheckBox x:Name="low" Content="low" HorizontalAlignment="Left" Height="24" Margin="389,199.5,0,0" VerticalAlignment="Top" Width="91.5" Unchecked="low_Unchecked" Checked="low_Checked"/>
+            <CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Left" Height="24" Margin="502,199.5,0,0" VerticalAlignment="Top" Width="91.5" Checked="volume_Checked"/>
+            <Button x:Name="EnterHistorique" Content="Enter" HorizontalAlignment="Left" Height="52.5" Margin="229.857,301.5,0,0" VerticalAlignment="Top" Width="135.643" Click="EnterHistorique_Click">
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="Click">
+            			<ei:GoToStateAction StateName="res_taux_de_change"/>
+            		</i:EventTrigger>
+            	</i:Interaction.Triggers>
+            </Button>
             <Rectangle x:Name="rectangle" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21.5" Margin="-100.375,249.5,0,0" Opacity="0" Stroke="Black" VerticalAlignment="Top" Width="98.875" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
@@ -391,6 +405,7 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
+            <TextBox x:Name="Actif" HorizontalAlignment="Left" Height="38" Margin="185.75,28.25,0,0" Opacity="0" TextWrapping="Wrap" Text="Actif" VerticalAlignment="Top" Width="104"/>
         </Grid>
         <Grid x:Name="grid1" HorizontalAlignment="Left" Height="452" Margin="2873,-2757.283,-2773,0" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
@@ -486,6 +501,7 @@
         		</Grid.RenderTransform>
         	</Grid>
         </ScrollViewer>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="1,466,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="27.96" Width="85.46"/>
 
     </Grid>
 </Window>

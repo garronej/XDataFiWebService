@@ -25,8 +25,13 @@ namespace WpfApplication
     
     public partial class MainWindow : Window
     {
-        
-      
+
+        Boolean check1 = false;
+        Boolean check2 = false;
+        Boolean check3 = false;
+        Boolean check4 = false;
+        Boolean check5 = false;
+
         public MainWindow()
         {
             
@@ -43,13 +48,13 @@ namespace WpfApplication
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            
-            Data.Currency currencyToCompare = (Data.Currency) 
+
+            Data.Currency currencyToCompare = (Data.Currency)
                 Enum.Parse(typeof(Data.Currency), Devise1.SelectedValue.ToString());
 
             List<Data.Currency> l = new List<Data.Currency>();
             //TextBox1.Text
-            l.Add((Data.Currency) 
+            l.Add((Data.Currency)
                 Enum.Parse(typeof(Data.Currency), Devise2.SelectedValue.ToString()));
 
             DateTime debut = Convert.ToDateTime(DateDebut.SelectedDate.ToString());
@@ -92,7 +97,7 @@ namespace WpfApplication
             contenu.ShowGridLines = false;
             contenu.Background = new SolidColorBrush(Colors.LightGreen);
 
-            
+
             ColumnDefinition c1 = new ColumnDefinition();
             contenu.ColumnDefinitions.Add(c1);
             ColumnDefinition c2 = new ColumnDefinition();
@@ -121,14 +126,14 @@ namespace WpfApplication
             //on créer les colonnes et on remplit les titres
             int j = 0;
             foreach (string col in d.Columns)
-            {    
-                ColumnDefinition c= new ColumnDefinition();
+            {
+                ColumnDefinition c = new ColumnDefinition();
                 contenu.ColumnDefinitions.Add(c);
                 TextBlock t = new TextBlock();
                 t.Background = new SolidColorBrush(Colors.Green);
                 t.Text = col;
                 t.FontSize = 14;
-                Grid.SetColumn(t, 2+j);
+                Grid.SetColumn(t, 2 + j);
                 Grid.SetRow(t, 0);
                 contenu.Children.Add(t);
                 j++;
@@ -165,7 +170,7 @@ namespace WpfApplication
                 tt2.Text = time.ToString("dd/MM/yyyy");
                 tt2.FontSize = 14;
                 Grid.SetColumn(tt2, 1);
-                Grid.SetRow(tt2, i+1);
+                Grid.SetRow(tt2, i + 1);
                 contenu.Children.Add(tt2);
 
                 int k = 0;
@@ -179,7 +184,7 @@ namespace WpfApplication
                     }
                     tt3.Text = d.Ds.Tables[0].Rows[i][s].ToString();
                     tt3.FontSize = 14;
-                    Grid.SetColumn(tt3, 2+k);
+                    Grid.SetColumn(tt3, 2 + k);
                     Grid.SetRow(tt3, i + 1);
                     contenu.Children.Add(tt3);
                     k++;
@@ -191,8 +196,189 @@ namespace WpfApplication
             scroll.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
             contenu.Children.Add(scroll);
             */
-            
         }
+
+
+        private void open_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check1 = true;
+        }
+
+        private void open_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check1 = false;
+        }
+
+        private void close_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check2 = true;
+        }
+
+        private void close_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check2 = false;
+        }
+
+        private void high_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check3 = true;
+        }
+
+        private void high_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check3 = false;
+        }
+
+        private void low_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check4 = true;
+        }
+
+        private void low_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check4 = false;
+        }
+
+        private void volume_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check5 = true;
+        }
+
+        private void volume_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            check5 = false;
+        }
+
+        private void EnterHistorique_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	 List<String> l = new List<String>();
+            l.Add(Actif.Text);
+                
+            List<Data.HistoricalColumn> columns = new List<Data.HistoricalColumn>();
+            if (check1) { columns.Add((Data.HistoricalColumn) Enum.Parse(typeof(Data.HistoricalColumn), "Open")); }
+            if (check2) { columns.Add((Data.HistoricalColumn) Enum.Parse(typeof(Data.HistoricalColumn), "Close")); }
+            if (check3) { columns.Add((Data.HistoricalColumn) Enum.Parse(typeof(Data.HistoricalColumn), "High")); }
+            if (check4) { columns.Add((Data.HistoricalColumn) Enum.Parse(typeof(Data.HistoricalColumn), "Low")); }
+            if (check5) { columns.Add((Data.HistoricalColumn) Enum.Parse(typeof(Data.HistoricalColumn), "Volume")); }
+
+            DateTime debut = Convert.ToDateTime(Début.SelectedDate.ToString());
+            DateTime fin = Convert.ToDateTime(Fin.SelectedDate.ToString());
+
+            ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
+            DataActif d = client.getActifHistorique(l, columns, debut, fin);
+            client.Close();
+
+
+            contenu.ColumnDefinitions.Clear();
+            contenu.RowDefinitions.Clear();
+            contenu.Children.Clear();
+
+            contenu.Width = 800;
+            contenu.Height = 100;
+            contenu.HorizontalAlignment = HorizontalAlignment.Left;
+            contenu.VerticalAlignment = VerticalAlignment.Top;
+            contenu.Margin = new Thickness(104, 120, 0, 0);
+            contenu.ShowGridLines = false;
+            contenu.Background = new SolidColorBrush(Colors.LightGreen);
+
+
+            ColumnDefinition c1 = new ColumnDefinition();
+            contenu.ColumnDefinitions.Add(c1);
+            ColumnDefinition c2 = new ColumnDefinition();
+            contenu.ColumnDefinitions.Add(c2);
+
+            RowDefinition r1 = new RowDefinition();
+            r1.Height = new GridLength(60);
+            contenu.RowDefinitions.Add(r1);
+
+            TextBlock t1 = new TextBlock();
+            t1.Background = new SolidColorBrush(Colors.Green);
+            t1.Text = "Symbole";
+            t1.FontSize = 14;
+            Grid.SetColumn(t1, 0);
+            Grid.SetRow(t1, 0);
+            TextBlock t2 = new TextBlock();
+            t2.Background = new SolidColorBrush(Colors.Green);
+            t2.Text = "Date";
+            t2.FontSize = 14;
+            Grid.SetColumn(t2, 1);
+            Grid.SetRow(t2, 0);
+
+            contenu.Children.Add(t1);
+            contenu.Children.Add(t2);
+
+            //on créer les colonnes et on remplit les titres
+            int j = 0;
+            textBlock3.Text = "BONJOUR TAMER 1 " + j.ToString();
+            foreach (string col in d.Columns)
+            {
+                ColumnDefinition c = new ColumnDefinition();
+                contenu.ColumnDefinitions.Add(c);
+                TextBlock t = new TextBlock();
+                t.Background = new SolidColorBrush(Colors.Green);
+                t.Text = col;
+                t.FontSize = 14;
+                Grid.SetColumn(t, 2 + j);
+                Grid.SetRow(t, 0);
+                contenu.Children.Add(t);
+                j++;
+                textBlock3.Text = "BONJOUR TAMER " +j.ToString();
+            }
+
+            //on créer et on remplit les lignes
+            int n = d.Ds.Tables[0].Rows.Count;
+
+            for (int i = 0; i < n; i++)
+            {
+                string name = (string)d.Ds.Tables[0].Rows[i]["Symbol"];
+                DateTime time = (DateTime)d.Ds.Tables[0].Rows[i]["Date"];
+
+                RowDefinition r = new RowDefinition();
+                r.Height = new GridLength(60);
+                contenu.RowDefinitions.Add(r);
+
+                TextBlock tt = new TextBlock();
+                if (i % 2 == 0)
+                {
+                    tt.Background = new SolidColorBrush(Colors.LawnGreen);
+                }
+                tt.Text = name;
+                tt.FontSize = 14;
+                Grid.SetColumn(tt, 0);
+                Grid.SetRow(tt, i + 1);
+                contenu.Children.Add(tt);
+
+                TextBlock tt2 = new TextBlock();
+                if (i % 2 == 0)
+                {
+                    tt2.Background = new SolidColorBrush(Colors.LawnGreen);
+                }
+                tt2.Text = time.ToString("dd/MM/yyyy");
+                tt2.FontSize = 14;
+                Grid.SetColumn(tt2, 1);
+                Grid.SetRow(tt2, i + 1);
+                contenu.Children.Add(tt2);
+
+                int k = 0;
+                foreach (string s in d.Columns)
+                {
+                    // Ajout d'une case (correspondant à une valeur)
+                    TextBlock tt3 = new TextBlock();
+                    if (i % 2 == 0)
+                    {
+                        tt3.Background = new SolidColorBrush(Colors.LawnGreen);
+                    }
+                    tt3.Text = d.Ds.Tables[0].Rows[i][s].ToString();
+                    tt3.FontSize = 14;
+                    Grid.SetColumn(tt3, 2 + k);
+                    Grid.SetRow(tt3, i + 1);
+                    contenu.Children.Add(tt3);
+                    k++;
+                }
+
+            }
+        }
+
 
     }
    
