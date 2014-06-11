@@ -99,20 +99,20 @@
 					</ControlTemplate>
 				</Setter.Value>
 			</Setter>
-			</Style>
+		</Style>
 
-			<!-- Text Alignment -->
-			<Style x:Key="TextCenter" TargetType="TextBlock">
-				<Setter Property="VerticalAlignment" Value="Center" />
-				<Setter Property="TextAlignment" Value="Center" />
-				<Setter Property="FontSize" Value="14" />
-			</Style>
+		<!-- Text Alignment -->
+		<Style x:Key="TextCenter" TargetType="TextBlock">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="TextAlignment" Value="Center" />
+			<Setter Property="FontSize" Value="14" />
+		</Style>
 
-			<Style x:Key="TextRight" TargetType="TextBlock">
-				<Setter Property="VerticalAlignment" Value="Center" />
-				<Setter Property="TextAlignment" Value="Right" />
-				<Setter Property="FontSize" Value="14" />
-				<Setter Property="Margin" Value="0,0,5,0" />
-			</Style>
+		<Style x:Key="TextRight" TargetType="TextBlock">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="TextAlignment" Value="Right" />
+			<Setter Property="FontSize" Value="14" />
+			<Setter Property="Margin" Value="0,0,5,0" />
+		</Style>
     </Application.Resources>
 </Application>

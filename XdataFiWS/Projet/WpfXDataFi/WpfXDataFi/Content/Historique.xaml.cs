@@ -35,10 +35,11 @@ namespace WpfXDataFi
 
         private void EnterHistorique_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+			// Actif
             List<String> l = new List<String>();
             l.Add(Actif.Text);
 			
+			// Données voulues
             List<Data.HistoricalColumn> columns = new List<Data.HistoricalColumn>();
             if (check1) { columns.Add((Data.HistoricalColumn)Enum.Parse(typeof(Data.HistoricalColumn), "Open")); }
             if (check2) { columns.Add((Data.HistoricalColumn)Enum.Parse(typeof(Data.HistoricalColumn), "Close")); }
@@ -46,14 +47,25 @@ namespace WpfXDataFi
             if (check4) { columns.Add((Data.HistoricalColumn)Enum.Parse(typeof(Data.HistoricalColumn), "Low")); }
             if (check5) { columns.Add((Data.HistoricalColumn)Enum.Parse(typeof(Data.HistoricalColumn), "Volume")); }
 
+			// Dates
             DateTime debut = Convert.ToDateTime(Début.SelectedDate.ToString());
             DateTime fin = Convert.ToDateTime(Fin.SelectedDate.ToString());
-
-            ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
-            DataActif d = client.getActifHistorique(l, columns, debut, fin);
-            client.Close();
-
-            mw.showRes(d);
+			
+			
+			// Traitement des données
+            try
+            {
+				ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
+				DataActif d = client.getActifHistorique(l, columns, debut, fin);
+				client.Close();
+	
+				mw.showRes(d);
+			}
+            catch (Exception ex)
+            {
+                //TO DO ouvrir une page d'erreur pour demander au client de recommencer la manoeuvre
+                Console.WriteLine("Une erreur s'est produite");
+            }
         }
 
         private void open_Checked(object sender, System.Windows.RoutedEventArgs e)

@@ -25,11 +25,41 @@ namespace WpfXDataFi
 		{
 			this.InitializeComponent();
             this.mw = mw;
+			
+			foreach (Data.InterestRate i in (Data.InterestRate[])Enum.GetValues(typeof(Data.InterestRate)))
+            {
+
+                TauxInterBancaire.Items.Add(i);
+            } 
+
+            DateDébut.SelectedDate = DateTime.Today;
+            DateFin.SelectedDate = DateTime.Today;
 		}
 		
 		private void EnterInterBancaire_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// TODO : ajoutez ici l'implémentation du gestionnaire d'événements.
+			// Taux de référence
+        	Data.InterestRate symbol = (Data.InterestRate)
+                Enum.Parse(typeof(Data.InterestRate), TauxInterBancaire.SelectedItem.ToString());
+
+			// Dates
+            DateTime debut = Convert.ToDateTime(DateDébut.SelectedDate.ToString());
+            DateTime fin = Convert.ToDateTime(DateFin.SelectedDate.ToString());
+
+			// Traitement des données
+            try
+            {
+				ServiceReference.InterestRateServiceClient client = new ServiceReference.InterestRateServiceClient();
+				DataInterestRate d = client.getInterestRate(symbol, debut, fin);
+				client.Close();
+					
+				mw.showRes(d);
+            }
+            catch (Exception ex)
+            {
+                //TO DO ouvrir une page d'erreur pour demander au client de recommencer la manoeuvre
+                Console.WriteLine("Une erreur s'est produite");
+            }
         }
 	}
 }
