@@ -18,6 +18,6 @@
     	<ComboBox x:Name="Devise1" HorizontalAlignment="Center" Margin="0,0,250,180" VerticalAlignment="Center" Width="120" IsEditable="True" MaxDropDownHeight="300"/>
     	<ComboBox x:Name="Devise2" HorizontalAlignment="Center" Margin="250,0,0,180" VerticalAlignment="Center" Width="120" IsEditable="True" MaxDropDownHeight="300"/>
 		<ComboBox x:Name="Frequency" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Center" Width="120" MaxDropDownHeight="300" BorderBrush="#FFFFF9F9" />
-		<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="550" Height="37" TextAlignment="Center" Foreground="#FFE20A0A"/>
+		<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="550" Height="75" TextAlignment="Center" Foreground="#FFE20A0A"/>
     </Grid>
 </UserControl>
