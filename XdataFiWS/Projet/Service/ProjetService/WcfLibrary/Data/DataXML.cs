@@ -17,10 +17,11 @@ namespace WcfLibrary.Data
         /// Construction à partir d'un fichier XML de configuration
         /// </summary>
         /// <param name="filepath">Chemin du fichier</param>
-        public DataXML(XmlDocument doc)
+        public DataXML()
             : base()
         {
-
+            
+            /*
             XmlNode noeudSymbol = doc["RecupData"]["ListeIndex"];
             Symbol = new List<string>();
             //Traitement des index ou des composantes, suivant le cas
@@ -44,7 +45,7 @@ namespace WcfLibrary.Data
 
             Debut = DateTime.Parse(doc["RecupData"]["DateDebut"].InnerText);
             Fin = DateTime.Parse(doc["RecupData"]["DateFin"].InnerText);
-
+            */
         }
     }
 }

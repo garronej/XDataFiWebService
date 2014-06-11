@@ -14,6 +14,9 @@ namespace WcfLibrary.Parser
     class ParserXML : Parser
     {
         #region Attributs
+        /// <summary> Nom du fichier à parser  </summary>
+        protected string _FilepathSchema;
+
         /// <summary> Tableau des symboles à traiter </summary>
         private string[] _TableauSymboles;
 
@@ -52,6 +55,15 @@ namespace WcfLibrary.Parser
             _TableauSymboles = new string[tab.Length];
             Array.Copy(tab, _TableauSymboles, tab.Length);
         }
+        public ParserXML()
+        {
+        }
+
+        public ParserXML(string filepath, string filepathSchema)
+        {
+            _Filepath = filepath;
+            _FilepathSchema = filepathSchema;
+        }
         #endregion
 
         #region Méthodes
@@ -62,12 +74,14 @@ namespace WcfLibrary.Parser
         /// <param name="d">base de donnée</param>
         public override void ParseFile(Data.Data d)
         {
-            //On teste le bon ordre des dates
-            if (d.Fin < d.Debut)
-            {
-                throw new WrongDates(@"La date de fin ne peut être antérieure au début de l'acquisition");
-            }
+            WcfLibrary.Constantes.displayDEBUG("start parseXML", 2);
 
+            d.Ds.ReadXmlSchema(_FilepathSchema);
+            d.Ds.ReadXml(_Filepath, XmlReadMode.ReadSchema);
+
+            WcfLibrary.Constantes.displayDEBUG("end parseXML", 2);
+
+            /*
             XmlDocument doc = new XmlDocument();
             doc.Load(_Filepath);
 
@@ -97,7 +111,7 @@ namespace WcfLibrary.Parser
 
                 d.Ds.Tables[0].Rows.Add(dr);
 
-            }
+            }*/
         }
         #endregion
 

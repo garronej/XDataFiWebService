@@ -508,7 +508,7 @@ namespace WcfLibrary.Data
 
             int nbCol = 2 + Columns.Count;
             DataColumn[] dataColumns = new DataColumn[nbCol];
-
+            
             dataColumns[0] = new DataColumn("Symbol", System.Type.GetType("System.String"));
             dt.Columns.Add(dataColumns[0]);
             dataColumns[1] = new DataColumn("Date", System.Type.GetType("System.DateTime"));

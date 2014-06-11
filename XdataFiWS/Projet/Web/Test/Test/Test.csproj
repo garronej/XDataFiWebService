@@ -113,6 +113,9 @@
     <Content Include="Service References\ServiceReference\Test.ServiceReference.DataInterestRate.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\ServiceReference\Test.ServiceReference.DataXML.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

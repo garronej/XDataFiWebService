@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,6 +29,11 @@ namespace Test
         protected void Button3_Click(object sender, EventArgs e)
         {
             testExchangeRate();
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            testXML();
         }
 
         protected void testHist()
@@ -264,6 +270,85 @@ namespace Test
                 }
             }
             #endregion
+        }
+
+        protected void testXML()
+        {
+            #region Recuperation des Donnees
+
+            string filePath = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/xml.xml";
+            string filePathSchema = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/xmlSchema.xsd";
+
+            StreamReader str = new StreamReader(filePath);
+            string s = str.ReadToEnd();
+
+            StreamReader strSchema = new StreamReader(filePathSchema);
+            string sSchema = strSchema.ReadToEnd();
+
+            ServiceReference.XMLServiceClient client = new ServiceReference.XMLServiceClient();
+            DataXML d = client.getXML(s, sSchema);
+            client.Close();
+
+            //Label1.Text = d.Dict["CA.PA"].Dict[fin][0].ToString() + " "
+            //            + d.Dict["BNP.PA"].Dict[fin][0].ToString();
+            //Label1.Text = d.Ds.Tables[0].Rows[0]["Symbol"].ToString();
+            #endregion
+            /*
+            #region Affichage
+            // On affiche la barre de titre
+            // On crée une nouvelle ligne
+            TableRow tRowTitle = new TableRow();
+            Table1.Rows.Add(tRowTitle);
+
+            // Nom de l'actif
+            TableCell tCellNameTitle = new TableCell();
+            tCellNameTitle.Text = "Symbol";
+            tRowTitle.Cells.Add(tCellNameTitle);
+
+            // Date
+            TableCell tCellDateTitle = new TableCell();
+            tCellDateTitle.Text = "Date";
+            tRowTitle.Cells.Add(tCellDateTitle);
+
+            foreach (string col in d.Columns)
+            {
+                // Ajout d'une case (correspondant à une valeur)
+                TableCell tCellVal = new TableCell();
+                tCellVal.Text = col;
+                tRowTitle.Cells.Add(tCellVal);
+            }
+
+            // Ajout des différentes lignes
+            int n = d.Ds.Tables[0].Rows.Count;
+
+            for (int i = 0; i < n; i++)
+            {
+                string name = (string)d.Ds.Tables[0].Rows[i]["Symbol"];
+                DateTime time = (DateTime)d.Ds.Tables[0].Rows[i]["Date"];
+
+                // On crée une nouvelle ligne
+                TableRow tRow = new TableRow();
+                Table1.Rows.Add(tRow);
+
+                // Nom de l'actif
+                TableCell tCellName = new TableCell();
+                tCellName.Text = name;
+                tRow.Cells.Add(tCellName);
+
+                // Date
+                TableCell tCellDate = new TableCell();
+                tCellDate.Text = time.ToString("dd/MM/yyyy");
+                tRow.Cells.Add(tCellDate);
+
+                foreach (string s in d.Columns)
+                {
+                    // Ajout d'une case (correspondant à une valeur)
+                    TableCell tCellVal = new TableCell();
+                    tCellVal.Text = d.Ds.Tables[0].Rows[i][s].ToString();
+                    tRow.Cells.Add(tCellVal);
+                }
+            }
+            #endregion*/
         }
     }
 }

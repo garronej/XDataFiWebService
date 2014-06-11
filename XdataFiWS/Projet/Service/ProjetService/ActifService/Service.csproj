@@ -46,6 +46,7 @@
     <Compile Include="IExchangeRateService.cs" />
     <Compile Include="IInterestRateService.cs" />
     <Compile Include="IService1.cs" />
+    <Compile Include="IXMLService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
     <Compile Include="Services.cs" />

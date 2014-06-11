@@ -310,4 +310,12 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="DataInterestRate" nillable="true" type="tns:DataInterestRate" />
+  <xs:complexType name="DataXML">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Data">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataXML" nillable="true" type="tns:DataXML" />
 </xs:schema>

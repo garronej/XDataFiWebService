@@ -22,6 +22,8 @@
         <asp:Button ID="Button2" runat="server" Height="28px" Text="Interest Rate" Width="90px" OnClick="Button2_Click" />
         &nbsp;&nbsp;
         <asp:Button ID="Button3" runat="server" Height="28px" Text="Change Rate" Width="90px" OnClick="Button3_Click" />
+        &nbsp;&nbsp;
+        <asp:Button ID="Button4" runat="server" Height="28px" Text="XML" Width="90px" OnClick="Button4_Click" />
         </p>
     </div>
         <p style="margin-left: 280px">

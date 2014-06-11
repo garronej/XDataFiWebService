@@ -27,6 +27,12 @@
   <wsdl:message name="IInterestRateService_getInterestRate_OutputMessage">
     <wsdl:part name="parameters" element="tns:getInterestRateResponse" />
   </wsdl:message>
+  <wsdl:message name="IXMLService_getXML_InputMessage">
+    <wsdl:part name="parameters" element="tns:getXML" />
+  </wsdl:message>
+  <wsdl:message name="IXMLService_getXML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getXMLResponse" />
+  </wsdl:message>
   <wsdl:portType name="IActifService">
     <wsdl:operation name="getActifHistorique">
       <wsdl:input wsaw:Action="http://tempuri.org/IActifService/getActifHistorique" message="tns:IActifService_getActifHistorique_InputMessage" />
@@ -43,6 +49,12 @@
     <wsdl:operation name="getInterestRate">
       <wsdl:input wsaw:Action="http://tempuri.org/IInterestRateService/getInterestRate" message="tns:IInterestRateService_getInterestRate_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IInterestRateService/getInterestRateResponse" message="tns:IInterestRateService_getInterestRate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IXMLService">
+    <wsdl:operation name="getXML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IXMLService/getXML" message="tns:IXMLService_getXML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IXMLService/getXMLResponse" message="tns:IXMLService_getXML_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IActifService" type="tns:IActifService">
@@ -81,6 +93,18 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IXMLService" type="tns:IXMLService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getXML">
+      <soap:operation soapAction="http://tempuri.org/IXMLService/getXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
   <wsdl:service name="Services">
     <wsdl:port name="BasicHttpBinding_IActifService" binding="tns:BasicHttpBinding_IActifService">
       <soap:address location="http://localhost:8080/ActifService" />
@@ -90,6 +114,9 @@
     </wsdl:port>
     <wsdl:port name="BasicHttpBinding_IInterestRateService" binding="tns:BasicHttpBinding_IInterestRateService">
       <soap:address location="http://localhost:8080/InterestRateService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IXMLService" binding="tns:BasicHttpBinding_IXMLService">
+      <soap:address location="http://localhost:8080/XMLService" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
