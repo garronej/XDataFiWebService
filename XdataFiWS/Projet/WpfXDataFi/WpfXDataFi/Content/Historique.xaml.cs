@@ -31,6 +31,8 @@ namespace WpfXDataFi
         {
             InitializeComponent();
             this.mw = mw;
+            Début.SelectedDate = DateTime.Today;
+            Fin.SelectedDate = DateTime.Today;
         }
 
         private void EnterHistorique_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -48,10 +50,29 @@ namespace WpfXDataFi
             if (check5) { columns.Add((Data.HistoricalColumn)Enum.Parse(typeof(Data.HistoricalColumn), "Volume")); }
 
 			// Dates
+            if (Actif.Text.Equals(""))
+            {
+                error.Text = "Il faut choisir un actif";
+                return;
+            }
             DateTime debut = Convert.ToDateTime(Début.SelectedDate.ToString());
             DateTime fin = Convert.ToDateTime(Fin.SelectedDate.ToString());
-			
-			
+
+            //gestion du cas où les dates ne sont pas correctes et affichage du message d'erreur
+            if (DateTime.Compare(debut, fin) >= 0)
+            {
+                error.Text = "Les dates choisies ne sont pas valides.";
+                return;
+            }
+
+            //gestion du cas où aucune comb box n'a été cochée et affichage du message d'erreur
+            if (!(check1 || check2 || check3 || check4 || check5))
+            {
+                error.Text = "Vous devez cocher au moins une case ci-dessous.";
+                return;
+            }
+            
+
 			// Traitement des données
             try
             {
@@ -63,9 +84,11 @@ namespace WpfXDataFi
 			}
             catch (Exception ex)
             {
-                //TO DO ouvrir une page d'erreur pour demander au client de recommencer la manoeuvre
-                Console.WriteLine("Une erreur s'est produite");
+               
+                error.Text = ex.Message+" Vérifier l'actif que vous avez choisi.";
+                return;
             }
+            error.Text = "";
         }
 
         private void open_Checked(object sender, System.Windows.RoutedEventArgs e)
