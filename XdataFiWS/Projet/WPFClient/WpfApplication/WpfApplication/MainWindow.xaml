@@ -449,7 +449,7 @@
             <ComboBox x:Name="Devise1" HorizontalAlignment="Left" Margin="19,78.5,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
             <TextBlock HorizontalAlignment="Left" Height="48" Margin="377.5,25.5,0,0" TextWrapping="Wrap" Text="Choisissez la devise à laquelle vous voulez comparer" VerticalAlignment="Top" Width="198"/>
             <ComboBox x:Name="Devise2" HorizontalAlignment="Left" Margin="394,78.5,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-            <DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top" />
+            <DatePicker x:Name="DateDebut" HorizontalAlignment="Left" Margin="19,196.5,0,0" VerticalAlignment="Top"  />
             <DatePicker x:Name="DateFin" HorizontalAlignment="Left" Margin="293.5,196.5,0,0" VerticalAlignment="Top"/>
             <Button x:Name="button9" Content="Enter" HorizontalAlignment="Left" Height="45" Margin="95.5,313.5,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click">
             	<i:Interaction.Triggers>

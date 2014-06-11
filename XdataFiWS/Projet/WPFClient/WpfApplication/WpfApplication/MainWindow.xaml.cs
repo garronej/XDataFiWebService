@@ -51,6 +51,7 @@ namespace WpfApplication
 
             DateDebut.SelectedDate = DateTime.Today;
             DateFin.SelectedDate = DateTime.Today;
+            DateFin.BlackoutDates.Add(new CalendarDateRange(new DateTime(2014, 1, 1), Convert.ToDateTime(DateDebut.SelectedDate.ToString()).AddDays(-1)));
             
            
         }
