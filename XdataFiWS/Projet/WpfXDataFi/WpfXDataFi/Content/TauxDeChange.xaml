@@ -9,5 +9,14 @@
 	d:DesignWidth="640" d:DesignHeight="480"
 	Background="{StaticResource BackgroundContentColor}" >
 
-	<Grid x:Name="LayoutRoot"/>
+	<Grid x:Name="LayoutRoot" >
+		<TextBlock HorizontalAlignment="Center" Height="30" Margin="0,0,200,250" TextWrapping="Wrap" Text="Devise à comparer" Width="150" VerticalAlignment="Center"/>
+    	<TextBlock HorizontalAlignment="Center" Height="30" Margin="260,0,0,250" TextWrapping="Wrap" Text="par rapport à cette Devise" VerticalAlignment="Center" Width="150"/>
+    	<DatePicker x:Name="DateDebut" HorizontalAlignment="Center" Margin="0,0,250,0" VerticalAlignment="Center"/>
+    	<DatePicker x:Name="DateFin" HorizontalAlignment="Center" Margin="250,0,0,0" VerticalAlignment="Center"/>
+    	<Button x:Name="EnterTauxChange" Content="Enter" HorizontalAlignment="Center" Height="35" Margin="0,320,0,0" VerticalAlignment="Center" Width="100" Click="EnterTauxChange_Click"/>
+    	<ComboBox x:Name="Devise1" HorizontalAlignment="Center" Margin="0,0,250,180" VerticalAlignment="Center" Width="120" IsEditable="True" MaxDropDownHeight="300"/>
+    	<ComboBox x:Name="Devise2" HorizontalAlignment="Center" Margin="250,0,0,180" VerticalAlignment="Center" Width="120" IsEditable="True" MaxDropDownHeight="300"/>
+		<ComboBox x:Name="Frequency" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Center" Width="120" MaxDropDownHeight="300" BorderBrush="#FFFFF9F9" />
+    </Grid>
 </UserControl>
