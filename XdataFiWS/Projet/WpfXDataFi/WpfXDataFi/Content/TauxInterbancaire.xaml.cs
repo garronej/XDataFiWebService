@@ -38,6 +38,11 @@ namespace WpfXDataFi
 		
 		private void EnterInterBancaire_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            if (TauxInterBancaire.SelectedValue == null)
+            {
+                error.Text = "Vous devez selectionner un taux.";
+                return;
+            }
 			// Taux de référence
         	Data.InterestRate symbol = (Data.InterestRate)
                 Enum.Parse(typeof(Data.InterestRate), TauxInterBancaire.SelectedItem.ToString());
@@ -46,6 +51,13 @@ namespace WpfXDataFi
             DateTime debut = Convert.ToDateTime(DateDébut.SelectedDate.ToString());
             DateTime fin = Convert.ToDateTime(DateFin.SelectedDate.ToString());
 
+          
+
+            if (DateTime.Compare(debut, fin) >= 0)
+            {
+                error.Text = "Les dates choisies ne sont pas valides.";
+                return;
+            }
 			// Traitement des données
             try
             {
@@ -57,8 +69,8 @@ namespace WpfXDataFi
             }
             catch (Exception ex)
             {
-                //TO DO ouvrir une page d'erreur pour demander au client de recommencer la manoeuvre
-                Console.WriteLine("Une erreur s'est produite");
+                error.Text = ex.Message;
+                return;
             }
         }
 	}

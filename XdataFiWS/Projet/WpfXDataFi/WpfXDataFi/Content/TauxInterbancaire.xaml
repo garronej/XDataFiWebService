@@ -15,5 +15,6 @@
     	<DatePicker x:Name="DateFin" HorizontalAlignment="Center" Margin="250,0,0,0" VerticalAlignment="Center"/>
     	<Button x:Name="EnterInterBancaire" Content="Enter" HorizontalAlignment="Center" Height="35" Margin="0,250,0,0" VerticalAlignment="Center" Width="100" Click="EnterInterBancaire_Click"/>
     	<TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Height="24" Margin="0,0,180,250" TextWrapping="Wrap" Text="Choisissez le taux désiré:" VerticalAlignment="Center" Width="150"/>
+    	<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Foreground="#FFD60707" Width="450" Height="48" TextAlignment="Center"/>
     </Grid>
 </UserControl>

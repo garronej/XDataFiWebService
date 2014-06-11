@@ -45,6 +45,25 @@ namespace WpfXDataFi
 		
 		 private void EnterTauxChange_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+
+
+            if (Devise1.SelectedValue == null)
+            {
+                error.Text = "Vous devez choisir une devise à comparer";
+                return;
+            }
+
+            if (Devise2.SelectedValue == null)
+            {
+                error.Text = "Vous devez choisir une devise par rapport à laquelle vous voulez comparer";
+                return;
+            }
+
+            if (Frequency.SelectedValue == null)
+            {
+                error.Text = "Vous devez choisir une fréquence";
+                return;
+            }
 			// Récupération des devises
             Data.Currency currencyToCompare = (Data.Currency)
                 Enum.Parse(typeof(Data.Currency), Devise1.SelectedValue.ToString());
@@ -52,6 +71,7 @@ namespace WpfXDataFi
 			Data.Currency currency2 = (Data.Currency)
                 Enum.Parse(typeof(Data.Currency), Devise2.SelectedValue.ToString());
 			
+
             List<Data.Currency> l = new List<Data.Currency>();
             l.Add(currency2);
              
@@ -76,8 +96,8 @@ namespace WpfXDataFi
             }
             catch (Exception ex)
             {
-                //TO DO ouvrir une page d'erreur pour demander au client de recommencer la manoeuvre
-                Console.WriteLine("Une erreur s'est produite");
+                error.Text = ex.Message;
+                return;
             }
         }
 	}
