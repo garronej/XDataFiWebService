@@ -41,7 +41,14 @@ namespace WpfApplication
 
                 Devise1.Items.Add(cur);
                 Devise2.Items.Add(cur);
+            }
+
+            foreach (Data.InterestRate i in (Data.InterestRate[])Enum.GetValues(typeof(Data.InterestRate)))
+            {
+
+                TauxInterBancaire.Items.Add(i);
             } 
+
             DateDebut.SelectedDate = DateTime.Today;
             DateFin.SelectedDate = DateTime.Today;
             

@@ -26,8 +26,15 @@ namespace Taux_interbancaire
         public UserControl1()
         {
             InitializeComponent();
+            foreach (Data.InterestRate i in (Data.InterestRate[])Enum.GetValues(typeof(Data.InterestRate)))
+            {
+
+                TauxInterBancaire.Items.Add(i);
+            } 
+
             DateDébut.SelectedDate = DateTime.Today;
             DateFin.SelectedDate = DateTime.Today;
+            
         }
 
         private void EnterInterBancaire_Click(object sender, System.Windows.RoutedEventArgs e)
