@@ -76,8 +76,18 @@ namespace WcfLibrary.Parser
         {
             WcfLibrary.Constantes.displayDEBUG("start parseXML", 2);
 
-            d.Ds.ReadXmlSchema(_FilepathSchema);
-            d.Ds.ReadXml(_Filepath, XmlReadMode.ReadSchema);
+            try
+            {
+                d.Ds.ReadXmlSchema(_FilepathSchema);
+                WcfLibrary.Constantes.displayDEBUG("ReadXmlSchema Done", 3);
+
+                d.Ds.ReadXml(_Filepath, XmlReadMode.ReadSchema);
+                WcfLibrary.Constantes.displayDEBUG("ReadXml Done", 3);
+            }
+            catch(Exception e)
+            {
+                WcfLibrary.Constantes.displayDEBUG(e.Message, 3);
+            }
 
             WcfLibrary.Constantes.displayDEBUG("end parseXML", 2);
 

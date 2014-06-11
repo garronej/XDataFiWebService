@@ -41,15 +41,30 @@ namespace WcfLibrary.ImportParse
             string filePath = "xml.xml";
             string filePathSchema = "xmlSchema.xsd";
 
+            // Si les fichiers existe,nt alors on les nomme autrement
+            int i = 0;
+            string nameFile = filePath;
+            string nameFileSchema = filePathSchema;
+            while (System.IO.File.Exists(@nameFile))
+            {
+                i++;
+                nameFile = i + "_" + filePath;
+                nameFileSchema = i + "_" + filePathSchema;
+            }
+            filePath = nameFile;
+            filePathSchema = nameFileSchema;
+
             // Fichier XML
             StreamWriter stw = new StreamWriter(filePath);
             stw.Write(s);
             stw.Close();
+            WcfLibrary.Constantes.displayDEBUG("Fichier XML créé", 1);
 
             // Fichier XSD
             StreamWriter stwSchema = new StreamWriter(filePathSchema);
             stwSchema.Write(sSchema);
             stwSchema.Close();
+            WcfLibrary.Constantes.displayDEBUG("Fichier XSD créé", 1);
 
             // Parse
             _Parser = new Parser.ParserXML(filePath, filePathSchema);

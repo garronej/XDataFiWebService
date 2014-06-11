@@ -503,7 +503,7 @@ namespace WcfLibrary.Data
         protected void initDataSet()
         {
             // Création du DataSet
-            Ds = new DataSet();
+            Ds  = new DataSet();
             DataTable dt = new DataTable();
 
             int nbCol = 2 + Columns.Count;

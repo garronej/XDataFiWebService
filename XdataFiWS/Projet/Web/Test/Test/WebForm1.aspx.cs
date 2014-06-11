@@ -281,9 +281,11 @@ namespace Test
 
             StreamReader str = new StreamReader(filePath);
             string s = str.ReadToEnd();
+            str.Close();
 
             StreamReader strSchema = new StreamReader(filePathSchema);
             string sSchema = strSchema.ReadToEnd();
+            strSchema.Close();
 
             ServiceReference.XMLServiceClient client = new ServiceReference.XMLServiceClient();
             DataXML d = client.getXML(s, sSchema);
@@ -293,7 +295,7 @@ namespace Test
             //            + d.Dict["BNP.PA"].Dict[fin][0].ToString();
             //Label1.Text = d.Ds.Tables[0].Rows[0]["Symbol"].ToString();
             #endregion
-            /*
+            
             #region Affichage
             // On affiche la barre de titre
             // On crée une nouvelle ligne
@@ -335,12 +337,7 @@ namespace Test
                 tCellName.Text = name;
                 tRow.Cells.Add(tCellName);
 
-                // Date
-                TableCell tCellDate = new TableCell();
-                tCellDate.Text = time.ToString("dd/MM/yyyy");
-                tRow.Cells.Add(tCellDate);
-
-                foreach (string s in d.Columns)
+                foreach (object o in d.Ds.Tables[0].Rows[i].ItemArray)
                 {
                     // Ajout d'une case (correspondant à une valeur)
                     TableCell tCellVal = new TableCell();
