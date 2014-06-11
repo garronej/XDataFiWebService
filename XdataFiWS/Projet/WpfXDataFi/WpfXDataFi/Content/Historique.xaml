@@ -12,8 +12,8 @@
 	<Grid>
     	<TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="24" Margin="0,0,120,250" TextWrapping="Wrap" Text="Choix de l'actif :" VerticalAlignment="Center" Width="100"/>
     	<TextBox x:Name="Actif" HorizontalAlignment="Center" Height="24" Margin="120,0,0,250" TextWrapping="Wrap" VerticalAlignment="Center" Width="100"/>
-    	<DatePicker x:Name="Début" HorizontalAlignment="Center" Margin="0,0,200,50" VerticalAlignment="Center" Height="30" Width="150"/>
-    	<DatePicker x:Name="Fin" HorizontalAlignment="Center" Margin="200,0,0,50" VerticalAlignment="Center" Height="30" Width="150"/>
+    	<DatePicker x:Name="Début" HorizontalAlignment="Center" Margin="0,0,250,50" VerticalAlignment="Center" Height="30" Width="150"/>
+    	<DatePicker x:Name="Fin" HorizontalAlignment="Center" Margin="250,0,0,50" VerticalAlignment="Center" Height="30" Width="150"/>
     	<CheckBox x:Name="open" Content="open" HorizontalAlignment="Center" Height="30" Margin="-360,180,0,0" VerticalAlignment="Center" Width="80" Checked="open_Checked" Unchecked="open_Unchecked"/>
     	<CheckBox x:Name="close" Content="close" HorizontalAlignment="Center" Height="30" Margin="-180,180,0,0" VerticalAlignment="Center" Width="80" Checked="close_Checked" Unchecked="close_Unchecked"/>
     	<CheckBox x:Name="high" Content="high" HorizontalAlignment="Center" Height="30" Margin="0,180,0,0" VerticalAlignment="Center" Width="80" Checked="high_Checked" Unchecked="high_Unchecked"/>

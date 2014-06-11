@@ -25,5 +25,10 @@ namespace WpfXDataFi
 			this.InitializeComponent();
             this.mw = mw;
 		}
+		
+		private void EnterInterBancaire_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// TODO : ajoutez ici l'implémentation du gestionnaire d'événements.
+        }
 	}
 }
