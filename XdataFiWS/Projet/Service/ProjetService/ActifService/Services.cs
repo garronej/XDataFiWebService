@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
@@ -11,7 +12,7 @@ namespace Service
     /// <summary>
     /// Contient toutes les fonctions de tous les services disponibles
     /// </summary>
-    public class Services : IActifService, IExchangeRateService, IInterestRateService
+    public class Services : IActifService, IExchangeRateService, IInterestRateService, IXMLService
     {
         #region IActifService
         /// <summary>
@@ -95,5 +96,23 @@ namespace Service
             return d;
         }
         #endregion    
+
+        #region IXML
+        public WcfLibrary.Data.DataXML getXML(string s, string sSchema)
+        {
+            WcfLibrary.Constantes.displayDEBUG("start getXML", 0);
+
+            // Création du DataIRate
+            WcfLibrary.Data.DataXML d = new WcfLibrary.Data.DataXML();
+
+            // Import des données désirées
+            WcfLibrary.ImportParse.XML i = new WcfLibrary.ImportParse.XML(s, sSchema);
+            i.ImportAndParse(d);
+
+            WcfLibrary.Constantes.displayDEBUG("end getXML", 0);
+
+            return d;
+        }
+        #endregion
     }
 }

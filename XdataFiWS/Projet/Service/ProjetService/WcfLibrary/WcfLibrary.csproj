@@ -57,6 +57,7 @@
     <Compile Include="ImportParse\Google.cs" />
     <Compile Include="ImportParse\EBF.cs" />
     <Compile Include="ImportParse\FXTop.cs" />
+    <Compile Include="ImportParse\XML.cs" />
     <Compile Include="ImportParse\Yahoo.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Parser\Parser.cs" />

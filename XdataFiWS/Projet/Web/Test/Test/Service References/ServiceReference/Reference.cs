@@ -19,6 +19,7 @@ namespace Test.ServiceReference {
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Test.ServiceReference.DataExchangeRate))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Test.ServiceReference.DataInterestRate))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Test.ServiceReference.DataXML))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Test.ServiceReference.DataActif))]
     public partial class Data : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -857,6 +858,13 @@ namespace Test.ServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DataXML", Namespace="http://schemas.datacontract.org/2004/07/WcfLibrary.Data")]
+    [System.SerializableAttribute()]
+    public partial class DataXML : Test.ServiceReference.Data {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DataActif", Namespace="http://schemas.datacontract.org/2004/07/WcfLibrary.Data")]
     [System.SerializableAttribute()]
     public partial class DataActif : Test.ServiceReference.Data {
@@ -1000,6 +1008,53 @@ namespace Test.ServiceReference {
         
         public System.Threading.Tasks.Task<Test.ServiceReference.DataInterestRate> getInterestRateAsync(Test.ServiceReference.Data.InterestRate symbol, System.DateTime debut, System.DateTime fin) {
             return base.Channel.getInterestRateAsync(symbol, debut, fin);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IXMLService")]
+    public interface IXMLService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IXMLService/getXML", ReplyAction="http://tempuri.org/IXMLService/getXMLResponse")]
+        Test.ServiceReference.DataXML getXML(string s, string sSchema);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IXMLService/getXML", ReplyAction="http://tempuri.org/IXMLService/getXMLResponse")]
+        System.Threading.Tasks.Task<Test.ServiceReference.DataXML> getXMLAsync(string s, string sSchema);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IXMLServiceChannel : Test.ServiceReference.IXMLService, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class XMLServiceClient : System.ServiceModel.ClientBase<Test.ServiceReference.IXMLService>, Test.ServiceReference.IXMLService {
+        
+        public XMLServiceClient() {
+        }
+        
+        public XMLServiceClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public XMLServiceClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public XMLServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public XMLServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public Test.ServiceReference.DataXML getXML(string s, string sSchema) {
+            return base.Channel.getXML(s, sSchema);
+        }
+        
+        public System.Threading.Tasks.Task<Test.ServiceReference.DataXML> getXMLAsync(string s, string sSchema) {
+            return base.Channel.getXMLAsync(s, sSchema);
         }
     }
 }
