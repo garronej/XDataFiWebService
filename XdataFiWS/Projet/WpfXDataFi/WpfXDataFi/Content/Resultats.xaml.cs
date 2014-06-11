@@ -36,12 +36,17 @@ namespace WpfXDataFi
 			SolidColorBrush lightBarColor = (SolidColorBrush)App.Current.FindResource("LightBarColor");
 			SolidColorBrush darkBarColor  = (SolidColorBrush)App.Current.FindResource("DarkBarColor");
 			
+			// Taille
+			GridLength wDate = new GridLength(100);
+			GridLength w = new GridLength(80);
+			GridLength h = new GridLength(50);
+			
 			// Efface le contenu
 			contenu.ColumnDefinitions.Clear();
             contenu.RowDefinitions.Clear();
             contenu.Children.Clear();
 
-            contenu.HorizontalAlignment = HorizontalAlignment.Left;
+            contenu.HorizontalAlignment = HorizontalAlignment.Center;
             contenu.VerticalAlignment = VerticalAlignment.Top;
             contenu.Margin = new Thickness(0, 0, 0, 0);
             contenu.ShowGridLines = false;
@@ -49,15 +54,15 @@ namespace WpfXDataFi
 
 
             ColumnDefinition c1 = new ColumnDefinition();
-			c1.Width = new GridLength(80);
+			c1.Width = w;
             contenu.ColumnDefinitions.Add(c1);
 			
             ColumnDefinition c2 = new ColumnDefinition();
-			c2.Width = new GridLength(100);
+			c2.Width = wDate;
             contenu.ColumnDefinitions.Add(c2);
 
             RowDefinition r1 = new RowDefinition();
-            r1.Height = new GridLength(60);
+            r1.Height = h;
             contenu.RowDefinitions.Add(r1);
 			
 			MyGrid mg1 = new MyGrid(titleBarColor, "Symbole", "TextCenter");
@@ -76,7 +81,7 @@ namespace WpfXDataFi
             foreach (string col in d.Columns)
             {
                 ColumnDefinition c = new ColumnDefinition();
-				c.Width = new GridLength(60);
+				c.Width = w;
                 contenu.ColumnDefinitions.Add(c);
 				
 				MyGrid mg = new MyGrid(titleBarColor, col, "TextCenter");
@@ -103,7 +108,7 @@ namespace WpfXDataFi
 				
 				// Ligne
                 RowDefinition r = new RowDefinition();
-                r.Height = new GridLength(60);
+                r.Height = h;
                 contenu.RowDefinitions.Add(r);
 
 				// Nom

@@ -49,6 +49,7 @@ namespace WpfXDataFi
 		
 		private void showAccueil(object sender, RoutedEventArgs e)
 		{
+            removeFocus();
 			hideBarMenu();
 			mw.showAccueil();
 		}
@@ -90,12 +91,17 @@ namespace WpfXDataFi
 		
 		private void changeFocus(Button b)
 		{
-			if (focusButton != null)
-			{
-				focusButton.Style = (Style)App.Current.FindResource("MenuButton");
-			}
+            removeFocus();
 			focusButton = b;
 			focusButton.Style = (Style)App.Current.FindResource("MenuButtonClick");
 		}
+
+        private void removeFocus()
+        {
+            if (focusButton != null)
+            {
+                focusButton.Style = (Style)App.Current.FindResource("MenuButton");
+            }
+        }
 	}
 }

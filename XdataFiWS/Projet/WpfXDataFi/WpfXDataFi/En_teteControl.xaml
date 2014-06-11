@@ -9,7 +9,7 @@
 	d:DesignWidth="793.6" d:DesignHeight="100">
 
 	<Grid x:Name="En_tete" 
-		Background="{StaticResource BackgroundColor}" >
+		Background="{StaticResource BackgroundColor}" Margin="0" >
 		<Label x:Name="Title" 
 			Content="XDataFi" 
 			HorizontalAlignment="Center" 
@@ -17,6 +17,8 @@
 			Foreground="{StaticResource TitleColor}"
 			FontSize="32" 
 			FontWeight="Bold" />
+		<Rectangle Fill="{StaticResource TitleColor}" Height="5" VerticalAlignment="Bottom" Margin="0,0,0,1" />
+		<Rectangle Fill="{StaticResource BackgroundColor}" Height="1" VerticalAlignment="Bottom" />
 	</Grid>
 
 </UserControl>

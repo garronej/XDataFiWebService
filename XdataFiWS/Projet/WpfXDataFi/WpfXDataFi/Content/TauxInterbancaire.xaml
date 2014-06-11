@@ -6,15 +6,16 @@
 	mc:Ignorable="d"
 	x:Class="WpfXDataFi.TauxInterbancaire"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480"
-	Background="{StaticResource BackgroundContentColor}" >
+	d:DesignWidth="640" d:DesignHeight="480" >
 
-	<Grid x:Name="LayoutRoot">
-		<ComboBox x:Name="TauxInterBancaire" HorizontalAlignment="Center" Margin="180,0,0,250" VerticalAlignment="Center" Width="120"/>
-    	<DatePicker x:Name="DateDébut" HorizontalAlignment="Center" Margin="0,0,250,0" VerticalAlignment="Center"/>
-    	<DatePicker x:Name="DateFin" HorizontalAlignment="Center" Margin="250,0,0,0" VerticalAlignment="Center"/>
-    	<Button x:Name="EnterInterBancaire" Content="Enter" HorizontalAlignment="Center" Height="35" Margin="0,250,0,0" VerticalAlignment="Center" Width="100" Click="EnterInterBancaire_Click"/>
-    	<TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Height="24" Margin="0,0,180,250" TextWrapping="Wrap" Text="Choisissez le taux désiré:" VerticalAlignment="Center" Width="150"/>
-    	<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Foreground="#FFD60707" Width="450" Height="48" TextAlignment="Center"/>
-    </Grid>
+	<DockPanel Style="{StaticResource BackgroundPanel}" >
+		<Grid x:Name="LayoutRoot">
+			<ComboBox x:Name="TauxInterBancaire" HorizontalAlignment="Center" Margin="180,0,0,250" VerticalAlignment="Center" Width="120"/>
+    		<DatePicker x:Name="DateDébut" HorizontalAlignment="Center" Margin="0,0,250,0" VerticalAlignment="Center"/>
+    		<DatePicker x:Name="DateFin" HorizontalAlignment="Center" Margin="250,0,0,0" VerticalAlignment="Center"/>
+    		<Button x:Name="EnterInterBancaire" Content="Rechercher" Margin="0,250,0,0" Style="{StaticResource StyleButton}" Click="EnterInterBancaire_Click" />
+    		<TextBlock x:Name="textBlock2" HorizontalAlignment="Center" Height="24" Margin="0,0,180,250" TextWrapping="Wrap" Text="Choisissez le taux désiré:" VerticalAlignment="Center" Width="150"/>
+    		<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Foreground="#FFD60707" Width="450" Height="48" TextAlignment="Center"/>
+		</Grid>
+	</DockPanel>
 </UserControl>

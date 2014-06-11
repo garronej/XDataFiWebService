@@ -7,9 +7,9 @@
 	mc:Ignorable="d"
 	x:Class="WpfXDataFi.LeftMenuControl"
 	x:Name="UserControl"
-	d:DesignWidth="120" d:DesignHeight="460">
+	d:DesignWidth="140" d:DesignHeight="460">
 
-	<Grid x:Name="LeftMenu" Background="{StaticResource MenuButtonNormalColor}" >
+	<Grid x:Name="LeftMenu" Background="{StaticResource MenuButtonNormalColor}" Width="140" >
 		<StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top" >
 			<Button Content="Données Historiques" 
 				Style="{StaticResource MenuButton}" 
