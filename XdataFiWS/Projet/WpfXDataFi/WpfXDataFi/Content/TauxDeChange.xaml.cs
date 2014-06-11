@@ -30,7 +30,14 @@ namespace WpfXDataFi
             
                 Devise1.Items.Add(cur);
                 Devise2.Items.Add(cur);
-            } 
+            }
+
+
+            foreach (Data.Frequency cur in (Data.Frequency[])Enum.GetValues(typeof(Data.Frequency)))
+            {
+
+                Frequency.Items.Add(cur);
+            }
 
             DateDebut.SelectedDate = DateTime.Today;
             DateFin.SelectedDate = DateTime.Today;
@@ -47,16 +54,22 @@ namespace WpfXDataFi
 			
             List<Data.Currency> l = new List<Data.Currency>();
             l.Add(currency2);
-
+             
 			// Récupération des dates
             DateTime debut = Convert.ToDateTime(DateDebut.SelectedDate.ToString());
             DateTime fin = Convert.ToDateTime(DateFin.SelectedDate.ToString());
-			
+
+            if (DateTime.Compare(debut, fin) >= 0)
+            {
+                error.Text = "Les dates choisies ne sont pas valides.";
+                return;
+            }
 			// Traitement des données
             try
             {
                 ServiceReference.ExchangeRateServiceClient client = new ServiceReference.ExchangeRateServiceClient();
-                DataExchangeRate d = client.getExchangeRate(currencyToCompare, l, debut, fin, Data.Frequency.Monthly);
+                DataExchangeRate d = client.getExchangeRate(currencyToCompare, l, debut, fin, (Data.Frequency)
+                Enum.Parse(typeof(Data.Frequency), Frequency.SelectedValue.ToString()));
                 client.Close();
 				
 				mw.showRes(d);

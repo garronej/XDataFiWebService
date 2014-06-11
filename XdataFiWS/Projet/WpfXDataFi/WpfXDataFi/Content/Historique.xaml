@@ -20,6 +20,7 @@
     	<CheckBox x:Name="low" Content="low" HorizontalAlignment="Center" Height="30" Margin="180,180,0,0" VerticalAlignment="Center" Width="80" Checked="low_Checked" Unchecked="low_Unchecked"/>
     	<CheckBox x:Name="volume" Content="volume" HorizontalAlignment="Center" Height="30" Margin="360,180,0,0" VerticalAlignment="Center" Width="80" Checked="volume_Checked" Unchecked="volume_Unchecked"/>
     	<Button x:Name="EnterHistorique" Content="Enter" HorizontalAlignment="Center" Height="35" Margin="0,350,0,0" VerticalAlignment="Center" Width="100" Click="EnterHistorique_Click"/>
+		<TextBlock x:Name="error" HorizontalAlignment="Center" Margin="0,75,0,0" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False" Width="400" Height="60" TextAlignment="Center" Foreground="#FFCF0909"/>
             
     </Grid>
 </UserControl>
