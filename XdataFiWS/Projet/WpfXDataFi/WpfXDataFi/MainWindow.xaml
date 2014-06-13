@@ -6,8 +6,7 @@
 	
     <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" LastChildFill="True" >
 		<local:En_teteControl x:Name="EnTete" Height="100" DockPanel.Dock="Top"/>
-		<local:LeftMenuControl x:Name="Menu" Width="120" DockPanel.Dock="Left"/>
+		<local:LeftMenuControl x:Name="Menu" Width="140" DockPanel.Dock="Left"/>
 		<UserControl x:Name="Content" />
-		<!--<Grid x:Name="Content" Background="#FF98F8CC" />-->
 	</DockPanel>
 </Window>

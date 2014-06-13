@@ -6,8 +6,9 @@
 	mc:Ignorable="d"
 	x:Class="WpfXDataFi.Accueil"
 	x:Name="UserControl"
-	d:DesignWidth="640" d:DesignHeight="480"
-	Background="{StaticResource BackgroundContentColor}" >
+	d:DesignWidth="640" d:DesignHeight="480" >
 
-	<Grid x:Name="LayoutRoot"/>
+	<DockPanel Style="{StaticResource BackgroundPanel}" >
+		<Grid x:Name="LayoutRoot" />
+	</DockPanel>
 </UserControl>

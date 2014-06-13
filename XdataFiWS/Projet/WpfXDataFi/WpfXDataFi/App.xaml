@@ -7,8 +7,8 @@
 	<Application.Resources>
 		
         <!--Control colors : En-tete-->
-		<SolidColorBrush x:Key="BackgroundColor">#FF1F201E</SolidColorBrush>
-		<SolidColorBrush x:Key="TitleColor">#FF2B702C</SolidColorBrush>
+		<SolidColorBrush x:Key="BackgroundColor">#FF343632</SolidColorBrush>
+		<SolidColorBrush x:Key="TitleColor">#FF98C335</SolidColorBrush>
 
         <!--Control colors : LeftMenu-->
         <SolidColorBrush x:Key="MenuButtonNormalColor">#FF343632</SolidColorBrush>
@@ -16,20 +16,31 @@
         <SolidColorBrush x:Key="MenuLineSeparateColor">#FF000000</SolidColorBrush>
 
 		<SolidColorBrush x:Key="TextNormalColor">#FFFFFFFF</SolidColorBrush>
-		<SolidColorBrush x:Key="TextOverColor">#FF2B702C</SolidColorBrush>
-
-		<SolidColorBrush x:Key="Test">#FFAA00AA</SolidColorBrush>
+		<SolidColorBrush x:Key="TextOverColor">#FF98C335</SolidColorBrush>
 
 		<!--Control colors : User Controls-->
-		<SolidColorBrush x:Key="BackgroundContentColor">#FFC3F5B8</SolidColorBrush>
+		<!-- Degrade -->
+		<LinearGradientBrush x:Key="DegradeVertBlanc" EndPoint="0.5,1" StartPoint="0.5,0" >
+			<GradientStop Color="#FFCAF6C1" Offset="0"/>
+			<GradientStop Color="#FFF3F9F2" Offset="1"/>
+		</LinearGradientBrush>
 
 		<!--Control colors : Resultats-->
 		<SolidColorBrush x:Key="TitleBarColor">#FF84C776</SolidColorBrush>
-		<SolidColorBrush x:Key="LightBarColor">#FF9FF28E</SolidColorBrush>
-		<SolidColorBrush x:Key="DarkBarColor">#FF89DE78</SolidColorBrush>
+		<SolidColorBrush x:Key="LightBarColor">#FFCAF6C1</SolidColorBrush>
+		<SolidColorBrush x:Key="DarkBarColor">#FFACDDA2</SolidColorBrush>
+		
+		<!--Control colors : Button -->
+		<SolidColorBrush x:Key="ButtonNormalColor">#FFCAF6C1</SolidColorBrush>
+		<SolidColorBrush x:Key="ButtonPressedColor">#FFACDDA2</SolidColorBrush>
+		<SolidColorBrush x:Key="ButtonBorderColor">#FF84C776</SolidColorBrush>
 
+		<!-- Panel -->
+        <Style x:Key="BackgroundPanel" TargetType="DockPanel">
+			<Setter Property="Background" Value="{StaticResource DegradeVertBlanc}"/>
+		</Style>
 
-        <!-- Button -->
+        <!-- Button Menu -->
         <Style x:Key="MenuButton" TargetType="Button">
             <Setter Property="Background" Value="{StaticResource MenuButtonNormalColor}" />
             <Setter Property="Foreground" Value="{StaticResource TextNormalColor}" />
@@ -65,7 +76,7 @@
 			</Setter>
         </Style>
 
-		<!-- Button -->
+		<!-- Button  Menu Click -->
         <Style x:Key="MenuButtonClick" TargetType="Button">
             <Setter Property="Background" Value="{StaticResource MenuButtonPressedColor}" />
             <Setter Property="Foreground" Value="{StaticResource TextOverColor}" />
@@ -100,6 +111,42 @@
 				</Setter.Value>
 			</Setter>
 		</Style>
+
+		 <!-- Button -->
+        <Style x:Key="StyleButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonNormalColor}" />
+			<Setter Property="BorderBrush" Value="{StaticResource ButtonBorderColor}" />
+			<Setter Property="BorderThickness" Value="1,1,1,1" />
+
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Height" Value="35" />
+			<Setter Property="Width" Value="100" />
+			
+			<!-- Remove default mouseover -->
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}" 
+							CornerRadius="15" >
+							
+							<ContentPresenter 
+								HorizontalAlignment="Center" 
+								VerticalAlignment="Center" />
+						</Border>
+
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver" Value="true">
+								<Setter Property="Background" Value="{StaticResource ButtonPressedColor}" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+        </Style>
 
 		<!-- Text Alignment -->
 		<Style x:Key="TextCenter" TargetType="TextBlock">

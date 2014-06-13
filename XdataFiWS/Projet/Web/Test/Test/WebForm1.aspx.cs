@@ -297,51 +297,20 @@ namespace Test
             #endregion
             
             #region Affichage
-            // On affiche la barre de titre
-            // On crée une nouvelle ligne
-            TableRow tRowTitle = new TableRow();
-            Table1.Rows.Add(tRowTitle);
-
-            // Nom de l'actif
-            TableCell tCellNameTitle = new TableCell();
-            tCellNameTitle.Text = "Symbol";
-            tRowTitle.Cells.Add(tCellNameTitle);
-
-            // Date
-            TableCell tCellDateTitle = new TableCell();
-            tCellDateTitle.Text = "Date";
-            tRowTitle.Cells.Add(tCellDateTitle);
-
-            foreach (string col in d.Columns)
-            {
-                // Ajout d'une case (correspondant à une valeur)
-                TableCell tCellVal = new TableCell();
-                tCellVal.Text = col;
-                tRowTitle.Cells.Add(tCellVal);
-            }
-
             // Ajout des différentes lignes
             int n = d.Ds.Tables[0].Rows.Count;
 
             for (int i = 0; i < n; i++)
             {
-                string name = (string)d.Ds.Tables[0].Rows[i]["Symbol"];
-                DateTime time = (DateTime)d.Ds.Tables[0].Rows[i]["Date"];
-
                 // On crée une nouvelle ligne
                 TableRow tRow = new TableRow();
                 Table1.Rows.Add(tRow);
-
-                // Nom de l'actif
-                TableCell tCellName = new TableCell();
-                tCellName.Text = name;
-                tRow.Cells.Add(tCellName);
 
                 foreach (object o in d.Ds.Tables[0].Rows[i].ItemArray)
                 {
                     // Ajout d'une case (correspondant à une valeur)
                     TableCell tCellVal = new TableCell();
-                    tCellVal.Text = d.Ds.Tables[0].Rows[i][s].ToString();
+                    tCellVal.Text = o.ToString();
                     tRow.Cells.Add(tCellVal);
                 }
             }
