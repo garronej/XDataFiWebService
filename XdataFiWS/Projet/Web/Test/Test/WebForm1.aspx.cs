@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.DataVisualization.Charting;
 using System.Web.UI.WebControls;
 using Test.ServiceReference;
 
@@ -13,7 +15,6 @@ namespace Test
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -34,6 +35,11 @@ namespace Test
         protected void Button4_Click(object sender, EventArgs e)
         {
             testXML();
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            testChart();
         }
 
         protected void testHist()
@@ -276,9 +282,35 @@ namespace Test
         {
             #region Recuperation des Donnees
 
-            string filePath = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/xml.xml";
-            string filePathSchema = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/xmlSchema.xsd";
+            string filePath = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/htmlFxtop.xml";
+            string filePathSchema = "D:/GitHub/XDataFiWebService/XdataFiWS/Projet/Web/Test/Test/htmlFxtopSchema.xsd";
 
+
+            DataSet Ds = new DataSet();
+
+            try
+            {
+                Ds.ReadXmlSchema(filePathSchema);
+
+                try
+                {
+                    Ds.ReadXml(filePath, XmlReadMode.ReadSchema);
+
+                    Label1.Text = "OK";
+                    //displayXML(Ds);
+                    Grid1.DataSource = Ds.Tables[Ds.Tables.Count -1 ];
+                    Grid1.DataBind();
+                }
+                catch (Exception ex)
+                {
+                    Label1.Text = "erreur xml : \n" + ex.Message;
+                }
+            }
+            catch(Exception ex)
+            {
+                Label1.Text = "erreur Schema : \n" + ex.Message;
+            }
+            /*
             StreamReader str = new StreamReader(filePath);
             string s = str.ReadToEnd();
             str.Close();
@@ -290,31 +322,117 @@ namespace Test
             ServiceReference.XMLServiceClient client = new ServiceReference.XMLServiceClient();
             DataXML d = client.getXML(s, sSchema);
             client.Close();
-
+            */
             //Label1.Text = d.Dict["CA.PA"].Dict[fin][0].ToString() + " "
             //            + d.Dict["BNP.PA"].Dict[fin][0].ToString();
             //Label1.Text = d.Ds.Tables[0].Rows[0]["Symbol"].ToString();
             #endregion
             
+        }
+
+        private void displayXML(DataSet Ds)
+        {
             #region Affichage
             // Ajout des différentes lignes
-            int n = d.Ds.Tables[0].Rows.Count;
+            /*
+            int k = Ds.Tables.Count;
+            Grid1.DataSource = Ds.Tables[k-1];
+            Grid1.DataBind();*/
 
-            for (int i = 0; i < n; i++)
+            int k = Ds.Tables.Count;
+            int j = k - 1;
+            //for(int j = 0; j < k; j++)
+            //{
+            int n = Ds.Tables[j].Rows.Count;
+            
+           TableRow tRowTitle = new TableRow();
+           Table1.Rows.Add(tRowTitle);
+
+           TableCell tCellValTitle = new TableCell();
+           tCellValTitle.Text = Ds.Tables[j].TableName;
+           tRowTitle.Cells.Add(tCellValTitle);
+       
+            // On crée une nouvelle ligne
+            TableRow tRow = new TableRow();
+            Table1.Rows.Add(tRow);
+            int a = 0;
+            for (int i = 0; i < n - 1; i++)
             {
-                // On crée une nouvelle ligne
-                TableRow tRow = new TableRow();
-                Table1.Rows.Add(tRow);
 
-                foreach (object o in d.Ds.Tables[0].Rows[i].ItemArray)
+                TableCell tCellVal = new TableCell();
+                tCellVal.Text = Ds.Tables[j].Rows[i][0].ToString();
+
+                int idRow = (int)Ds.Tables[j].Rows[i][1];
+
+                if (idRow > a)
+                {
+                    a++;
+                    tRow = new TableRow();
+                    Table1.Rows.Add(tRow);
+                }
+                //tCellVal.Text = o.ToString() + "_" + j + "_" + i;
+                tRow.Cells.Add(tCellVal);
+                /*
+                foreach (object o in Ds.Tables[j].Rows[i].ItemArray)
                 {
                     // Ajout d'une case (correspondant à une valeur)
-                    TableCell tCellVal = new TableCell();
-                    tCellVal.Text = o.ToString();
-                    tRow.Cells.Add(tCellVal);
-                }
+                }*/
             }
-            #endregion*/
+            //}
+
+            #endregion
+        }
+
+        protected void testChart()
+        {
+            #region Récupération
+            List<string> l = new List<string>();
+            l.Add("CA.PA");
+
+            List<Data.HistoricalColumn> columns = new List<Data.HistoricalColumn>();
+            columns.Add(Data.HistoricalColumn.Open);
+
+            DateTime debut = new DateTime(2013, 6, 14);
+            DateTime fin = new DateTime(2014, 6, 14);
+
+            ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
+            DataActif d = client.getActifHistorique(l, columns, debut, fin);
+            client.Close();
+            #endregion
+
+
+            #region Chart
+            Chart1 = new Chart();
+            Chart1.Width = 800;
+            Chart1.Height = 600;
+
+            // ChartArea
+            ChartArea area = new ChartArea("MainArea");
+            area.AxisX.Title = "Date";
+            area.AxisY.Title = "Valeur";
+
+            area.AxisX.IntervalType = DateTimeIntervalType.Months;
+            Chart1.ChartAreas.Add(area);
+
+            // Legend
+            Legend legend = new Legend();
+            legend.Name = "Default";
+            legend.Alignment = System.Drawing.StringAlignment.Center;
+            Chart1.Legends.Add(legend);
+
+            int n = d.Ds.Tables[0].Rows.Count;
+            Series series = new Series("CA.PA");
+
+            for(int i=0; i<n; i++)
+            {
+                series.Points.AddXY((DateTime) d.Ds.Tables[0].Rows[i]["Date"], (double)d.Ds.Tables[0].Rows[i]["Open"]);
+            }
+
+
+            Chart1.Series.Add(series);
+            
+            this.form1.Controls.Add(Chart1);
+            #endregion
         }
     }
 }

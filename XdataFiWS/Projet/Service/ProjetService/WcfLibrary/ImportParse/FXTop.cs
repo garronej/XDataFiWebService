@@ -71,7 +71,8 @@ namespace WcfLibrary.ImportParse
 
                         //Récupération de l'url
                         //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=EUR&C2=USD&DD1=1&MM1=1&YYYY1=2012&B=1&P=&I=1&DD2=1&MM21&YYYY2=2013&btnOK=Go%21
-                        //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=ADF&C2=ALL&MA=1&DD1=1&MM1=1&YYYY1=2012&B=1&P=&I=1&DD2=1&MM21&YYYY2=2013&btnOK=Go%21
+                        //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=EUR&C2=USD&MA=1&DD1=01&MM1=05&YYYY1=2014&B=1&P=&I=1&DD2=01&MM2=06&YYYY2=2014&btnOK=Go%21
+                        //http://fxtop.com/en/historical-exchange-rates.php?A=1&C1=ADF&C2=ALL&MA=1&DD1=1&MM1=4&YYYY1=2014&B=1&P=&I=1&DD2=1&MM2=5&YYYY2=2014&btnOK=Go%21
                         string url;
 
                         if (der.Freq == Data.Data.Frequency.Daily)
