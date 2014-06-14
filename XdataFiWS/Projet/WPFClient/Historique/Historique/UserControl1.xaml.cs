@@ -59,6 +59,7 @@ namespace Historique
             ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
             DataActif d = client.getActifHistorique(l, columns, debut, fin);
             client.Close();
+            
         }
 
         private void open_Checked(object sender, System.Windows.RoutedEventArgs e)

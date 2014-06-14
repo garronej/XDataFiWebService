@@ -30,6 +30,13 @@ namespace WebTest
             ServiceReference.ActifServiceClient client = new ServiceReference.ActifServiceClient();
             DataActif d = client.getActifHistorique(l, columns, debut , fin);
             client.Close();
+
+            this.display_chart(d);
+        }
+
+        private void display_chart(DataActif d)
+        {
+
         }
     }
 }
