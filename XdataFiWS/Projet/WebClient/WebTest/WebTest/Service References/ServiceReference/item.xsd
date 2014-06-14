@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://xdatafi.com:22/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://xdatafi.com:22/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" />
+  <xs:element name="getActifHistorique">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="symbol" nillable="true" type="q1:ArrayOfstring" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="columns" nillable="true" type="q2:ArrayOfData.HistoricalColumn" />
+        <xs:element minOccurs="0" name="debut" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fin" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getActifHistoriqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="getActifHistoriqueResult" nillable="true" type="q3:DataActif" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getExchangeRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="symbol" type="q4:Data.Currency" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="columns" nillable="true" type="q5:ArrayOfData.Currency" />
+        <xs:element minOccurs="0" name="debut" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fin" type="xs:dateTime" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="freq" type="q6:Data.Frequency" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getExchangeRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="getExchangeRateResult" nillable="true" type="q7:DataExchangeRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getInterestRate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="symbol" type="q8:Data.InterestRate" />
+        <xs:element minOccurs="0" name="debut" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fin" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getInterestRateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" minOccurs="0" name="getInterestRateResult" nillable="true" type="q9:DataInterestRate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

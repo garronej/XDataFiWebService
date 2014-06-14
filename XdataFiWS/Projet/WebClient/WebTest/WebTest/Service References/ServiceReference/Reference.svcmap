@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20237584-c8fd-4966-ac87-6c88f01fb60b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://xdatafi.com:22/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="0d9ae355-7b11-4d06-af34-0b271f44620b" SourceId="1" SourceUrl="http://xdatafi.com:22/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="a0a99d73-0ba8-42cf-9637-c788e2252ed7" SourceId="1" SourceUrl="http://xdatafi.com:22/?xsd=xsd1" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="c7b0a8d9-b29d-4f0d-ad2b-b763dc7cf991" SourceId="1" SourceUrl="http://xdatafi.com:22/?xsd=xsd4" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="76237ebe-0d43-419b-8660-c9fee2180595" SourceId="1" SourceUrl="http://xdatafi.com:22/?xsd=xsd2" />
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="db369df9-8d37-411e-b520-779305588e7a" SourceId="1" SourceUrl="http://xdatafi.com:22/?xsd=xsd3" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="8872f834-6a34-4bb8-a27d-eda9f68f870d" SourceId="1" SourceUrl="http://xdatafi.com:22/?disco" />
+    <MetadataFile FileName="Services.wsdl" MetadataType="Wsdl" ID="fb9c1ac9-d522-45af-a854-798c36fee3b0" SourceId="1" SourceUrl="http://xdatafi.com:22/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Services" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://xdatafi.com:22/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://xdatafi.com:22/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://xdatafi.com:22/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://xdatafi.com:22/?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfLibrary.Data" />
+      <xsd:import schemaLocation="http://xdatafi.com:22/?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IActifService_getActifHistorique_InputMessage">
+    <wsdl:part name="parameters" element="tns:getActifHistorique" />
+  </wsdl:message>
+  <wsdl:message name="IActifService_getActifHistorique_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getActifHistoriqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IExchangeRateService_getExchangeRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getExchangeRate" />
+  </wsdl:message>
+  <wsdl:message name="IExchangeRateService_getExchangeRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getExchangeRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInterestRateService_getInterestRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getInterestRate" />
+  </wsdl:message>
+  <wsdl:message name="IInterestRateService_getInterestRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getInterestRateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IActifService">
+    <wsdl:operation name="getActifHistorique">
+      <wsdl:input wsaw:Action="http://tempuri.org/IActifService/getActifHistorique" message="tns:IActifService_getActifHistorique_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IActifService/getActifHistoriqueResponse" message="tns:IActifService_getActifHistorique_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IExchangeRateService">
+    <wsdl:operation name="getExchangeRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IExchangeRateService/getExchangeRate" message="tns:IExchangeRateService_getExchangeRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IExchangeRateService/getExchangeRateResponse" message="tns:IExchangeRateService_getExchangeRate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IInterestRateService">
+    <wsdl:operation name="getInterestRate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInterestRateService/getInterestRate" message="tns:IInterestRateService_getInterestRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInterestRateService/getInterestRateResponse" message="tns:IInterestRateService_getInterestRate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IActifService" type="tns:IActifService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getActifHistorique">
+      <soap:operation soapAction="http://tempuri.org/IActifService/getActifHistorique" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IExchangeRateService" type="tns:IExchangeRateService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getExchangeRate">
+      <soap:operation soapAction="http://tempuri.org/IExchangeRateService/getExchangeRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IInterestRateService" type="tns:IInterestRateService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getInterestRate">
+      <soap:operation soapAction="http://tempuri.org/IInterestRateService/getInterestRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Services">
+    <wsdl:port name="BasicHttpBinding_IActifService" binding="tns:BasicHttpBinding_IActifService">
+      <soap:address location="http://xdatafi.com:22/ActifService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IExchangeRateService" binding="tns:BasicHttpBinding_IExchangeRateService">
+      <soap:address location="http://xdatafi.com:22/ExchangeRateService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IInterestRateService" binding="tns:BasicHttpBinding_IInterestRateService">
+      <soap:address location="http://xdatafi.com:22/InterestRateService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
