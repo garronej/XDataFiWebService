@@ -25,7 +25,9 @@ namespace WpfXDataFi
 		private Historique H;
 		private TauxInterbancaire TI;
 		private TauxDeChange TC;
+		private XML X;
 		private Resultats R;
+		private Export E;
 		
         public MainWindow()
         {
@@ -36,6 +38,8 @@ namespace WpfXDataFi
 			H = new Historique(this);
 			TI = new TauxInterbancaire(this);
 			TC = new TauxDeChange(this);
+			X = new XML(this);
+			E = new Export(this);
 			
 			showAccueil();
         }
@@ -60,6 +64,10 @@ namespace WpfXDataFi
             Content.Content = TC;
         }
 		
+		public void showChangeRate()
+        {
+            Content.Content = TC;
+        }
 		// Affiche la page de résultat précédente
 		public void showRes()
 		{
@@ -72,6 +80,12 @@ namespace WpfXDataFi
 			R = new Resultats(d);
 			Content.Content = R;
 			Menu.showBarMenu();
+		}
+		
+		public void showExport()
+		{
+			Content.Content = E;
+			E.getFilepathExport(R.d);
 		}
     }
 }

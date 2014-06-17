@@ -62,8 +62,14 @@
     <Compile Include="Content\Accueil.xaml.cs">
       <DependentUpon>Accueil.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Content\Export.xaml.cs">
+      <DependentUpon>Export.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Content\Historique.xaml.cs">
       <DependentUpon>Historique.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\XML.xaml.cs">
+      <DependentUpon>XML.xaml</DependentUpon>
     </Compile>
     <Compile Include="Custom\MyGrid.cs" />
     <Compile Include="Content\Resultats.xaml.cs">
@@ -81,6 +87,14 @@
       <DependentUpon>TauxInterbancaire.xaml</DependentUpon>
     </Compile>
     <Page Include="Content\Accueil.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\Export.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\XML.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

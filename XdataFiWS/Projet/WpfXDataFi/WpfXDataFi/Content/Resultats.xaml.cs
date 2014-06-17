@@ -19,7 +19,7 @@ namespace WpfXDataFi
 	/// </summary>
 	public partial class Resultats : UserControl
 	{
-		private Data d;
+		public Data d;
 		
 		public Resultats(Data d)
 		{

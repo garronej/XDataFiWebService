@@ -78,8 +78,9 @@ namespace WpfXDataFi
 		
 		private void showXML(object sender, RoutedEventArgs e)
         {
-			// TODO
-            showBarMenu();
+			Button b = (Button)sender;
+            changeFocus(b);
+            mw.showXML();
         }
 		
 		private void showRes(object sender, RoutedEventArgs e) 
@@ -87,6 +88,13 @@ namespace WpfXDataFi
 			Button b = (Button)sender;
             changeFocus(b);
             mw.showRes();
+		}
+		
+		private void showExport(object sender, RoutedEventArgs e) 
+		{
+			Button b = (Button)sender;
+            changeFocus(b);
+            mw.showExport();
 		}
 		
 		private void changeFocus(Button b)
